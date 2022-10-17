@@ -3,9 +3,13 @@ from Cython.Build import cythonize
 import numpy
 from distutils.extension import Extension
 
-
+'''
 extensions = [
-    Extension("_partition_nodes", sources=["_partition_nodes.pyx"], include_dirs=[numpy.get_include()], language="c++")
+    Extension("_partition_nodes", sources=["_partition_nodes.pyx"],
+              include_dirs=[numpy.get_include()], 
+              language="c++",
+              #extra_compile_args=["-std=c++12"],
+              )
 ]
 
 
@@ -22,4 +26,3 @@ setup(
     name="_kd_tree",
     ext_modules = cythonize(extensions),
 )
-'''
