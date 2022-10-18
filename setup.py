@@ -27,7 +27,7 @@ ext_module_kd_tree = Extension("_kd_tree",
 
 extensions = [
     ext_module_kd_tree,
-    #ext_module_partition_nodes
+    ext_module_partition_nodes
 ]
 
 
@@ -43,7 +43,7 @@ setup(
 
     packages=find_packages(),
     
-    ext_modules=cythonize(extensions),
+    #ext_modules=cythonize(extensions),
 
     description='Adaptive k Nearest Neighbor',
 
