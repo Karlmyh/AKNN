@@ -3,12 +3,15 @@ from setuptools.extension import Extension
 from Cython.Build import cythonize
 import numpy
 import pathlib
+import os
 
 here = pathlib.Path(__file__).parent.resolve()
 long_description = (here / "README.md").read_text(encoding="utf-8")
 
-
-libraries=["m"]
+if os.name=="posix":
+    libraries=["m"]
+else:
+    libraries=[]
 
 ext_module_partition_nodes = Extension("_partition_nodes", sources=["./AKNN/_partition_nodes.pyx"],
           include_dirs=[numpy.get_include()], 
@@ -43,7 +46,7 @@ setup(
 
     packages=find_packages(),
     
-    ext_modules=cythonize(extensions),
+    #ext_modules=cythonize(extensions),
 
     description='Adaptive k Nearest Neighbor',
 
