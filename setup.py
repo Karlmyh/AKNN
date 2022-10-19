@@ -43,7 +43,7 @@ setup(
 
     packages=find_packages(),
     
-    #ext_modules=cythonize(extensions),
+    ext_modules=cythonize(extensions),
 
     description='Adaptive k Nearest Neighbor',
 
