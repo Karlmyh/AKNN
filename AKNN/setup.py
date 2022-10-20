@@ -15,10 +15,8 @@ def configuration(parent_package="", top_path=None):
     config = Configuration("AKNN", parent_package, top_path)
 
   
-    config.add_subpackage("AKNN")
-    
-
-    
+    config.add_subpackage("AKNNDE")
+    config.add_subpackage("kdtree")
 
     # Skip cythonization as we do not want to include the generated
     # C/C++ files in the release tarballs as they are not necessarily
