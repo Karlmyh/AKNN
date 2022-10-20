@@ -1,28 +1,35 @@
-from distutils.core import setup
-from Cython.Build import cythonize
-import numpy
-from distutils.extension import Extension
+import sys
+import os
 
-'''
-extensions = [
-    Extension("_partition_nodes", sources=["_partition_nodes.pyx"],
-              include_dirs=[numpy.get_include()], 
-              language="c++",
-              #extra_compile_args=["-std=c++12"],
-              )
-]
+from sklearn._build_utils import cythonize_extensions
 
 
-setup(
-    name="_partition_nodes",
-    ext_modules = cythonize(extensions),
-)
-'''
-extensions = [
-    Extension("_kd_tree", sources=["_kd_tree.pyx"], include_dirs=[numpy.get_include()])
-]
+def configuration(parent_package="", top_path=None):
+    from numpy.distutils.misc_util import Configuration
+    import numpy
 
-setup(
-    name="_kd_tree",
-    ext_modules = cythonize(extensions),
-)
+    libraries = []
+    if os.name == "posix":
+        libraries.append("m")
+
+    config = Configuration("AKNN", parent_package, top_path)
+
+  
+    config.add_subpackage("AKNN")
+    
+
+    
+
+    # Skip cythonization as we do not want to include the generated
+    # C/C++ files in the release tarballs as they are not necessarily
+    # forward compatible with future versions of Python for instance.
+    if "sdist" not in sys.argv:
+        cythonize_extensions(top_path, config)
+
+    return config
+
+
+if __name__ == "__main__":
+    from numpy.distutils.core import setup
+
+    setup(**configuration(top_path="").todict())
