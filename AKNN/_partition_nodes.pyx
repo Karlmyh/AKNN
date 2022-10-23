@@ -19,6 +19,12 @@
 #  - https://github.com/scikit-learn/scikit-learn/pull/11103
 #  - https://github.com/scikit-learn/scikit-learn/pull/19473
 
+
+cimport numpy as cnp
+#ctypedef cnp.float64_t DTYPE_t
+#ctypedef cnp.intp_t ITYPE_t
+
+
 cdef extern from *:
     """
     #include <algorithm>
@@ -63,9 +69,7 @@ cdef extern from *:
                 I n_features,
                 I n_points) except +
 
-cimport numpy as cnp
-ctypedef cnp.float64_t DTYPE_t
-ctypedef cnp.intp_t ITYPE_t
+
 
 cdef int partition_node_indices(
         DTYPE_t *data,

@@ -14,12 +14,15 @@
             "/Users/mayuheng/opt/anaconda3/lib/python3.8/site-packages/numpy/core/include"
         ],
         "language": "c++",
-        "name": "_partition_nodes",
+        "libraries": [
+            "m"
+        ],
+        "name": "AKNN._partition_nodes",
         "sources": [
             "./AKNN/_partition_nodes.pyx"
         ]
     },
-    "module_name": "_partition_nodes"
+    "module_name": "AKNN._partition_nodes"
 }
 END: Cython Metadata */
 
@@ -775,9 +778,19 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE___partition_nodes
-#define __PYX_HAVE_API___partition_nodes
+#define __PYX_HAVE__AKNN___partition_nodes
+#define __PYX_HAVE_API__AKNN___partition_nodes
 /* Early includes */
+#include <string.h>
+#include <stdio.h>
+#include "numpy/arrayobject.h"
+#include "numpy/ndarrayobject.h"
+#include "numpy/ndarraytypes.h"
+#include "numpy/arrayscalars.h"
+#include "numpy/ufuncobject.h"
+
+    /* NumPy API declarations from "numpy/__init__.pxd" */
+    
 #include "ios"
 #include "new"
 #include "stdexcept"
@@ -816,16 +829,6 @@ static CYTHON_INLINE float __PYX_NAN() {
             node_indices + n_points,
             index_comparator);
     }
-    
-#include <string.h>
-#include <stdio.h>
-#include "numpy/arrayobject.h"
-#include "numpy/ndarrayobject.h"
-#include "numpy/ndarraytypes.h"
-#include "numpy/arrayscalars.h"
-#include "numpy/ufuncobject.h"
-
-    /* NumPy API declarations from "numpy/__init__.pxd" */
     
 #ifdef _OPENMP
 #include <omp.h>
@@ -1252,23 +1255,22 @@ typedef npy_double __pyx_t_5numpy_double_t;
  */
 typedef npy_longdouble __pyx_t_5numpy_longdouble_t;
 
-/* "_partition_nodes.pyx":67
- * 
+/* "AKNN/_partition_nodes.pxd":2
  * cimport numpy as cnp
  * ctypedef cnp.float64_t DTYPE_t             # <<<<<<<<<<<<<<
  * ctypedef cnp.intp_t ITYPE_t
  * 
  */
-typedef __pyx_t_5numpy_float64_t __pyx_t_16_partition_nodes_DTYPE_t;
+typedef __pyx_t_5numpy_float64_t __pyx_t_4AKNN_16_partition_nodes_DTYPE_t;
 
-/* "_partition_nodes.pyx":68
+/* "AKNN/_partition_nodes.pxd":3
  * cimport numpy as cnp
  * ctypedef cnp.float64_t DTYPE_t
  * ctypedef cnp.intp_t ITYPE_t             # <<<<<<<<<<<<<<
  * 
  * cdef int partition_node_indices(
  */
-typedef __pyx_t_5numpy_intp_t __pyx_t_16_partition_nodes_ITYPE_t;
+typedef __pyx_t_5numpy_intp_t __pyx_t_4AKNN_16_partition_nodes_ITYPE_t;
 /* Declarations.proto */
 #if CYTHON_CCOMPLEX
   #ifdef __cplusplus
@@ -1717,6 +1719,9 @@ static CYTHON_INLINE int __Pyx_PyErr_GivenExceptionMatches2(PyObject *err, PyObj
 /* CheckBinaryVersion.proto */
 static int __Pyx_check_binary_version(void);
 
+/* FunctionExport.proto */
+static int __Pyx_ExportFunction(const char *name, void (*f)(void), const char *sig);
+
 /* InitStrings.proto */
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
@@ -1759,12 +1764,12 @@ static PyTypeObject *__pyx_ptype_5numpy_flexible = 0;
 static PyTypeObject *__pyx_ptype_5numpy_character = 0;
 static PyTypeObject *__pyx_ptype_5numpy_ufunc = 0;
 
-/* Module declarations from '_partition_nodes' */
-#define __Pyx_MODULE_NAME "_partition_nodes"
-extern int __pyx_module_is_main__partition_nodes;
-int __pyx_module_is_main__partition_nodes = 0;
+/* Module declarations from 'AKNN._partition_nodes' */
+#define __Pyx_MODULE_NAME "AKNN._partition_nodes"
+extern int __pyx_module_is_main_AKNN___partition_nodes;
+int __pyx_module_is_main_AKNN___partition_nodes = 0;
 
-/* Implementation of '_partition_nodes' */
+/* Implementation of 'AKNN._partition_nodes' */
 static PyObject *__pyx_builtin_ImportError;
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_name[] = "__name__";
@@ -1784,15 +1789,15 @@ static PyObject *__pyx_tuple_;
 static PyObject *__pyx_tuple__2;
 /* Late includes */
 
-/* "_partition_nodes.pyx":70
- * ctypedef cnp.intp_t ITYPE_t
+/* "AKNN/_partition_nodes.pyx":74
+ * 
  * 
  * cdef int partition_node_indices(             # <<<<<<<<<<<<<<
  *         DTYPE_t *data,
  *         ITYPE_t *node_indices,
  */
 
-static int __pyx_f_16_partition_nodes_partition_node_indices(__pyx_t_16_partition_nodes_DTYPE_t *__pyx_v_data, __pyx_t_16_partition_nodes_ITYPE_t *__pyx_v_node_indices, __pyx_t_16_partition_nodes_ITYPE_t __pyx_v_split_dim, __pyx_t_16_partition_nodes_ITYPE_t __pyx_v_split_index, __pyx_t_16_partition_nodes_ITYPE_t __pyx_v_n_features, __pyx_t_16_partition_nodes_ITYPE_t __pyx_v_n_points) {
+static int __pyx_f_4AKNN_16_partition_nodes_partition_node_indices(__pyx_t_4AKNN_16_partition_nodes_DTYPE_t *__pyx_v_data, __pyx_t_4AKNN_16_partition_nodes_ITYPE_t *__pyx_v_node_indices, __pyx_t_4AKNN_16_partition_nodes_ITYPE_t __pyx_v_split_dim, __pyx_t_4AKNN_16_partition_nodes_ITYPE_t __pyx_v_split_index, __pyx_t_4AKNN_16_partition_nodes_ITYPE_t __pyx_v_n_features, __pyx_t_4AKNN_16_partition_nodes_ITYPE_t __pyx_v_n_points) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   int __pyx_lineno = 0;
@@ -1800,7 +1805,7 @@ static int __pyx_f_16_partition_nodes_partition_node_indices(__pyx_t_16_partitio
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("partition_node_indices", 0);
 
-  /* "_partition_nodes.pyx":118
+  /* "AKNN/_partition_nodes.pyx":122
  *         modified as noted above.
  *     """
  *     partition_node_indices_inner(             # <<<<<<<<<<<<<<
@@ -1808,13 +1813,13 @@ static int __pyx_f_16_partition_nodes_partition_node_indices(__pyx_t_16_partitio
  *         node_indices,
  */
   try {
-    partition_node_indices_inner<__pyx_t_16_partition_nodes_DTYPE_t,__pyx_t_16_partition_nodes_ITYPE_t>(__pyx_v_data, __pyx_v_node_indices, __pyx_v_split_dim, __pyx_v_split_index, __pyx_v_n_features, __pyx_v_n_points);
+    partition_node_indices_inner<__pyx_t_4AKNN_16_partition_nodes_DTYPE_t,__pyx_t_4AKNN_16_partition_nodes_ITYPE_t>(__pyx_v_data, __pyx_v_node_indices, __pyx_v_split_dim, __pyx_v_split_index, __pyx_v_n_features, __pyx_v_n_points);
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(0, 118, __pyx_L1_error)
+    __PYX_ERR(0, 122, __pyx_L1_error)
   }
 
-  /* "_partition_nodes.pyx":125
+  /* "AKNN/_partition_nodes.pyx":129
  *         n_features,
  *         n_points)
  *     return 0             # <<<<<<<<<<<<<<
@@ -1822,8 +1827,8 @@ static int __pyx_f_16_partition_nodes_partition_node_indices(__pyx_t_16_partitio
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_partition_nodes.pyx":70
- * ctypedef cnp.intp_t ITYPE_t
+  /* "AKNN/_partition_nodes.pyx":74
+ * 
  * 
  * cdef int partition_node_indices(             # <<<<<<<<<<<<<<
  *         DTYPE_t *data,
@@ -1832,7 +1837,7 @@ static int __pyx_f_16_partition_nodes_partition_node_indices(__pyx_t_16_partitio
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("_partition_nodes.partition_node_indices", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._partition_nodes.partition_node_indices", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -2983,10 +2988,17 @@ static int __Pyx_modinit_variable_export_code(void) {
 
 static int __Pyx_modinit_function_export_code(void) {
   __Pyx_RefNannyDeclarations
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_function_export_code", 0);
   /*--- Function export code ---*/
+  if (__Pyx_ExportFunction("partition_node_indices", (void (*)(void))__pyx_f_4AKNN_16_partition_nodes_partition_node_indices, "int (__pyx_t_4AKNN_16_partition_nodes_DTYPE_t *, __pyx_t_4AKNN_16_partition_nodes_ITYPE_t *, __pyx_t_4AKNN_16_partition_nodes_ITYPE_t, __pyx_t_4AKNN_16_partition_nodes_ITYPE_t, __pyx_t_4AKNN_16_partition_nodes_ITYPE_t, __pyx_t_4AKNN_16_partition_nodes_ITYPE_t)") < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
+  __pyx_L1_error:;
+  __Pyx_RefNannyFinishContext();
+  return -1;
 }
 
 static int __Pyx_modinit_type_init_code(void) {
@@ -3245,14 +3257,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main__partition_nodes) {
+  if (__pyx_module_is_main_AKNN___partition_nodes) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "_partition_nodes")) {
-      if (unlikely(PyDict_SetItemString(modules, "_partition_nodes", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "AKNN._partition_nodes")) {
+      if (unlikely(PyDict_SetItemString(modules, "AKNN._partition_nodes", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -3263,7 +3275,7 @@ if (!__Pyx_RefNanny) {
   /*--- Global type/function init code ---*/
   (void)__Pyx_modinit_global_init_code();
   (void)__Pyx_modinit_variable_export_code();
-  (void)__Pyx_modinit_function_export_code();
+  if (unlikely(__Pyx_modinit_function_export_code() < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
   (void)__Pyx_modinit_type_init_code();
   if (unlikely(__Pyx_modinit_type_import_code() < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
   (void)__Pyx_modinit_variable_import_code();
@@ -3273,7 +3285,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "_partition_nodes.pyx":1
+  /* "AKNN/_partition_nodes.pyx":1
  * # distutils : language = c++             # <<<<<<<<<<<<<<
  * 
  * # BinaryTrees rely on partial sorts to partition their nodes during their
@@ -3298,11 +3310,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init _partition_nodes", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init AKNN._partition_nodes", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init _partition_nodes");
+    PyErr_SetString(PyExc_ImportError, "init AKNN._partition_nodes");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -4931,6 +4943,43 @@ static int __Pyx_check_binary_version(void) {
         return PyErr_WarnEx(NULL, message, 1);
     }
     return 0;
+}
+
+/* FunctionExport */
+static int __Pyx_ExportFunction(const char *name, void (*f)(void), const char *sig) {
+    PyObject *d = 0;
+    PyObject *cobj = 0;
+    union {
+        void (*fp)(void);
+        void *p;
+    } tmp;
+    d = PyObject_GetAttrString(__pyx_m, (char *)"__pyx_capi__");
+    if (!d) {
+        PyErr_Clear();
+        d = PyDict_New();
+        if (!d)
+            goto bad;
+        Py_INCREF(d);
+        if (PyModule_AddObject(__pyx_m, (char *)"__pyx_capi__", d) < 0)
+            goto bad;
+    }
+    tmp.fp = f;
+#if PY_VERSION_HEX >= 0x02070000
+    cobj = PyCapsule_New(tmp.p, sig, 0);
+#else
+    cobj = PyCObject_FromVoidPtrAndDesc(tmp.p, (void *)sig, 0);
+#endif
+    if (!cobj)
+        goto bad;
+    if (PyDict_SetItemString(d, name, cobj) < 0)
+        goto bad;
+    Py_DECREF(cobj);
+    Py_DECREF(d);
+    return 0;
+bad:
+    Py_XDECREF(cobj);
+    Py_XDECREF(d);
+    return -1;
 }
 
 /* InitStrings */

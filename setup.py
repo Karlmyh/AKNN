@@ -1,4 +1,5 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages
+from numpy.distutils.core import setup
 from setuptools.extension import Extension
 from Cython.Build import cythonize
 import numpy
@@ -24,6 +25,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 from numpy.distutils.command.build_ext import build_ext  
 
+
 USE_NEWEST_NUMPY_C_API = (
     "AKNN._partition_nodes",
 )
@@ -31,20 +33,13 @@ USE_NEWEST_NUMPY_C_API = (
 class build_ext_subclass(build_ext):
     def finalize_options(self):
         super().finalize_options()
-        if self.parallel is None:
-            # Do not override self.parallel if already defined by
-            # command-line flag (--parallel or -j)
-
-            parallel = os.environ.get("SKLEARN_BUILD_PARALLEL")
-            if parallel:
-                self.parallel = int(parallel)
-        if self.parallel:
-            print("setting parallel=%d " % self.parallel)
+      
 
     def build_extensions(self):
-        from sklearn._build_utils.openmp_helpers import get_openmp_flag
+     
 
         for ext in self.extensions:
+           
             if ext.name in USE_NEWEST_NUMPY_C_API:
                 print(f"Using newest NumPy C API for extension {ext.name}")
                 DEFINE_MACRO_NUMPY_C_API = (
@@ -56,13 +51,6 @@ class build_ext_subclass(build_ext):
                 print(
                     f"Using old NumPy C API (version 1.7) for extension {ext.name}"
                 )
-
-        if sklearn._OPENMP_SUPPORTED:
-            openmp_flag = get_openmp_flag(self.compiler)
-
-            for e in self.extensions:
-                e.extra_compile_args += openmp_flag
-                e.extra_link_args += openmp_flag
 
         build_ext.build_extensions(self)
 
@@ -76,7 +64,7 @@ else:
 ext_module_partition_nodes = Extension("AKNN._partition_nodes", sources=["./AKNN/_partition_nodes.pyx"],
           include_dirs=[numpy.get_include()], 
           language="c++",
-          library=libraries,
+          libraries=libraries,
           )
 
 
@@ -84,8 +72,9 @@ ext_module_partition_nodes = Extension("AKNN._partition_nodes", sources=["./AKNN
 ext_module_kd_tree = Extension("AKNN._kd_tree", 
            sources=["./AKNN/_kd_tree.pyx"], 
            include_dirs=[numpy.get_include()],
-           library=libraries,
+           libraries=libraries,
            )
+
 
 
 extensions = [
@@ -124,4 +113,5 @@ setup(
     
     install_requires=requirements,
     
+    cmdclass=cmdclass
 )

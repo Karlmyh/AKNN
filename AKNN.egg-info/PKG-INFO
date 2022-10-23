@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: AKNN
+Version: 0.0.1
+Summary: Adaptive k Nearest Neighbor
+Home-page: https://github.com/Karlmyh/AKNN
+Author: Karlmyh
+Author-email: yma@ruc.edu.cn
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# AKNN
+
+## Installation
+
+### Via pip
+
+- Macos: pip install git+https://github.com/Karlmyh/AKNN.git
+- Win: pip install git+https://github.com/Karlmyh/AKNN.git --user

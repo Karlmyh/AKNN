@@ -13,12 +13,12 @@
         "include_dirs": [
             "/Users/mayuheng/opt/anaconda3/lib/python3.8/site-packages/numpy/core/include"
         ],
-        "name": "_kd_tree",
+        "name": "AKNN._kd_tree",
         "sources": [
             "./AKNN/_kd_tree.pyx"
         ]
     },
-    "module_name": "_kd_tree"
+    "module_name": "AKNN._kd_tree"
 }
 END: Cython Metadata */
 
@@ -760,8 +760,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE___kd_tree
-#define __PYX_HAVE_API___kd_tree
+#define __PYX_HAVE__AKNN___kd_tree
+#define __PYX_HAVE_API__AKNN___kd_tree
 /* Early includes */
 #include <string.h>
 #include <stdio.h>
@@ -1332,7 +1332,7 @@ typedef __pyx_t_5numpy_intp_t __pyx_t_4AKNN_16_partition_nodes_ITYPE_t;
  * ctypedef cnp.intp_t ITYPE_t
  * ctypedef cnp.int32_t SPARSE_INDEX_TYPE_t
  */
-typedef __pyx_t_5numpy_float64_t __pyx_t_8_kd_tree_DTYPE_t;
+typedef __pyx_t_5numpy_float64_t __pyx_t_4AKNN_8_kd_tree_DTYPE_t;
 
 /* "AKNN/_binary_tree.pxi":156
  * 
@@ -1341,7 +1341,7 @@ typedef __pyx_t_5numpy_float64_t __pyx_t_8_kd_tree_DTYPE_t;
  * ctypedef cnp.int32_t SPARSE_INDEX_TYPE_t
  * 
  */
-typedef __pyx_t_5numpy_intp_t __pyx_t_8_kd_tree_ITYPE_t;
+typedef __pyx_t_5numpy_intp_t __pyx_t_4AKNN_8_kd_tree_ITYPE_t;
 
 /* "AKNN/_binary_tree.pxi":157
  * ctypedef cnp.float64_t DTYPE_t
@@ -1350,7 +1350,7 @@ typedef __pyx_t_5numpy_intp_t __pyx_t_8_kd_tree_ITYPE_t;
  * 
  * ITYPE = np.intp
  */
-typedef __pyx_t_5numpy_int32_t __pyx_t_8_kd_tree_SPARSE_INDEX_TYPE_t;
+typedef __pyx_t_5numpy_int32_t __pyx_t_4AKNN_8_kd_tree_SPARSE_INDEX_TYPE_t;
 /* Declarations.proto */
 #if CYTHON_CCOMPLEX
   #ifdef __cplusplus
@@ -1377,10 +1377,10 @@ static CYTHON_INLINE __pyx_t_double_complex __pyx_t_double_complex_from_parts(do
 
 
 /*--- Type declarations ---*/
-struct __pyx_obj_8_kd_tree_NeighborsHeap;
-struct __pyx_obj_8_kd_tree_NodeHeap;
-struct __pyx_obj_8_kd_tree_BinaryTree;
-struct __pyx_obj_8_kd_tree_KDTree;
+struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap;
+struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap;
+struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree;
+struct __pyx_obj_4AKNN_8_kd_tree_KDTree;
 struct __pyx_array_obj;
 struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
@@ -1421,8 +1421,8 @@ typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
  * cdef inline object PyArray_MultiIterNew1(a):
  */
 typedef npy_cdouble __pyx_t_5numpy_complex_t;
-struct __pyx_t_8_kd_tree_NodeHeapData_t;
-struct __pyx_t_8_kd_tree_NodeData_t;
+struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t;
+struct __pyx_t_4AKNN_8_kd_tree_NodeData_t;
 
 /* "AKNN/_binary_tree.pxi":319
  * 
@@ -1431,10 +1431,10 @@ struct __pyx_t_8_kd_tree_NodeData_t;
  *     DTYPE_t val
  *     ITYPE_t i1
  */
-struct __pyx_t_8_kd_tree_NodeHeapData_t {
-  __pyx_t_8_kd_tree_DTYPE_t val;
-  __pyx_t_8_kd_tree_ITYPE_t i1;
-  __pyx_t_8_kd_tree_ITYPE_t i2;
+struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t {
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t val;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t i1;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t i2;
 };
 
 /* "AKNN/_binary_tree.pxi":328
@@ -1444,11 +1444,11 @@ struct __pyx_t_8_kd_tree_NodeHeapData_t {
  *     ITYPE_t idx_start
  *     ITYPE_t idx_end
  */
-struct __pyx_t_8_kd_tree_NodeData_t {
-  __pyx_t_8_kd_tree_ITYPE_t idx_start;
-  __pyx_t_8_kd_tree_ITYPE_t idx_end;
-  __pyx_t_8_kd_tree_ITYPE_t is_leaf;
-  __pyx_t_8_kd_tree_DTYPE_t radius;
+struct __pyx_t_4AKNN_8_kd_tree_NodeData_t {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t idx_start;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t idx_end;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t is_leaf;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t radius;
 };
 
 /* "AKNN/_binary_tree.pxi":538
@@ -1458,9 +1458,9 @@ struct __pyx_t_8_kd_tree_NodeData_t {
  *     """A max-heap structure to keep track of distances/indices of neighbors
  * 
  */
-struct __pyx_obj_8_kd_tree_NeighborsHeap {
+struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap {
   PyObject_HEAD
-  struct __pyx_vtabstruct_8_kd_tree_NeighborsHeap *__pyx_vtab;
+  struct __pyx_vtabstruct_4AKNN_8_kd_tree_NeighborsHeap *__pyx_vtab;
   PyArrayObject *distances_arr;
   PyArrayObject *indices_arr;
   __Pyx_memviewslice distances;
@@ -1475,12 +1475,12 @@ struct __pyx_obj_8_kd_tree_NeighborsHeap {
  *     """NodeHeap
  * 
  */
-struct __pyx_obj_8_kd_tree_NodeHeap {
+struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap {
   PyObject_HEAD
-  struct __pyx_vtabstruct_8_kd_tree_NodeHeap *__pyx_vtab;
+  struct __pyx_vtabstruct_4AKNN_8_kd_tree_NodeHeap *__pyx_vtab;
   PyArrayObject *data_arr;
   __Pyx_memviewslice data;
-  __pyx_t_8_kd_tree_ITYPE_t n;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t n;
 };
 
 
@@ -1491,21 +1491,21 @@ struct __pyx_obj_8_kd_tree_NodeHeap {
  * 
  *     cdef cnp.ndarray data_arr
  */
-struct __pyx_obj_8_kd_tree_BinaryTree {
+struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree {
   PyObject_HEAD
-  struct __pyx_vtabstruct_8_kd_tree_BinaryTree *__pyx_vtab;
+  struct __pyx_vtabstruct_4AKNN_8_kd_tree_BinaryTree *__pyx_vtab;
   PyArrayObject *data_arr;
   PyArrayObject *idx_array_arr;
   PyArrayObject *node_data_arr;
   PyArrayObject *node_bounds_arr;
   __Pyx_memviewslice data;
-  __pyx_t_8_kd_tree_DTYPE_t sum_weight;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t sum_weight;
   __Pyx_memviewslice idx_array;
   __Pyx_memviewslice node_data;
   __Pyx_memviewslice node_bounds;
-  __pyx_t_8_kd_tree_ITYPE_t leaf_size;
-  __pyx_t_8_kd_tree_ITYPE_t n_levels;
-  __pyx_t_8_kd_tree_ITYPE_t n_nodes;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t leaf_size;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t n_levels;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t n_nodes;
   int euclidean;
   int n_trims;
   int n_leaves;
@@ -1514,15 +1514,15 @@ struct __pyx_obj_8_kd_tree_BinaryTree {
 };
 
 
-/* "_kd_tree.pyx":13
+/* "AKNN/_kd_tree.pyx":13
  * 
  * # Inherit KDTree from BinaryTree
  * cdef class KDTree(BinaryTree):             # <<<<<<<<<<<<<<
  *     __doc__ = CLASS_DOC.format(**DOC_DICT)
  *     pass
  */
-struct __pyx_obj_8_kd_tree_KDTree {
-  struct __pyx_obj_8_kd_tree_BinaryTree __pyx_base;
+struct __pyx_obj_4AKNN_8_kd_tree_KDTree {
+  struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree __pyx_base;
 };
 
 
@@ -1612,13 +1612,13 @@ struct __pyx_memoryviewslice_obj {
  * 
  */
 
-struct __pyx_vtabstruct_8_kd_tree_NeighborsHeap {
-  __pyx_t_8_kd_tree_DTYPE_t (*largest)(struct __pyx_obj_8_kd_tree_NeighborsHeap *, __pyx_t_8_kd_tree_ITYPE_t);
-  int (*_push)(struct __pyx_obj_8_kd_tree_NeighborsHeap *, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_DTYPE_t, __pyx_t_8_kd_tree_ITYPE_t);
-  int (*_sort)(struct __pyx_obj_8_kd_tree_NeighborsHeap *);
+struct __pyx_vtabstruct_4AKNN_8_kd_tree_NeighborsHeap {
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t (*largest)(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t);
+  int (*_push)(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_DTYPE_t, __pyx_t_4AKNN_8_kd_tree_ITYPE_t);
+  int (*_sort)(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *);
 };
-static struct __pyx_vtabstruct_8_kd_tree_NeighborsHeap *__pyx_vtabptr_8_kd_tree_NeighborsHeap;
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_13NeighborsHeap_largest(struct __pyx_obj_8_kd_tree_NeighborsHeap *, __pyx_t_8_kd_tree_ITYPE_t);
+static struct __pyx_vtabstruct_4AKNN_8_kd_tree_NeighborsHeap *__pyx_vtabptr_4AKNN_8_kd_tree_NeighborsHeap;
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_13NeighborsHeap_largest(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t);
 
 
 /* "AKNN/_binary_tree.pxi":672
@@ -1629,14 +1629,14 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_13NeighborsHeap
  * 
  */
 
-struct __pyx_vtabstruct_8_kd_tree_NodeHeap {
-  int (*resize)(struct __pyx_obj_8_kd_tree_NodeHeap *, __pyx_t_8_kd_tree_ITYPE_t);
-  int (*push)(struct __pyx_obj_8_kd_tree_NodeHeap *, struct __pyx_t_8_kd_tree_NodeHeapData_t);
-  struct __pyx_t_8_kd_tree_NodeHeapData_t (*peek)(struct __pyx_obj_8_kd_tree_NodeHeap *);
-  struct __pyx_t_8_kd_tree_NodeHeapData_t (*pop)(struct __pyx_obj_8_kd_tree_NodeHeap *);
-  void (*clear)(struct __pyx_obj_8_kd_tree_NodeHeap *);
+struct __pyx_vtabstruct_4AKNN_8_kd_tree_NodeHeap {
+  int (*resize)(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t);
+  int (*push)(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *, struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t);
+  struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t (*peek)(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *);
+  struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t (*pop)(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *);
+  void (*clear)(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *);
 };
-static struct __pyx_vtabstruct_8_kd_tree_NodeHeap *__pyx_vtabptr_8_kd_tree_NodeHeap;
+static struct __pyx_vtabstruct_4AKNN_8_kd_tree_NodeHeap *__pyx_vtabptr_4AKNN_8_kd_tree_NodeHeap;
 
 
 /* "AKNN/_binary_tree.pxi":805
@@ -1647,19 +1647,19 @@ static struct __pyx_vtabstruct_8_kd_tree_NodeHeap *__pyx_vtabptr_8_kd_tree_NodeH
  *     cdef cnp.ndarray data_arr
  */
 
-struct __pyx_vtabstruct_8_kd_tree_BinaryTree {
-  __pyx_t_8_kd_tree_DTYPE_t (*dist)(struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_ITYPE_t);
-  __pyx_t_8_kd_tree_DTYPE_t (*rdist)(struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_ITYPE_t);
-  int (*_recursive_build)(struct __pyx_obj_8_kd_tree_BinaryTree *, __Pyx_memviewslice, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_ITYPE_t);
-  int (*_query_single_depthfirst)(struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_ITYPE_t, struct __pyx_obj_8_kd_tree_NeighborsHeap *, __pyx_t_8_kd_tree_DTYPE_t);
-  int (*_query_single_breadthfirst)(struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_ITYPE_t, struct __pyx_obj_8_kd_tree_NeighborsHeap *, struct __pyx_obj_8_kd_tree_NodeHeap *);
+struct __pyx_vtabstruct_4AKNN_8_kd_tree_BinaryTree {
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t (*dist)(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t);
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t (*rdist)(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t);
+  int (*_recursive_build)(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __Pyx_memviewslice, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_ITYPE_t);
+  int (*_query_single_depthfirst)(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t);
+  int (*_query_single_breadthfirst)(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *, struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *);
 };
-static struct __pyx_vtabstruct_8_kd_tree_BinaryTree *__pyx_vtabptr_8_kd_tree_BinaryTree;
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_10BinaryTree_dist(struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_ITYPE_t);
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_10BinaryTree_rdist(struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_ITYPE_t);
+static struct __pyx_vtabstruct_4AKNN_8_kd_tree_BinaryTree *__pyx_vtabptr_4AKNN_8_kd_tree_BinaryTree;
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_10BinaryTree_dist(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t);
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_10BinaryTree_rdist(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t);
 
 
-/* "_kd_tree.pyx":13
+/* "AKNN/_kd_tree.pyx":13
  * 
  * # Inherit KDTree from BinaryTree
  * cdef class KDTree(BinaryTree):             # <<<<<<<<<<<<<<
@@ -1667,10 +1667,10 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_10BinaryTree_rd
  *     pass
  */
 
-struct __pyx_vtabstruct_8_kd_tree_KDTree {
-  struct __pyx_vtabstruct_8_kd_tree_BinaryTree __pyx_base;
+struct __pyx_vtabstruct_4AKNN_8_kd_tree_KDTree {
+  struct __pyx_vtabstruct_4AKNN_8_kd_tree_BinaryTree __pyx_base;
 };
-static struct __pyx_vtabstruct_8_kd_tree_KDTree *__pyx_vtabptr_8_kd_tree_KDTree;
+static struct __pyx_vtabstruct_4AKNN_8_kd_tree_KDTree *__pyx_vtabptr_4AKNN_8_kd_tree_KDTree;
 
 
 /* "View.MemoryView":106
@@ -2383,17 +2383,17 @@ static CYTHON_INLINE PyObject *__pyx_capsule_create(void *p, const char *sig);
 #define __Pyx_HAS_GCC_DIAGNOSTIC
 #endif
 
-struct __pyx_t_8_kd_tree_NodeHeapData_t;
-static PyObject* __pyx_convert__to_py_struct____pyx_t_8_kd_tree_NodeHeapData_t(struct __pyx_t_8_kd_tree_NodeHeapData_t s);
+struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t;
+static PyObject* __pyx_convert__to_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t s);
 /* MemviewDtypeToObject.proto */
-static CYTHON_INLINE PyObject *__pyx_memview_get_nn_struct____pyx_t_8_kd_tree_NodeHeapData_t(const char *itemp);
-static CYTHON_INLINE int __pyx_memview_set_nn_struct____pyx_t_8_kd_tree_NodeHeapData_t(const char *itemp, PyObject *obj);
+static CYTHON_INLINE PyObject *__pyx_memview_get_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(const char *itemp);
+static CYTHON_INLINE int __pyx_memview_set_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(const char *itemp, PyObject *obj);
 
-struct __pyx_t_8_kd_tree_NodeData_t;
-static PyObject* __pyx_convert__to_py_struct____pyx_t_8_kd_tree_NodeData_t(struct __pyx_t_8_kd_tree_NodeData_t s);
+struct __pyx_t_4AKNN_8_kd_tree_NodeData_t;
+static PyObject* __pyx_convert__to_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t s);
 /* MemviewDtypeToObject.proto */
-static CYTHON_INLINE PyObject *__pyx_memview_get_nn_struct____pyx_t_8_kd_tree_NodeData_t(const char *itemp);
-static CYTHON_INLINE int __pyx_memview_set_nn_struct____pyx_t_8_kd_tree_NodeData_t(const char *itemp, PyObject *obj);
+static CYTHON_INLINE PyObject *__pyx_memview_get_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(const char *itemp);
+static CYTHON_INLINE int __pyx_memview_set_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(const char *itemp, PyObject *obj);
 
 /* IsLittleEndian.proto */
 static CYTHON_INLINE int __Pyx_Is_Little_Endian(void);
@@ -2419,40 +2419,40 @@ static int __Pyx_ValidateAndInit_memviewslice(
                 PyObject *original_obj);
 
 /* ObjectToMemviewSlice.proto */
-static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_8_kd_tree_DTYPE_t(PyObject *, int writable_flag);
+static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t(PyObject *, int writable_flag);
 
 /* ObjectToMemviewSlice.proto */
-static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_8_kd_tree_ITYPE_t(PyObject *, int writable_flag);
+static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t(PyObject *, int writable_flag);
 
 /* ObjectToMemviewSlice.proto */
-static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_8_kd_tree_NodeHeapData_t(PyObject *, int writable_flag);
+static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(PyObject *, int writable_flag);
 
 /* ObjectToMemviewSlice.proto */
-static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_8_kd_tree_DTYPE_t__const__(PyObject *, int writable_flag);
+static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__(PyObject *, int writable_flag);
 
 /* ObjectToMemviewSlice.proto */
-static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_8_kd_tree_ITYPE_t__const__(PyObject *, int writable_flag);
+static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t__const__(PyObject *, int writable_flag);
 
 /* ObjectToMemviewSlice.proto */
-static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_8_kd_tree_NodeData_t__const__(PyObject *, int writable_flag);
+static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t__const__(PyObject *, int writable_flag);
 
 /* ObjectToMemviewSlice.proto */
-static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_nn___pyx_t_8_kd_tree_DTYPE_t__const__(PyObject *, int writable_flag);
+static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__(PyObject *, int writable_flag);
 
 /* IntPow.proto */
 static CYTHON_INLINE long __Pyx_pow_long(long, long);
 
 /* ObjectToMemviewSlice.proto */
-static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_8_kd_tree_NodeData_t(PyObject *, int writable_flag);
+static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(PyObject *, int writable_flag);
 
 /* MemviewDtypeToObject.proto */
-static CYTHON_INLINE PyObject *__pyx_memview_get_nn___pyx_t_8_kd_tree_DTYPE_t__const__(const char *itemp);
+static CYTHON_INLINE PyObject *__pyx_memview_get_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__(const char *itemp);
 
 /* MemviewDtypeToObject.proto */
-static CYTHON_INLINE PyObject *__pyx_memview_get_nn___pyx_t_8_kd_tree_ITYPE_t__const__(const char *itemp);
+static CYTHON_INLINE PyObject *__pyx_memview_get_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t__const__(const char *itemp);
 
 /* MemviewDtypeToObject.proto */
-static CYTHON_INLINE PyObject *__pyx_memview_get_nn_struct____pyx_t_8_kd_tree_NodeData_t__const__(const char *itemp);
+static CYTHON_INLINE PyObject *__pyx_memview_get_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t__const__(const char *itemp);
 
 /* RealImag.proto */
 #if CYTHON_CCOMPLEX
@@ -2595,19 +2595,19 @@ static int __Pyx_ImportFunction(PyObject *module, const char *funcname, void (**
 /* InitStrings.proto */
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_13NeighborsHeap_largest(struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_row); /* proto*/
-static int __pyx_f_8_kd_tree_13NeighborsHeap__push(struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_row, __pyx_t_8_kd_tree_DTYPE_t __pyx_v_val, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_val); /* proto*/
-static int __pyx_f_8_kd_tree_13NeighborsHeap__sort(struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self); /* proto*/
-static int __pyx_f_8_kd_tree_8NodeHeap_resize(struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_new_size); /* proto*/
-static int __pyx_f_8_kd_tree_8NodeHeap_push(struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self, struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_v_data); /* proto*/
-static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_f_8_kd_tree_8NodeHeap_peek(struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self); /* proto*/
-static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_f_8_kd_tree_8NodeHeap_pop(struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self); /* proto*/
-static void __pyx_f_8_kd_tree_8NodeHeap_clear(struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self); /* proto*/
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_10BinaryTree_dist(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_x1, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_x2, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_size); /* proto*/
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_10BinaryTree_rdist(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_x1, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_x2, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_size); /* proto*/
-static int __pyx_f_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, __Pyx_memviewslice __pyx_v_node_data, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_idx_start, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_idx_end); /* proto*/
-static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_pt, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_pt, struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_heap, __pyx_t_8_kd_tree_DTYPE_t __pyx_v_reduced_dist_LB); /* proto*/
-static int __pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_pt, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_pt, struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_heap, struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_nodeheap); /* proto*/
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_13NeighborsHeap_largest(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_row); /* proto*/
+static int __pyx_f_4AKNN_8_kd_tree_13NeighborsHeap__push(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_row, __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_val, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_val); /* proto*/
+static int __pyx_f_4AKNN_8_kd_tree_13NeighborsHeap__sort(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self); /* proto*/
+static int __pyx_f_4AKNN_8_kd_tree_8NodeHeap_resize(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_new_size); /* proto*/
+static int __pyx_f_4AKNN_8_kd_tree_8NodeHeap_push(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self, struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_v_data); /* proto*/
+static struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_f_4AKNN_8_kd_tree_8NodeHeap_peek(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self); /* proto*/
+static struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_f_4AKNN_8_kd_tree_8NodeHeap_pop(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self); /* proto*/
+static void __pyx_f_4AKNN_8_kd_tree_8NodeHeap_clear(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self); /* proto*/
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_10BinaryTree_dist(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_x1, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_x2, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_size); /* proto*/
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_10BinaryTree_rdist(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_x1, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_x2, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_size); /* proto*/
+static int __pyx_f_4AKNN_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, __Pyx_memviewslice __pyx_v_node_data, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_idx_start, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_idx_end); /* proto*/
+static int __pyx_f_4AKNN_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_pt, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_pt, struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_heap, __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_reduced_dist_LB); /* proto*/
+static int __pyx_f_4AKNN_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_pt, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_pt, struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_heap, struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_nodeheap); /* proto*/
 static PyObject *__pyx_array_get_memview(struct __pyx_array_obj *__pyx_v_self); /* proto*/
 static char *__pyx_memoryview_get_item_pointer(struct __pyx_memoryview_obj *__pyx_v_self, PyObject *__pyx_v_index); /* proto*/
 static PyObject *__pyx_memoryview_is_slice(struct __pyx_memoryview_obj *__pyx_v_self, PyObject *__pyx_v_obj); /* proto*/
@@ -2670,23 +2670,23 @@ static struct __pyx_array_obj *__pyx_array_new(PyObject *, Py_ssize_t, char *, c
 
 /* Module declarations from 'cython' */
 
-/* Module declarations from '_kd_tree' */
-static PyTypeObject *__pyx_ptype_8_kd_tree_NeighborsHeap = 0;
-static PyTypeObject *__pyx_ptype_8_kd_tree_NodeHeap = 0;
-static PyTypeObject *__pyx_ptype_8_kd_tree_BinaryTree = 0;
-static PyTypeObject *__pyx_ptype_8_kd_tree_KDTree = 0;
+/* Module declarations from 'AKNN._kd_tree' */
+static PyTypeObject *__pyx_ptype_4AKNN_8_kd_tree_NeighborsHeap = 0;
+static PyTypeObject *__pyx_ptype_4AKNN_8_kd_tree_NodeHeap = 0;
+static PyTypeObject *__pyx_ptype_4AKNN_8_kd_tree_BinaryTree = 0;
+static PyTypeObject *__pyx_ptype_4AKNN_8_kd_tree_KDTree = 0;
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
 static PyTypeObject *__pyx_memoryview_type = 0;
 static PyTypeObject *__pyx_memoryviewslice_type = 0;
-static __pyx_t_8_kd_tree_DTYPE_t __pyx_v_8_kd_tree_INF;
-static __pyx_t_8_kd_tree_DTYPE_t __pyx_v_8_kd_tree_NEG_INF;
-static __pyx_t_8_kd_tree_DTYPE_t __pyx_v_8_kd_tree_PI;
-static __pyx_t_8_kd_tree_DTYPE_t __pyx_v_8_kd_tree_ROOT_2PI;
-static __pyx_t_8_kd_tree_DTYPE_t __pyx_v_8_kd_tree_LOG_PI;
-static __pyx_t_8_kd_tree_DTYPE_t __pyx_v_8_kd_tree_LOG_2PI;
-static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_v_8_kd_tree_nhd_tmp;
-static struct __pyx_t_8_kd_tree_NodeData_t __pyx_v_8_kd_tree_nd_tmp;
+static __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_4AKNN_8_kd_tree_INF;
+static __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_4AKNN_8_kd_tree_NEG_INF;
+static __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_4AKNN_8_kd_tree_PI;
+static __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_4AKNN_8_kd_tree_ROOT_2PI;
+static __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_4AKNN_8_kd_tree_LOG_PI;
+static __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_4AKNN_8_kd_tree_LOG_2PI;
+static struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_v_4AKNN_8_kd_tree_nhd_tmp;
+static struct __pyx_t_4AKNN_8_kd_tree_NodeData_t __pyx_v_4AKNN_8_kd_tree_nd_tmp;
 static PyObject *generic = 0;
 static PyObject *strided = 0;
 static PyObject *indirect = 0;
@@ -2694,23 +2694,23 @@ static PyObject *contiguous = 0;
 static PyObject *indirect_contiguous = 0;
 static int __pyx_memoryview_thread_locks_used;
 static PyThread_type_lock __pyx_memoryview_thread_locks[8];
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_euclidean_dist(__pyx_t_8_kd_tree_DTYPE_t const *, __pyx_t_8_kd_tree_DTYPE_t const *, __pyx_t_8_kd_tree_ITYPE_t); /*proto*/
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_euclidean_rdist(__pyx_t_8_kd_tree_DTYPE_t const *, __pyx_t_8_kd_tree_DTYPE_t const *, __pyx_t_8_kd_tree_ITYPE_t); /*proto*/
-static __pyx_t_8_kd_tree_ITYPE_t __pyx_f_8_kd_tree_find_node_split_dim(__pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_ITYPE_t *, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_ITYPE_t); /*proto*/
-static CYTHON_INLINE void __pyx_f_8_kd_tree_swap_nodes(struct __pyx_t_8_kd_tree_NodeHeapData_t *, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_ITYPE_t); /*proto*/
-static int __pyx_f_8_kd_tree_allocate_data(struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_ITYPE_t); /*proto*/
-static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *, __Pyx_memviewslice, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_ITYPE_t); /*proto*/
-static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist(struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_DTYPE_t *); /*proto*/
-static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist(struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_DTYPE_t *); /*proto*/
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_ITYPE_t, struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_ITYPE_t); /*proto*/
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_ITYPE_t, struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_ITYPE_t); /*proto*/
-static CYTHON_INLINE void __pyx_fuse_0__pyx_f_8_kd_tree_dual_swap(float *, __pyx_t_8_kd_tree_ITYPE_t *, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_ITYPE_t); /*proto*/
-static CYTHON_INLINE void __pyx_fuse_1__pyx_f_8_kd_tree_dual_swap(double *, __pyx_t_8_kd_tree_ITYPE_t *, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_ITYPE_t); /*proto*/
-static int __pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(float *, __pyx_t_8_kd_tree_ITYPE_t *, __pyx_t_8_kd_tree_ITYPE_t); /*proto*/
-static int __pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(double *, __pyx_t_8_kd_tree_ITYPE_t *, __pyx_t_8_kd_tree_ITYPE_t); /*proto*/
-static CYTHON_INLINE int __pyx_fuse_1__pyx_f_8_kd_tree_heap_push(double *, __pyx_t_8_kd_tree_ITYPE_t *, __pyx_t_8_kd_tree_ITYPE_t, double, __pyx_t_8_kd_tree_ITYPE_t); /*proto*/
-static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeHeapData_t(PyObject *); /*proto*/
-static struct __pyx_t_8_kd_tree_NodeData_t __pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeData_t(PyObject *); /*proto*/
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_euclidean_dist(__pyx_t_4AKNN_8_kd_tree_DTYPE_t const *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t const *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t); /*proto*/
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_euclidean_rdist(__pyx_t_4AKNN_8_kd_tree_DTYPE_t const *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t const *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t); /*proto*/
+static __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_f_4AKNN_8_kd_tree_find_node_split_dim(__pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_ITYPE_t); /*proto*/
+static CYTHON_INLINE void __pyx_f_4AKNN_8_kd_tree_swap_nodes(struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_ITYPE_t); /*proto*/
+static int __pyx_f_4AKNN_8_kd_tree_allocate_data(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_ITYPE_t); /*proto*/
+static int __pyx_f_4AKNN_8_kd_tree_init_node(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __Pyx_memviewslice, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_ITYPE_t); /*proto*/
+static __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_min_rdist(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *); /*proto*/
+static __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_max_rdist(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *); /*proto*/
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_min_rdist_dual(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t); /*proto*/
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_max_rdist_dual(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t); /*proto*/
+static CYTHON_INLINE void __pyx_fuse_0__pyx_f_4AKNN_8_kd_tree_dual_swap(float *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_ITYPE_t); /*proto*/
+static CYTHON_INLINE void __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_dual_swap(double *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_ITYPE_t); /*proto*/
+static int __pyx_fuse_0__pyx_f_4AKNN_8_kd_tree_simultaneous_sort(float *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t); /*proto*/
+static int __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_simultaneous_sort(double *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t); /*proto*/
+static CYTHON_INLINE int __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_heap_push(double *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, double, __pyx_t_4AKNN_8_kd_tree_ITYPE_t); /*proto*/
+static struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(PyObject *); /*proto*/
+static struct __pyx_t_4AKNN_8_kd_tree_NodeData_t __pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(PyObject *); /*proto*/
 static struct __pyx_array_obj *__pyx_array_new(PyObject *, Py_ssize_t, char *, char *, char *); /*proto*/
 static void *__pyx_align_pointer(void *, size_t); /*proto*/
 static PyObject *__pyx_memoryview_new(PyObject *, int, int, __Pyx_TypeInfo *); /*proto*/
@@ -2745,38 +2745,38 @@ static void __pyx_memoryview_slice_assign_scalar(__Pyx_memviewslice *, int, size
 static void __pyx_memoryview__slice_assign_scalar(char *, Py_ssize_t *, Py_ssize_t *, int, size_t, void *); /*proto*/
 static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, PyObject *); /*proto*/
 static PyObject *__pyx_format_from_typeinfo(__Pyx_TypeInfo *); /*proto*/
-static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_8_kd_tree_DTYPE_t = { "DTYPE_t", NULL, sizeof(__pyx_t_8_kd_tree_DTYPE_t), { 0 }, 0, 'R', 0, 0 };
-static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_8_kd_tree_ITYPE_t = { "ITYPE_t", NULL, sizeof(__pyx_t_8_kd_tree_ITYPE_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_8_kd_tree_ITYPE_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_8_kd_tree_ITYPE_t), 0 };
-static __Pyx_StructField __Pyx_StructFields_nn_struct____pyx_t_8_kd_tree_NodeHeapData_t[] = {
-  {&__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_DTYPE_t, "val", offsetof(struct __pyx_t_8_kd_tree_NodeHeapData_t, val)},
-  {&__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_ITYPE_t, "i1", offsetof(struct __pyx_t_8_kd_tree_NodeHeapData_t, i1)},
-  {&__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_ITYPE_t, "i2", offsetof(struct __pyx_t_8_kd_tree_NodeHeapData_t, i2)},
+static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t = { "DTYPE_t", NULL, sizeof(__pyx_t_4AKNN_8_kd_tree_DTYPE_t), { 0 }, 0, 'R', 0, 0 };
+static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t = { "ITYPE_t", NULL, sizeof(__pyx_t_4AKNN_8_kd_tree_ITYPE_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_4AKNN_8_kd_tree_ITYPE_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_4AKNN_8_kd_tree_ITYPE_t), 0 };
+static __Pyx_StructField __Pyx_StructFields_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t[] = {
+  {&__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t, "val", offsetof(struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t, val)},
+  {&__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t, "i1", offsetof(struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t, i1)},
+  {&__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t, "i2", offsetof(struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t, i2)},
   {NULL, NULL, 0}
 };
-static __Pyx_TypeInfo __Pyx_TypeInfo_nn_struct____pyx_t_8_kd_tree_NodeHeapData_t = { "NodeHeapData_t", __Pyx_StructFields_nn_struct____pyx_t_8_kd_tree_NodeHeapData_t, sizeof(struct __pyx_t_8_kd_tree_NodeHeapData_t), { 0 }, 0, 'S', 0, 0 };
-static __Pyx_StructField __Pyx_StructFields_nn_struct____pyx_t_8_kd_tree_NodeData_t[] = {
-  {&__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_ITYPE_t, "idx_start", offsetof(struct __pyx_t_8_kd_tree_NodeData_t, idx_start)},
-  {&__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_ITYPE_t, "idx_end", offsetof(struct __pyx_t_8_kd_tree_NodeData_t, idx_end)},
-  {&__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_ITYPE_t, "is_leaf", offsetof(struct __pyx_t_8_kd_tree_NodeData_t, is_leaf)},
-  {&__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_DTYPE_t, "radius", offsetof(struct __pyx_t_8_kd_tree_NodeData_t, radius)},
+static __Pyx_TypeInfo __Pyx_TypeInfo_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t = { "NodeHeapData_t", __Pyx_StructFields_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t, sizeof(struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t), { 0 }, 0, 'S', 0, 0 };
+static __Pyx_StructField __Pyx_StructFields_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t[] = {
+  {&__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t, "idx_start", offsetof(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t, idx_start)},
+  {&__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t, "idx_end", offsetof(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t, idx_end)},
+  {&__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t, "is_leaf", offsetof(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t, is_leaf)},
+  {&__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t, "radius", offsetof(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t, radius)},
   {NULL, NULL, 0}
 };
-static __Pyx_TypeInfo __Pyx_TypeInfo_nn_struct____pyx_t_8_kd_tree_NodeData_t = { "NodeData_t", __Pyx_StructFields_nn_struct____pyx_t_8_kd_tree_NodeData_t, sizeof(struct __pyx_t_8_kd_tree_NodeData_t), { 0 }, 0, 'S', 0, 0 };
-static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_8_kd_tree_DTYPE_t__const__ = { "const DTYPE_t", NULL, sizeof(__pyx_t_8_kd_tree_DTYPE_t const ), { 0 }, 0, 'R', 0, 0 };
-static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_8_kd_tree_ITYPE_t__const__ = { "const ITYPE_t", NULL, sizeof(__pyx_t_8_kd_tree_ITYPE_t const ), { 0 }, 0, IS_UNSIGNED(__pyx_t_8_kd_tree_ITYPE_t const ) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_8_kd_tree_ITYPE_t const ), 0 };
-static __Pyx_StructField __Pyx_StructFields_nn_struct____pyx_t_8_kd_tree_NodeData_t__const__[] = {
-  {&__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_ITYPE_t, "idx_start", offsetof(struct __pyx_t_8_kd_tree_NodeData_t const , idx_start)},
-  {&__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_ITYPE_t, "idx_end", offsetof(struct __pyx_t_8_kd_tree_NodeData_t const , idx_end)},
-  {&__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_ITYPE_t, "is_leaf", offsetof(struct __pyx_t_8_kd_tree_NodeData_t const , is_leaf)},
-  {&__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_DTYPE_t, "radius", offsetof(struct __pyx_t_8_kd_tree_NodeData_t const , radius)},
+static __Pyx_TypeInfo __Pyx_TypeInfo_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t = { "NodeData_t", __Pyx_StructFields_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t, sizeof(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t), { 0 }, 0, 'S', 0, 0 };
+static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__ = { "const DTYPE_t", NULL, sizeof(__pyx_t_4AKNN_8_kd_tree_DTYPE_t const ), { 0 }, 0, 'R', 0, 0 };
+static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t__const__ = { "const ITYPE_t", NULL, sizeof(__pyx_t_4AKNN_8_kd_tree_ITYPE_t const ), { 0 }, 0, IS_UNSIGNED(__pyx_t_4AKNN_8_kd_tree_ITYPE_t const ) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_4AKNN_8_kd_tree_ITYPE_t const ), 0 };
+static __Pyx_StructField __Pyx_StructFields_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t__const__[] = {
+  {&__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t, "idx_start", offsetof(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t const , idx_start)},
+  {&__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t, "idx_end", offsetof(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t const , idx_end)},
+  {&__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t, "is_leaf", offsetof(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t const , is_leaf)},
+  {&__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t, "radius", offsetof(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t const , radius)},
   {NULL, NULL, 0}
 };
-static __Pyx_TypeInfo __Pyx_TypeInfo_nn_struct____pyx_t_8_kd_tree_NodeData_t__const__ = { "const NodeData_t", __Pyx_StructFields_nn_struct____pyx_t_8_kd_tree_NodeData_t__const__, sizeof(struct __pyx_t_8_kd_tree_NodeData_t const ), { 0 }, 0, 'S', 0, 0 };
-#define __Pyx_MODULE_NAME "_kd_tree"
-extern int __pyx_module_is_main__kd_tree;
-int __pyx_module_is_main__kd_tree = 0;
+static __Pyx_TypeInfo __Pyx_TypeInfo_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t__const__ = { "const NodeData_t", __Pyx_StructFields_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t__const__, sizeof(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t const ), { 0 }, 0, 'S', 0, 0 };
+#define __Pyx_MODULE_NAME "AKNN._kd_tree"
+extern int __pyx_module_is_main_AKNN___kd_tree;
+int __pyx_module_is_main_AKNN___kd_tree = 0;
 
-/* Implementation of '_kd_tree' */
+/* Implementation of 'AKNN._kd_tree' */
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_TypeError;
 static PyObject *__pyx_builtin_ValueError;
@@ -2885,7 +2885,6 @@ static const char __pyx_k_TypeError[] = "TypeError";
 static const char __pyx_k_enumerate[] = "enumerate";
 static const char __pyx_k_euclidean[] = "euclidean";
 static const char __pyx_k_idx_start[] = "idx_start";
-static const char __pyx_k_kd_tree_2[] = "_kd_tree";
 static const char __pyx_k_leaf_size[] = "leaf_size";
 static const char __pyx_k_pyx_state[] = "__pyx_state";
 static const char __pyx_k_reduce_ex[] = "__reduce_ex__";
@@ -2906,6 +2905,7 @@ static const char __pyx_k_NodeHeapData[] = "NodeHeapData";
 static const char __pyx_k_pyx_checksum[] = "__pyx_checksum";
 static const char __pyx_k_sort_results[] = "sort_results";
 static const char __pyx_k_stringsource[] = "stringsource";
+static const char __pyx_k_AKNN__kd_tree[] = "AKNN._kd_tree";
 static const char __pyx_k_NeighborsHeap[] = "NeighborsHeap";
 static const char __pyx_k_VALID_METRICS[] = "VALID_METRICS";
 static const char __pyx_k_breadth_first[] = "breadth_first";
@@ -2966,6 +2966,7 @@ static const char __pyx_k_No_value_specified_for_struct_at_5[] = "No value speci
 static const char __pyx_k_No_value_specified_for_struct_at_6[] = "No value specified for struct attribute 'is_leaf'";
 static const char __pyx_k_No_value_specified_for_struct_at_7[] = "No value specified for struct attribute 'radius'";
 static PyObject *__pyx_kp_s_AKNN__binary_tree_pxi;
+static PyObject *__pyx_n_s_AKNN__kd_tree;
 static PyObject *__pyx_n_s_ASCII;
 static PyObject *__pyx_n_s_BinaryTree;
 static PyObject *__pyx_kp_s_BinaryTree_X_leaf_size_40_metri;
@@ -3074,7 +3075,6 @@ static PyObject *__pyx_n_s_join;
 static PyObject *__pyx_n_s_k;
 static PyObject *__pyx_kp_s_k_must_be_less_than_or_equal_to;
 static PyObject *__pyx_n_s_kd_tree;
-static PyObject *__pyx_n_s_kd_tree_2;
 static PyObject *__pyx_n_s_leaf_size;
 static PyObject *__pyx_kp_s_leaf_size_must_be_greater_than_o;
 static PyObject *__pyx_n_s_log2;
@@ -3145,35 +3145,35 @@ static PyObject *__pyx_n_s_val;
 static PyObject *__pyx_n_s_warn;
 static PyObject *__pyx_n_s_warnings;
 static PyObject *__pyx_n_s_zeros;
-static int __pyx_pf_8_kd_tree_13NeighborsHeap___cinit__(struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self); /* proto */
-static int __pyx_pf_8_kd_tree_13NeighborsHeap_2__init__(struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self, PyObject *__pyx_v_n_pts, PyObject *__pyx_v_n_nbrs); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_4get_arrays(struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self, PyObject *__pyx_v_sort); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_6push(struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_row, __pyx_t_8_kd_tree_DTYPE_t __pyx_v_val, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_val); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static int __pyx_pf_8_kd_tree_8NodeHeap___cinit__(struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self); /* proto */
-static int __pyx_pf_8_kd_tree_8NodeHeap_2__init__(struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self, PyObject *__pyx_v_size_guess); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_8NodeHeap_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_8NodeHeap_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_newObj(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_obj); /* proto */
-static int __pyx_pf_8_kd_tree_10BinaryTree___cinit__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
-static int __pyx_pf_8_kd_tree_10BinaryTree_2__init__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_data, PyObject *__pyx_v_leaf_size, CYTHON_UNUSED PyObject *__pyx_v_metric, CYTHON_UNUSED PyObject *__pyx_v_kwargs); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_4_update_memviews(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_6get_arrays(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_8query(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_X, PyObject *__pyx_v_k, PyObject *__pyx_v_return_distance, CYTHON_UNUSED PyObject *__pyx_v_dualtree, PyObject *__pyx_v_breadth_first, PyObject *__pyx_v_sort_results); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_4data___get__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_10sum_weight___get__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
-static int __pyx_pf_8_kd_tree_10BinaryTree_10sum_weight_2__set__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_9idx_array___get__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
-static int __pyx_pf_8_kd_tree_10BinaryTree_9idx_array_2__set__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_9node_data___get__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
-static int __pyx_pf_8_kd_tree_10BinaryTree_9node_data_2__set__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_11node_bounds___get__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
-static int __pyx_pf_8_kd_tree_10BinaryTree_11node_bounds_2__set__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_10__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_12__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_6KDTree___reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_KDTree *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8_kd_tree_6KDTree_2__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_KDTree *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static int __pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap___cinit__(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self); /* proto */
+static int __pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap_2__init__(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self, PyObject *__pyx_v_n_pts, PyObject *__pyx_v_n_nbrs); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap_4get_arrays(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self, PyObject *__pyx_v_sort); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap_6push(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_row, __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_val, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_val); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static int __pyx_pf_4AKNN_8_kd_tree_8NodeHeap___cinit__(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self); /* proto */
+static int __pyx_pf_4AKNN_8_kd_tree_8NodeHeap_2__init__(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self, PyObject *__pyx_v_size_guess); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_8NodeHeap_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_8NodeHeap_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_newObj(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_obj); /* proto */
+static int __pyx_pf_4AKNN_8_kd_tree_10BinaryTree___cinit__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
+static int __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_2__init__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_data, PyObject *__pyx_v_leaf_size, CYTHON_UNUSED PyObject *__pyx_v_metric, CYTHON_UNUSED PyObject *__pyx_v_kwargs); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_4_update_memviews(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_6get_arrays(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_8query(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_X, PyObject *__pyx_v_k, PyObject *__pyx_v_return_distance, CYTHON_UNUSED PyObject *__pyx_v_dualtree, PyObject *__pyx_v_breadth_first, PyObject *__pyx_v_sort_results); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_4data___get__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_10sum_weight___get__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
+static int __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_10sum_weight_2__set__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_9idx_array___get__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
+static int __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_9idx_array_2__set__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_9node_data___get__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
+static int __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_9node_data_2__set__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_11node_bounds___get__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
+static int __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_11node_bounds_2__set__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_10__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_12__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_6KDTree___reduce_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_KDTree *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_6KDTree_2__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_KDTree *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array_2__getbuffer__(struct __pyx_array_obj *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_array___pyx_pf_15View_dot_MemoryView_5array_4__dealloc__(struct __pyx_array_obj *__pyx_v_self); /* proto */
@@ -3216,10 +3216,10 @@ static PyObject *__pyx_pf_15View_dot_MemoryView_16_memoryviewslice_4base___get__
 static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_8_kd_tree_NeighborsHeap(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_8_kd_tree_NodeHeap(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_8_kd_tree_BinaryTree(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_8_kd_tree_KDTree(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_4AKNN_8_kd_tree_NeighborsHeap(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_4AKNN_8_kd_tree_NodeHeap(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_4AKNN_8_kd_tree_BinaryTree(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_4AKNN_8_kd_tree_KDTree(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_memoryview(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -3298,13 +3298,13 @@ static PyObject *__pyx_codeobj__60;
  *     const DTYPE_t* x2,
  */
 
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_euclidean_dist(__pyx_t_8_kd_tree_DTYPE_t const *__pyx_v_x1, __pyx_t_8_kd_tree_DTYPE_t const *__pyx_v_x2, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_size) {
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_tmp;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_d;
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_euclidean_dist(__pyx_t_4AKNN_8_kd_tree_DTYPE_t const *__pyx_v_x1, __pyx_t_4AKNN_8_kd_tree_DTYPE_t const *__pyx_v_x2, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_size) {
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_tmp;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_d;
   __pyx_t_5numpy_intp_t __pyx_v_j;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_r;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_1;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_2;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_r;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_1;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_2;
   __pyx_t_5numpy_intp_t __pyx_t_3;
 
   /* "AKNN/_binary_tree.pxi":175
@@ -3335,7 +3335,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_euclidean_dist(
  *         d += tmp * tmp
  *     return sqrt(d)
  */
-    __pyx_v_tmp = ((__pyx_t_8_kd_tree_DTYPE_t)((__pyx_v_x1[__pyx_v_j]) - (__pyx_v_x2[__pyx_v_j])));
+    __pyx_v_tmp = ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)((__pyx_v_x1[__pyx_v_j]) - (__pyx_v_x2[__pyx_v_j])));
 
     /* "AKNN/_binary_tree.pxi":179
  *     for j in range(size):
@@ -3378,13 +3378,13 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_euclidean_dist(
  *     const DTYPE_t* x2,
  */
 
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_euclidean_rdist(__pyx_t_8_kd_tree_DTYPE_t const *__pyx_v_x1, __pyx_t_8_kd_tree_DTYPE_t const *__pyx_v_x2, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_size) {
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_tmp;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_d;
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_euclidean_rdist(__pyx_t_4AKNN_8_kd_tree_DTYPE_t const *__pyx_v_x1, __pyx_t_4AKNN_8_kd_tree_DTYPE_t const *__pyx_v_x2, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_size) {
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_tmp;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_d;
   __pyx_t_5numpy_intp_t __pyx_v_j;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_r;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_1;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_2;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_r;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_1;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_2;
   __pyx_t_5numpy_intp_t __pyx_t_3;
 
   /* "AKNN/_binary_tree.pxi":188
@@ -3415,7 +3415,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_euclidean_rdist
  *         d += tmp * tmp
  *     return d
  */
-    __pyx_v_tmp = ((__pyx_t_8_kd_tree_DTYPE_t)((__pyx_v_x1[__pyx_v_j]) - (__pyx_v_x2[__pyx_v_j])));
+    __pyx_v_tmp = ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)((__pyx_v_x1[__pyx_v_j]) - (__pyx_v_x2[__pyx_v_j])));
 
     /* "AKNN/_binary_tree.pxi":192
  *     for j in range(size):
@@ -3458,9 +3458,9 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_euclidean_rdist
  *     ITYPE_t *iarr,
  */
 
-static CYTHON_INLINE void __pyx_fuse_0__pyx_f_8_kd_tree_dual_swap(float *__pyx_v_darr, __pyx_t_8_kd_tree_ITYPE_t *__pyx_v_iarr, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_a, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_b) {
+static CYTHON_INLINE void __pyx_fuse_0__pyx_f_4AKNN_8_kd_tree_dual_swap(float *__pyx_v_darr, __pyx_t_4AKNN_8_kd_tree_ITYPE_t *__pyx_v_iarr, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_a, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_b) {
   float __pyx_v_dtmp;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_itmp;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_itmp;
 
   /* "AKNN/_binary_tree.pxi":214
  * ) nogil:
@@ -3527,9 +3527,9 @@ static CYTHON_INLINE void __pyx_fuse_0__pyx_f_8_kd_tree_dual_swap(float *__pyx_v
   /* function exit code */
 }
 
-static CYTHON_INLINE void __pyx_fuse_1__pyx_f_8_kd_tree_dual_swap(double *__pyx_v_darr, __pyx_t_8_kd_tree_ITYPE_t *__pyx_v_iarr, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_a, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_b) {
+static CYTHON_INLINE void __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_dual_swap(double *__pyx_v_darr, __pyx_t_4AKNN_8_kd_tree_ITYPE_t *__pyx_v_iarr, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_a, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_b) {
   double __pyx_v_dtmp;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_itmp;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_itmp;
 
   /* "AKNN/_binary_tree.pxi":214
  * ) nogil:
@@ -3604,16 +3604,16 @@ static CYTHON_INLINE void __pyx_fuse_1__pyx_f_8_kd_tree_dual_swap(double *__pyx_
  *     ITYPE_t* indices,
  */
 
-static int __pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(float *__pyx_v_values, __pyx_t_8_kd_tree_ITYPE_t *__pyx_v_indices, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_size) {
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_pivot_idx;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_store_idx;
+static int __pyx_fuse_0__pyx_f_4AKNN_8_kd_tree_simultaneous_sort(float *__pyx_v_values, __pyx_t_4AKNN_8_kd_tree_ITYPE_t *__pyx_v_indices, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_size) {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_pivot_idx;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_store_idx;
   float __pyx_v_pivot_val;
   int __pyx_r;
   int __pyx_t_1;
   long __pyx_t_2;
   long __pyx_t_3;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_4;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_4;
 
   /* "AKNN/_binary_tree.pxi":254
  * 
@@ -3654,7 +3654,7 @@ static int __pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(float *__pyx_v_values
  *     elif size == 3:
  *         if values[0] > values[1]:
  */
-      __pyx_fuse_0__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, 1);
+      __pyx_fuse_0__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, 1);
 
       /* "AKNN/_binary_tree.pxi":257
  *         pass
@@ -3702,7 +3702,7 @@ static int __pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(float *__pyx_v_values
  *         if values[1] > values[2]:
  *             dual_swap(values, indices, 1, 2)
  */
-      __pyx_fuse_0__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, 1);
+      __pyx_fuse_0__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, 1);
 
       /* "AKNN/_binary_tree.pxi":260
  *             dual_swap(values, indices, 0, 1)
@@ -3730,7 +3730,7 @@ static int __pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(float *__pyx_v_values
  *             if values[0] > values[1]:
  *                 dual_swap(values, indices, 0, 1)
  */
-      __pyx_fuse_0__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 1, 2);
+      __pyx_fuse_0__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 1, 2);
 
       /* "AKNN/_binary_tree.pxi":264
  *         if values[1] > values[2]:
@@ -3749,7 +3749,7 @@ static int __pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(float *__pyx_v_values
  *     else:
  *         # Determine the pivot using the median-of-three rule.
  */
-        __pyx_fuse_0__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, 1);
+        __pyx_fuse_0__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, 1);
 
         /* "AKNN/_binary_tree.pxi":264
  *         if values[1] > values[2]:
@@ -3806,7 +3806,7 @@ static int __pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(float *__pyx_v_values
  *         if values[size - 1] > values[pivot_idx]:
  *             dual_swap(values, indices, size - 1, pivot_idx)
  */
-      __pyx_fuse_0__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, (__pyx_v_size - 1));
+      __pyx_fuse_0__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, (__pyx_v_size - 1));
 
       /* "AKNN/_binary_tree.pxi":272
  *         # is moved to the pivot index.
@@ -3834,7 +3834,7 @@ static int __pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(float *__pyx_v_values
  *             if values[0] > values[size - 1]:
  *                 dual_swap(values, indices, 0, size - 1)
  */
-      __pyx_fuse_0__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, (__pyx_v_size - 1), __pyx_v_pivot_idx);
+      __pyx_fuse_0__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, (__pyx_v_size - 1), __pyx_v_pivot_idx);
 
       /* "AKNN/_binary_tree.pxi":276
  *         if values[size - 1] > values[pivot_idx]:
@@ -3853,7 +3853,7 @@ static int __pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(float *__pyx_v_values
  *         pivot_val = values[size - 1]
  * 
  */
-        __pyx_fuse_0__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, (__pyx_v_size - 1));
+        __pyx_fuse_0__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, (__pyx_v_size - 1));
 
         /* "AKNN/_binary_tree.pxi":276
  *         if values[size - 1] > values[pivot_idx]:
@@ -3920,7 +3920,7 @@ static int __pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(float *__pyx_v_values
  *                 store_idx += 1
  *         dual_swap(values, indices, store_idx, size - 1)
  */
-        __pyx_fuse_0__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, __pyx_v_i, __pyx_v_store_idx);
+        __pyx_fuse_0__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, __pyx_v_i, __pyx_v_store_idx);
 
         /* "AKNN/_binary_tree.pxi":287
  *             if values[i] < pivot_val:
@@ -3948,7 +3948,7 @@ static int __pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(float *__pyx_v_values
  *         pivot_idx = store_idx
  * 
  */
-    __pyx_fuse_0__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, __pyx_v_store_idx, (__pyx_v_size - 1));
+    __pyx_fuse_0__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, __pyx_v_store_idx, (__pyx_v_size - 1));
 
     /* "AKNN/_binary_tree.pxi":289
  *                 store_idx += 1
@@ -3976,7 +3976,7 @@ static int __pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(float *__pyx_v_values
  *         if pivot_idx + 2 < size:
  *             simultaneous_sort(values + pivot_idx + 1,
  */
-      (void)(__pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(__pyx_v_values, __pyx_v_indices, __pyx_v_pivot_idx));
+      (void)(__pyx_fuse_0__pyx_f_4AKNN_8_kd_tree_simultaneous_sort(__pyx_v_values, __pyx_v_indices, __pyx_v_pivot_idx));
 
       /* "AKNN/_binary_tree.pxi":292
  * 
@@ -4004,7 +4004,7 @@ static int __pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(float *__pyx_v_values
  *                               indices + pivot_idx + 1,
  *                               size - pivot_idx - 1)
  */
-      (void)(__pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(((__pyx_v_values + __pyx_v_pivot_idx) + 1), ((__pyx_v_indices + __pyx_v_pivot_idx) + 1), ((__pyx_v_size - __pyx_v_pivot_idx) - 1)));
+      (void)(__pyx_fuse_0__pyx_f_4AKNN_8_kd_tree_simultaneous_sort(((__pyx_v_values + __pyx_v_pivot_idx) + 1), ((__pyx_v_indices + __pyx_v_pivot_idx) + 1), ((__pyx_v_size - __pyx_v_pivot_idx) - 1)));
 
       /* "AKNN/_binary_tree.pxi":294
  *         if pivot_idx > 1:
@@ -4040,16 +4040,16 @@ static int __pyx_fuse_0__pyx_f_8_kd_tree_simultaneous_sort(float *__pyx_v_values
   return __pyx_r;
 }
 
-static int __pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(double *__pyx_v_values, __pyx_t_8_kd_tree_ITYPE_t *__pyx_v_indices, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_size) {
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_pivot_idx;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_store_idx;
+static int __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_simultaneous_sort(double *__pyx_v_values, __pyx_t_4AKNN_8_kd_tree_ITYPE_t *__pyx_v_indices, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_size) {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_pivot_idx;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_store_idx;
   double __pyx_v_pivot_val;
   int __pyx_r;
   int __pyx_t_1;
   long __pyx_t_2;
   long __pyx_t_3;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_4;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_4;
 
   /* "AKNN/_binary_tree.pxi":254
  * 
@@ -4090,7 +4090,7 @@ static int __pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(double *__pyx_v_value
  *     elif size == 3:
  *         if values[0] > values[1]:
  */
-      __pyx_fuse_1__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, 1);
+      __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, 1);
 
       /* "AKNN/_binary_tree.pxi":257
  *         pass
@@ -4138,7 +4138,7 @@ static int __pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(double *__pyx_v_value
  *         if values[1] > values[2]:
  *             dual_swap(values, indices, 1, 2)
  */
-      __pyx_fuse_1__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, 1);
+      __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, 1);
 
       /* "AKNN/_binary_tree.pxi":260
  *             dual_swap(values, indices, 0, 1)
@@ -4166,7 +4166,7 @@ static int __pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(double *__pyx_v_value
  *             if values[0] > values[1]:
  *                 dual_swap(values, indices, 0, 1)
  */
-      __pyx_fuse_1__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 1, 2);
+      __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 1, 2);
 
       /* "AKNN/_binary_tree.pxi":264
  *         if values[1] > values[2]:
@@ -4185,7 +4185,7 @@ static int __pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(double *__pyx_v_value
  *     else:
  *         # Determine the pivot using the median-of-three rule.
  */
-        __pyx_fuse_1__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, 1);
+        __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, 1);
 
         /* "AKNN/_binary_tree.pxi":264
  *         if values[1] > values[2]:
@@ -4242,7 +4242,7 @@ static int __pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(double *__pyx_v_value
  *         if values[size - 1] > values[pivot_idx]:
  *             dual_swap(values, indices, size - 1, pivot_idx)
  */
-      __pyx_fuse_1__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, (__pyx_v_size - 1));
+      __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, (__pyx_v_size - 1));
 
       /* "AKNN/_binary_tree.pxi":272
  *         # is moved to the pivot index.
@@ -4270,7 +4270,7 @@ static int __pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(double *__pyx_v_value
  *             if values[0] > values[size - 1]:
  *                 dual_swap(values, indices, 0, size - 1)
  */
-      __pyx_fuse_1__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, (__pyx_v_size - 1), __pyx_v_pivot_idx);
+      __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, (__pyx_v_size - 1), __pyx_v_pivot_idx);
 
       /* "AKNN/_binary_tree.pxi":276
  *         if values[size - 1] > values[pivot_idx]:
@@ -4289,7 +4289,7 @@ static int __pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(double *__pyx_v_value
  *         pivot_val = values[size - 1]
  * 
  */
-        __pyx_fuse_1__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, (__pyx_v_size - 1));
+        __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, 0, (__pyx_v_size - 1));
 
         /* "AKNN/_binary_tree.pxi":276
  *         if values[size - 1] > values[pivot_idx]:
@@ -4356,7 +4356,7 @@ static int __pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(double *__pyx_v_value
  *                 store_idx += 1
  *         dual_swap(values, indices, store_idx, size - 1)
  */
-        __pyx_fuse_1__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, __pyx_v_i, __pyx_v_store_idx);
+        __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, __pyx_v_i, __pyx_v_store_idx);
 
         /* "AKNN/_binary_tree.pxi":287
  *             if values[i] < pivot_val:
@@ -4384,7 +4384,7 @@ static int __pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(double *__pyx_v_value
  *         pivot_idx = store_idx
  * 
  */
-    __pyx_fuse_1__pyx_f_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, __pyx_v_store_idx, (__pyx_v_size - 1));
+    __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_dual_swap(__pyx_v_values, __pyx_v_indices, __pyx_v_store_idx, (__pyx_v_size - 1));
 
     /* "AKNN/_binary_tree.pxi":289
  *                 store_idx += 1
@@ -4412,7 +4412,7 @@ static int __pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(double *__pyx_v_value
  *         if pivot_idx + 2 < size:
  *             simultaneous_sort(values + pivot_idx + 1,
  */
-      (void)(__pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(__pyx_v_values, __pyx_v_indices, __pyx_v_pivot_idx));
+      (void)(__pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_simultaneous_sort(__pyx_v_values, __pyx_v_indices, __pyx_v_pivot_idx));
 
       /* "AKNN/_binary_tree.pxi":292
  * 
@@ -4440,7 +4440,7 @@ static int __pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(double *__pyx_v_value
  *                               indices + pivot_idx + 1,
  *                               size - pivot_idx - 1)
  */
-      (void)(__pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(((__pyx_v_values + __pyx_v_pivot_idx) + 1), ((__pyx_v_indices + __pyx_v_pivot_idx) + 1), ((__pyx_v_size - __pyx_v_pivot_idx) - 1)));
+      (void)(__pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_simultaneous_sort(((__pyx_v_values + __pyx_v_pivot_idx) + 1), ((__pyx_v_indices + __pyx_v_pivot_idx) + 1), ((__pyx_v_size - __pyx_v_pivot_idx) - 1)));
 
       /* "AKNN/_binary_tree.pxi":294
  *         if pivot_idx > 1:
@@ -4484,11 +4484,11 @@ static int __pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort(double *__pyx_v_value
  *     ITYPE_t* indices,
  */
 
-static CYTHON_INLINE int __pyx_fuse_1__pyx_f_8_kd_tree_heap_push(double *__pyx_v_values, __pyx_t_8_kd_tree_ITYPE_t *__pyx_v_indices, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_size, double __pyx_v_val, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_val_idx) {
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_current_idx;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_left_child_idx;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_right_child_idx;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_swap_idx;
+static CYTHON_INLINE int __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_heap_push(double *__pyx_v_values, __pyx_t_4AKNN_8_kd_tree_ITYPE_t *__pyx_v_indices, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_size, double __pyx_v_val, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_val_idx) {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_current_idx;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_left_child_idx;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_right_child_idx;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_swap_idx;
   int __pyx_r;
   int __pyx_t_1;
 
@@ -4848,22 +4848,22 @@ static CYTHON_INLINE int __pyx_fuse_1__pyx_f_8_kd_tree_heap_push(double *__pyx_v
  */
 
 /* Python wrapper */
-static int __pyx_pw_8_kd_tree_13NeighborsHeap_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_8_kd_tree_13NeighborsHeap_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__cinit__ (wrapper)", 0);
   if (unlikely(PyTuple_GET_SIZE(__pyx_args) > 0)) {
     __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 0, 0, PyTuple_GET_SIZE(__pyx_args)); return -1;}
   if (unlikely(__pyx_kwds) && unlikely(PyDict_Size(__pyx_kwds) > 0) && unlikely(!__Pyx_CheckKeywordStrings(__pyx_kwds, "__cinit__", 0))) return -1;
-  __pyx_r = __pyx_pf_8_kd_tree_13NeighborsHeap___cinit__(((struct __pyx_obj_8_kd_tree_NeighborsHeap *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap___cinit__(((struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_8_kd_tree_13NeighborsHeap___cinit__(struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self) {
+static int __pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap___cinit__(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4943,7 +4943,7 @@ static int __pyx_pf_8_kd_tree_13NeighborsHeap___cinit__(struct __pyx_obj_8_kd_tr
  *         self.indices = self.indices_arr
  * 
  */
-  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_8_kd_tree_DTYPE_t(((PyObject *)__pyx_v_self->distances_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 562, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t(((PyObject *)__pyx_v_self->distances_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 562, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->distances, 0);
   __pyx_v_self->distances = __pyx_t_4;
   __pyx_t_4.memview = NULL;
@@ -4956,7 +4956,7 @@ static int __pyx_pf_8_kd_tree_13NeighborsHeap___cinit__(struct __pyx_obj_8_kd_tr
  * 
  *     def __init__(self, n_pts, n_nbrs):
  */
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_8_kd_tree_ITYPE_t(((PyObject *)__pyx_v_self->indices_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 563, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t(((PyObject *)__pyx_v_self->indices_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 563, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->indices, 0);
   __pyx_v_self->indices = __pyx_t_5;
   __pyx_t_5.memview = NULL;
@@ -4979,7 +4979,7 @@ static int __pyx_pf_8_kd_tree_13NeighborsHeap___cinit__(struct __pyx_obj_8_kd_tr
   __Pyx_XDECREF(__pyx_t_3);
   __PYX_XDEC_MEMVIEW(&__pyx_t_4, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_t_5, 1);
-  __Pyx_AddTraceback("_kd_tree.NeighborsHeap.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NeighborsHeap.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -4995,8 +4995,8 @@ static int __pyx_pf_8_kd_tree_13NeighborsHeap___cinit__(struct __pyx_obj_8_kd_tr
  */
 
 /* Python wrapper */
-static int __pyx_pw_8_kd_tree_13NeighborsHeap_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_8_kd_tree_13NeighborsHeap_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_n_pts = 0;
   PyObject *__pyx_v_n_nbrs = 0;
   int __pyx_lineno = 0;
@@ -5047,18 +5047,18 @@ static int __pyx_pw_8_kd_tree_13NeighborsHeap_3__init__(PyObject *__pyx_v_self, 
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__init__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 565, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("_kd_tree.NeighborsHeap.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NeighborsHeap.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8_kd_tree_13NeighborsHeap_2__init__(((struct __pyx_obj_8_kd_tree_NeighborsHeap *)__pyx_v_self), __pyx_v_n_pts, __pyx_v_n_nbrs);
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap_2__init__(((struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *)__pyx_v_self), __pyx_v_n_pts, __pyx_v_n_nbrs);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_8_kd_tree_13NeighborsHeap_2__init__(struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self, PyObject *__pyx_v_n_pts, PyObject *__pyx_v_n_nbrs) {
+static int __pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap_2__init__(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self, PyObject *__pyx_v_n_pts, PyObject *__pyx_v_n_nbrs) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5175,7 +5175,7 @@ static int __pyx_pf_8_kd_tree_13NeighborsHeap_2__init__(struct __pyx_obj_8_kd_tr
  *         self.indices = self.indices_arr
  * 
  */
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_8_kd_tree_DTYPE_t(((PyObject *)__pyx_v_self->distances_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 569, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t(((PyObject *)__pyx_v_self->distances_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 569, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->distances, 0);
   __pyx_v_self->distances = __pyx_t_5;
   __pyx_t_5.memview = NULL;
@@ -5188,7 +5188,7 @@ static int __pyx_pf_8_kd_tree_13NeighborsHeap_2__init__(struct __pyx_obj_8_kd_tr
  * 
  *     def get_arrays(self, sort=True):
  */
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_8_kd_tree_ITYPE_t(((PyObject *)__pyx_v_self->indices_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 570, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t(((PyObject *)__pyx_v_self->indices_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 570, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->indices, 0);
   __pyx_v_self->indices = __pyx_t_6;
   __pyx_t_6.memview = NULL;
@@ -5212,7 +5212,7 @@ static int __pyx_pf_8_kd_tree_13NeighborsHeap_2__init__(struct __pyx_obj_8_kd_tr
   __Pyx_XDECREF(__pyx_t_4);
   __PYX_XDEC_MEMVIEW(&__pyx_t_5, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_t_6, 1);
-  __Pyx_AddTraceback("_kd_tree.NeighborsHeap.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NeighborsHeap.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -5228,9 +5228,9 @@ static int __pyx_pf_8_kd_tree_13NeighborsHeap_2__init__(struct __pyx_obj_8_kd_tr
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_13NeighborsHeap_5get_arrays(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8_kd_tree_13NeighborsHeap_4get_arrays[] = "Get the arrays of distances and indices within the heap.\n\n        If sort=True, then simultaneously sort the indices and distances,\n        so the closer points are listed first.\n        ";
-static PyObject *__pyx_pw_8_kd_tree_13NeighborsHeap_5get_arrays(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_5get_arrays(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_4AKNN_8_kd_tree_13NeighborsHeap_4get_arrays[] = "Get the arrays of distances and indices within the heap.\n\n        If sort=True, then simultaneously sort the indices and distances,\n        so the closer points are listed first.\n        ";
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_5get_arrays(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_sort = 0;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -5276,18 +5276,18 @@ static PyObject *__pyx_pw_8_kd_tree_13NeighborsHeap_5get_arrays(PyObject *__pyx_
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("get_arrays", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 572, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("_kd_tree.NeighborsHeap.get_arrays", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NeighborsHeap.get_arrays", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8_kd_tree_13NeighborsHeap_4get_arrays(((struct __pyx_obj_8_kd_tree_NeighborsHeap *)__pyx_v_self), __pyx_v_sort);
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap_4get_arrays(((struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *)__pyx_v_self), __pyx_v_sort);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_4get_arrays(struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self, PyObject *__pyx_v_sort) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap_4get_arrays(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self, PyObject *__pyx_v_sort) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -5315,7 +5315,7 @@ static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_4get_arrays(struct __pyx_obj
  *         return self.distances_arr, self.indices_arr
  * 
  */
-    __pyx_t_2 = ((struct __pyx_vtabstruct_8_kd_tree_NeighborsHeap *)__pyx_v_self->__pyx_vtab)->_sort(__pyx_v_self); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 579, __pyx_L1_error)
+    __pyx_t_2 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_NeighborsHeap *)__pyx_v_self->__pyx_vtab)->_sort(__pyx_v_self); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 579, __pyx_L1_error)
 
     /* "AKNN/_binary_tree.pxi":578
  *         so the closer points are listed first.
@@ -5357,7 +5357,7 @@ static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_4get_arrays(struct __pyx_obj
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("_kd_tree.NeighborsHeap.get_arrays", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NeighborsHeap.get_arrays", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5373,8 +5373,8 @@ static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_4get_arrays(struct __pyx_obj
  *         return self.distances[row, 0]
  */
 
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_13NeighborsHeap_largest(struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_row) {
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_r;
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_13NeighborsHeap_largest(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_row) {
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_r;
   Py_ssize_t __pyx_t_1;
   Py_ssize_t __pyx_t_2;
   int __pyx_t_3;
@@ -5405,7 +5405,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_13NeighborsHeap
     __Pyx_RaiseBufferIndexErrorNogil(__pyx_t_3);
     __PYX_ERR(0, 584, __pyx_L1_error)
   }
-  __pyx_r = (*((__pyx_t_8_kd_tree_DTYPE_t *) ( /* dim=1 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t *) ( /* dim=0 */ (__pyx_v_self->distances.data + __pyx_t_1 * __pyx_v_self->distances.strides[0]) )) + __pyx_t_2)) )));
+  __pyx_r = (*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t *) ( /* dim=1 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t *) ( /* dim=0 */ (__pyx_v_self->distances.data + __pyx_t_1 * __pyx_v_self->distances.strides[0]) )) + __pyx_t_2)) )));
   goto __pyx_L0;
 
   /* "AKNN/_binary_tree.pxi":582
@@ -5422,7 +5422,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_13NeighborsHeap
     #ifdef WITH_THREAD
     PyGILState_STATE __pyx_gilstate_save = __Pyx_PyGILState_Ensure();
     #endif
-    __Pyx_AddTraceback("_kd_tree.NeighborsHeap.largest", __pyx_clineno, __pyx_lineno, __pyx_filename);
+    __Pyx_AddTraceback("AKNN._kd_tree.NeighborsHeap.largest", __pyx_clineno, __pyx_lineno, __pyx_filename);
     #ifdef WITH_THREAD
     __Pyx_PyGILState_Release(__pyx_gilstate_save);
     #endif
@@ -5441,11 +5441,11 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_13NeighborsHeap
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_13NeighborsHeap_7push(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_8_kd_tree_13NeighborsHeap_7push(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_row;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_val;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_val;
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_7push(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_7push(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_row;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_val;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_val;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -5504,18 +5504,18 @@ static PyObject *__pyx_pw_8_kd_tree_13NeighborsHeap_7push(PyObject *__pyx_v_self
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("push", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 586, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("_kd_tree.NeighborsHeap.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NeighborsHeap.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8_kd_tree_13NeighborsHeap_6push(((struct __pyx_obj_8_kd_tree_NeighborsHeap *)__pyx_v_self), __pyx_v_row, __pyx_v_val, __pyx_v_i_val);
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap_6push(((struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *)__pyx_v_self), __pyx_v_row, __pyx_v_val, __pyx_v_i_val);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_6push(struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_row, __pyx_t_8_kd_tree_DTYPE_t __pyx_v_val, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_val) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap_6push(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_row, __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_val, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_val) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -5533,7 +5533,7 @@ static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_6push(struct __pyx_obj_8_kd_
  *     cdef int _push(self, ITYPE_t row, DTYPE_t val,
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = ((struct __pyx_vtabstruct_8_kd_tree_NeighborsHeap *)__pyx_v_self->__pyx_vtab)->_push(__pyx_v_self, __pyx_v_row, __pyx_v_val, __pyx_v_i_val); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 587, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_NeighborsHeap *)__pyx_v_self->__pyx_vtab)->_push(__pyx_v_self, __pyx_v_row, __pyx_v_val, __pyx_v_i_val); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 587, __pyx_L1_error)
   __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 587, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
@@ -5551,7 +5551,7 @@ static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_6push(struct __pyx_obj_8_kd_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("_kd_tree.NeighborsHeap.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NeighborsHeap.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5567,10 +5567,10 @@ static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_6push(struct __pyx_obj_8_kd_
  *         """push (val, i_val) into the given row"""
  */
 
-static int __pyx_f_8_kd_tree_13NeighborsHeap__push(struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_row, __pyx_t_8_kd_tree_DTYPE_t __pyx_v_val, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_val) {
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_size;
-  __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_dist_arr;
-  __pyx_t_8_kd_tree_ITYPE_t *__pyx_v_ind_arr;
+static int __pyx_f_4AKNN_8_kd_tree_13NeighborsHeap__push(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_row, __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_val, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_val) {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_size;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_dist_arr;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t *__pyx_v_ind_arr;
   int __pyx_r;
   Py_ssize_t __pyx_t_1;
   Py_ssize_t __pyx_t_2;
@@ -5612,7 +5612,7 @@ static int __pyx_f_8_kd_tree_13NeighborsHeap__push(struct __pyx_obj_8_kd_tree_Ne
     __Pyx_RaiseBufferIndexErrorNogil(__pyx_t_3);
     __PYX_ERR(0, 594, __pyx_L1_error)
   }
-  __pyx_v_dist_arr = (&(*((__pyx_t_8_kd_tree_DTYPE_t *) ( /* dim=1 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t *) ( /* dim=0 */ (__pyx_v_self->distances.data + __pyx_t_1 * __pyx_v_self->distances.strides[0]) )) + __pyx_t_2)) ))));
+  __pyx_v_dist_arr = (&(*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t *) ( /* dim=1 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t *) ( /* dim=0 */ (__pyx_v_self->distances.data + __pyx_t_1 * __pyx_v_self->distances.strides[0]) )) + __pyx_t_2)) ))));
 
   /* "AKNN/_binary_tree.pxi":595
  *             ITYPE_t size = self.distances.shape[1]
@@ -5637,7 +5637,7 @@ static int __pyx_f_8_kd_tree_13NeighborsHeap__push(struct __pyx_obj_8_kd_tree_Ne
     __Pyx_RaiseBufferIndexErrorNogil(__pyx_t_3);
     __PYX_ERR(0, 595, __pyx_L1_error)
   }
-  __pyx_v_ind_arr = (&(*((__pyx_t_8_kd_tree_ITYPE_t *) ( /* dim=1 */ ((char *) (((__pyx_t_8_kd_tree_ITYPE_t *) ( /* dim=0 */ (__pyx_v_self->indices.data + __pyx_t_2 * __pyx_v_self->indices.strides[0]) )) + __pyx_t_1)) ))));
+  __pyx_v_ind_arr = (&(*((__pyx_t_4AKNN_8_kd_tree_ITYPE_t *) ( /* dim=1 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_ITYPE_t *) ( /* dim=0 */ (__pyx_v_self->indices.data + __pyx_t_2 * __pyx_v_self->indices.strides[0]) )) + __pyx_t_1)) ))));
 
   /* "AKNN/_binary_tree.pxi":596
  *             DTYPE_t* dist_arr = &self.distances[row, 0]
@@ -5646,7 +5646,7 @@ static int __pyx_f_8_kd_tree_13NeighborsHeap__push(struct __pyx_obj_8_kd_tree_Ne
  * 
  *     cdef int _sort(self) except -1:
  */
-  __pyx_r = __pyx_fuse_1__pyx_f_8_kd_tree_heap_push(__pyx_v_dist_arr, __pyx_v_ind_arr, __pyx_v_size, __pyx_v_val, __pyx_v_i_val);
+  __pyx_r = __pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_heap_push(__pyx_v_dist_arr, __pyx_v_ind_arr, __pyx_v_size, __pyx_v_val, __pyx_v_i_val);
   goto __pyx_L0;
 
   /* "AKNN/_binary_tree.pxi":589
@@ -5663,7 +5663,7 @@ static int __pyx_f_8_kd_tree_13NeighborsHeap__push(struct __pyx_obj_8_kd_tree_Ne
     #ifdef WITH_THREAD
     PyGILState_STATE __pyx_gilstate_save = __Pyx_PyGILState_Ensure();
     #endif
-    __Pyx_AddTraceback("_kd_tree.NeighborsHeap._push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+    __Pyx_AddTraceback("AKNN._kd_tree.NeighborsHeap._push", __pyx_clineno, __pyx_lineno, __pyx_filename);
     #ifdef WITH_THREAD
     __Pyx_PyGILState_Release(__pyx_gilstate_save);
     #endif
@@ -5681,17 +5681,17 @@ static int __pyx_f_8_kd_tree_13NeighborsHeap__push(struct __pyx_obj_8_kd_tree_Ne
  *         cdef DTYPE_t[:, ::1] distances = self.distances
  */
 
-static int __pyx_f_8_kd_tree_13NeighborsHeap__sort(struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self) {
+static int __pyx_f_4AKNN_8_kd_tree_13NeighborsHeap__sort(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self) {
   __Pyx_memviewslice __pyx_v_distances = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_indices = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_row;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_row;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_t_2 = { 0, 0, { 0 }, { 0 }, { 0 } };
   Py_ssize_t __pyx_t_3;
   Py_ssize_t __pyx_t_4;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_5;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_5;
   Py_ssize_t __pyx_t_6;
   Py_ssize_t __pyx_t_7;
   int __pyx_t_8;
@@ -5795,7 +5795,7 @@ static int __pyx_f_8_kd_tree_13NeighborsHeap__sort(struct __pyx_obj_8_kd_tree_Ne
  *                                &indices[row, 0],
  *                                distances.shape[1])
  */
-    (void)(__pyx_fuse_1__pyx_f_8_kd_tree_simultaneous_sort((&(*((__pyx_t_8_kd_tree_DTYPE_t *) ( /* dim=1 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t *) ( /* dim=0 */ (__pyx_v_distances.data + __pyx_t_6 * __pyx_v_distances.strides[0]) )) + __pyx_t_7)) )))), (&(*((__pyx_t_8_kd_tree_ITYPE_t *) ( /* dim=1 */ ((char *) (((__pyx_t_8_kd_tree_ITYPE_t *) ( /* dim=0 */ (__pyx_v_indices.data + __pyx_t_9 * __pyx_v_indices.strides[0]) )) + __pyx_t_10)) )))), (__pyx_v_distances.shape[1])));
+    (void)(__pyx_fuse_1__pyx_f_4AKNN_8_kd_tree_simultaneous_sort((&(*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t *) ( /* dim=1 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t *) ( /* dim=0 */ (__pyx_v_distances.data + __pyx_t_6 * __pyx_v_distances.strides[0]) )) + __pyx_t_7)) )))), (&(*((__pyx_t_4AKNN_8_kd_tree_ITYPE_t *) ( /* dim=1 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_ITYPE_t *) ( /* dim=0 */ (__pyx_v_indices.data + __pyx_t_9 * __pyx_v_indices.strides[0]) )) + __pyx_t_10)) )))), (__pyx_v_distances.shape[1])));
   }
 
   /* "AKNN/_binary_tree.pxi":607
@@ -5820,7 +5820,7 @@ static int __pyx_f_8_kd_tree_13NeighborsHeap__sort(struct __pyx_obj_8_kd_tree_Ne
   __pyx_L1_error:;
   __PYX_XDEC_MEMVIEW(&__pyx_t_1, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_t_2, 1);
-  __Pyx_AddTraceback("_kd_tree.NeighborsHeap._sort", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NeighborsHeap._sort", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_distances, 1);
@@ -5836,19 +5836,19 @@ static int __pyx_f_8_kd_tree_13NeighborsHeap__sort(struct __pyx_obj_8_kd_tree_Ne
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_13NeighborsHeap_9__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_8_kd_tree_13NeighborsHeap_9__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_9__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_9__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_13NeighborsHeap_8__reduce_cython__(((struct __pyx_obj_8_kd_tree_NeighborsHeap *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap_8__reduce_cython__(((struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5878,7 +5878,7 @@ static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_8__reduce_cython__(CYTHON_UN
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_kd_tree.NeighborsHeap.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NeighborsHeap.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -5893,19 +5893,19 @@ static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_8__reduce_cython__(CYTHON_UN
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_13NeighborsHeap_11__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_8_kd_tree_13NeighborsHeap_11__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_11__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_11__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_13NeighborsHeap_10__setstate_cython__(((struct __pyx_obj_8_kd_tree_NeighborsHeap *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap_10__setstate_cython__(((struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_13NeighborsHeap_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5935,7 +5935,7 @@ static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_10__setstate_cython__(CYTHON
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_kd_tree.NeighborsHeap.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NeighborsHeap.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -5950,23 +5950,23 @@ static PyObject *__pyx_pf_8_kd_tree_13NeighborsHeap_10__setstate_cython__(CYTHON
  *                                  ITYPE_t n_features,
  */
 
-static __pyx_t_8_kd_tree_ITYPE_t __pyx_f_8_kd_tree_find_node_split_dim(__pyx_t_8_kd_tree_DTYPE_t *__pyx_v_data, __pyx_t_8_kd_tree_ITYPE_t *__pyx_v_node_indices, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_n_features, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_n_points) {
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_min_val;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_max_val;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_val;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_spread;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_max_spread;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_j;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_j_max;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_r;
+static __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_f_4AKNN_8_kd_tree_find_node_split_dim(__pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_data, __pyx_t_4AKNN_8_kd_tree_ITYPE_t *__pyx_v_node_indices, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_n_features, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_n_points) {
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_min_val;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_max_val;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_val;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_spread;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_max_spread;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_j;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_j_max;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_r;
   __Pyx_RefNannyDeclarations
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_1;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_2;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_3;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_4;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_5;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_6;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_1;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_2;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_3;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_4;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_5;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_6;
   int __pyx_t_7;
   __Pyx_RefNannySetupContext("find_node_split_dim", 0);
 
@@ -6137,8 +6137,8 @@ static __pyx_t_8_kd_tree_ITYPE_t __pyx_f_8_kd_tree_find_node_split_dim(__pyx_t_8
  *     arr[i1] = arr[i2]
  */
 
-static CYTHON_INLINE void __pyx_f_8_kd_tree_swap_nodes(struct __pyx_t_8_kd_tree_NodeHeapData_t *__pyx_v_arr, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i1, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i2) {
-  struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_v_tmp;
+static CYTHON_INLINE void __pyx_f_4AKNN_8_kd_tree_swap_nodes(struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *__pyx_v_arr, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i1, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i2) {
+  struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_v_tmp;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("swap_nodes", 0);
 
@@ -6190,22 +6190,22 @@ static CYTHON_INLINE void __pyx_f_8_kd_tree_swap_nodes(struct __pyx_t_8_kd_tree_
  */
 
 /* Python wrapper */
-static int __pyx_pw_8_kd_tree_8NodeHeap_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_8_kd_tree_8NodeHeap_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_4AKNN_8_kd_tree_8NodeHeap_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_4AKNN_8_kd_tree_8NodeHeap_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__cinit__ (wrapper)", 0);
   if (unlikely(PyTuple_GET_SIZE(__pyx_args) > 0)) {
     __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 0, 0, PyTuple_GET_SIZE(__pyx_args)); return -1;}
   if (unlikely(__pyx_kwds) && unlikely(PyDict_Size(__pyx_kwds) > 0) && unlikely(!__Pyx_CheckKeywordStrings(__pyx_kwds, "__cinit__", 0))) return -1;
-  __pyx_r = __pyx_pf_8_kd_tree_8NodeHeap___cinit__(((struct __pyx_obj_8_kd_tree_NodeHeap *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_8NodeHeap___cinit__(((struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_8_kd_tree_8NodeHeap___cinit__(struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self) {
+static int __pyx_pf_4AKNN_8_kd_tree_8NodeHeap___cinit__(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6254,7 +6254,7 @@ static int __pyx_pf_8_kd_tree_8NodeHeap___cinit__(struct __pyx_obj_8_kd_tree_Nod
  * 
  *     def __init__(self, size_guess=100):
  */
-  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_8_kd_tree_NodeHeapData_t(((PyObject *)__pyx_v_self->data_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 691, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(((PyObject *)__pyx_v_self->data_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 691, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->data, 0);
   __pyx_v_self->data = __pyx_t_4;
   __pyx_t_4.memview = NULL;
@@ -6276,7 +6276,7 @@ static int __pyx_pf_8_kd_tree_8NodeHeap___cinit__(struct __pyx_obj_8_kd_tree_Nod
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __PYX_XDEC_MEMVIEW(&__pyx_t_4, 1);
-  __Pyx_AddTraceback("_kd_tree.NodeHeap.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NodeHeap.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -6292,8 +6292,8 @@ static int __pyx_pf_8_kd_tree_8NodeHeap___cinit__(struct __pyx_obj_8_kd_tree_Nod
  */
 
 /* Python wrapper */
-static int __pyx_pw_8_kd_tree_8NodeHeap_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_8_kd_tree_8NodeHeap_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_4AKNN_8_kd_tree_8NodeHeap_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_4AKNN_8_kd_tree_8NodeHeap_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_size_guess = 0;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -6339,18 +6339,18 @@ static int __pyx_pw_8_kd_tree_8NodeHeap_3__init__(PyObject *__pyx_v_self, PyObje
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__init__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 693, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("_kd_tree.NodeHeap.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NodeHeap.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8_kd_tree_8NodeHeap_2__init__(((struct __pyx_obj_8_kd_tree_NodeHeap *)__pyx_v_self), __pyx_v_size_guess);
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_8NodeHeap_2__init__(((struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *)__pyx_v_self), __pyx_v_size_guess);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_8_kd_tree_8NodeHeap_2__init__(struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self, PyObject *__pyx_v_size_guess) {
+static int __pyx_pf_4AKNN_8_kd_tree_8NodeHeap_2__init__(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self, PyObject *__pyx_v_size_guess) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   long __pyx_t_1;
@@ -6360,7 +6360,7 @@ static int __pyx_pf_8_kd_tree_8NodeHeap_2__init__(struct __pyx_obj_8_kd_tree_Nod
   PyObject *__pyx_t_5 = NULL;
   int __pyx_t_6;
   __Pyx_memviewslice __pyx_t_7 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_8;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_8;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -6442,7 +6442,7 @@ static int __pyx_pf_8_kd_tree_8NodeHeap_2__init__(struct __pyx_obj_8_kd_tree_Nod
  *         self.n = size_guess
  *         self.clear()
  */
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_8_kd_tree_NodeHeapData_t(((PyObject *)__pyx_v_self->data_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 696, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(((PyObject *)__pyx_v_self->data_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 696, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->data, 0);
   __pyx_v_self->data = __pyx_t_7;
   __pyx_t_7.memview = NULL;
@@ -6465,7 +6465,7 @@ static int __pyx_pf_8_kd_tree_8NodeHeap_2__init__(struct __pyx_obj_8_kd_tree_Nod
  * 
  *     cdef int resize(self, ITYPE_t new_size) except -1:
  */
-  ((struct __pyx_vtabstruct_8_kd_tree_NodeHeap *)__pyx_v_self->__pyx_vtab)->clear(__pyx_v_self);
+  ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_NodeHeap *)__pyx_v_self->__pyx_vtab)->clear(__pyx_v_self);
 
   /* "AKNN/_binary_tree.pxi":693
  *         self.data = self.data_arr
@@ -6484,7 +6484,7 @@ static int __pyx_pf_8_kd_tree_8NodeHeap_2__init__(struct __pyx_obj_8_kd_tree_Nod
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
   __PYX_XDEC_MEMVIEW(&__pyx_t_7, 1);
-  __Pyx_AddTraceback("_kd_tree.NodeHeap.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NodeHeap.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_size_guess);
@@ -6500,11 +6500,11 @@ static int __pyx_pf_8_kd_tree_8NodeHeap_2__init__(struct __pyx_obj_8_kd_tree_Nod
  *         cdef NodeHeapData_t *data_ptr
  */
 
-static int __pyx_f_8_kd_tree_8NodeHeap_resize(struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_new_size) {
-  struct __pyx_t_8_kd_tree_NodeHeapData_t *__pyx_v_data_ptr;
-  struct __pyx_t_8_kd_tree_NodeHeapData_t *__pyx_v_new_data_ptr;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_size;
+static int __pyx_f_4AKNN_8_kd_tree_8NodeHeap_resize(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_new_size) {
+  struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *__pyx_v_data_ptr;
+  struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *__pyx_v_new_data_ptr;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_size;
   PyArrayObject *__pyx_v_new_data_arr = 0;
   __Pyx_memviewslice __pyx_v_new_data = { 0, 0, { 0 }, { 0 }, { 0 } };
   int __pyx_r;
@@ -6518,9 +6518,9 @@ static int __pyx_f_8_kd_tree_8NodeHeap_resize(struct __pyx_obj_8_kd_tree_NodeHea
   int __pyx_t_7;
   Py_ssize_t __pyx_t_8;
   int __pyx_t_9;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_10;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_11;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_12;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_10;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_11;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_12;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -6593,7 +6593,7 @@ static int __pyx_f_8_kd_tree_8NodeHeap_resize(struct __pyx_obj_8_kd_tree_NodeHea
  * 
  *         if size > 0 and new_size > 0:
  */
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_8_kd_tree_NodeHeapData_t(((PyObject *)__pyx_v_new_data_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 708, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(((PyObject *)__pyx_v_new_data_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 708, __pyx_L1_error)
   __pyx_v_new_data = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
@@ -6634,7 +6634,7 @@ static int __pyx_f_8_kd_tree_8NodeHeap_resize(struct __pyx_obj_8_kd_tree_NodeHea
       __Pyx_RaiseBufferIndexError(__pyx_t_9);
       __PYX_ERR(0, 711, __pyx_L1_error)
     }
-    __pyx_v_data_ptr = (&(*((struct __pyx_t_8_kd_tree_NodeHeapData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_8_kd_tree_NodeHeapData_t *) __pyx_v_self->data.data) + __pyx_t_8)) ))));
+    __pyx_v_data_ptr = (&(*((struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *) __pyx_v_self->data.data) + __pyx_t_8)) ))));
 
     /* "AKNN/_binary_tree.pxi":712
  *         if size > 0 and new_size > 0:
@@ -6653,7 +6653,7 @@ static int __pyx_f_8_kd_tree_8NodeHeap_resize(struct __pyx_obj_8_kd_tree_NodeHea
       __Pyx_RaiseBufferIndexError(__pyx_t_9);
       __PYX_ERR(0, 712, __pyx_L1_error)
     }
-    __pyx_v_new_data_ptr = (&(*((struct __pyx_t_8_kd_tree_NodeHeapData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_8_kd_tree_NodeHeapData_t *) __pyx_v_new_data.data) + __pyx_t_8)) ))));
+    __pyx_v_new_data_ptr = (&(*((struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *) __pyx_v_new_data.data) + __pyx_t_8)) ))));
 
     /* "AKNN/_binary_tree.pxi":713
  *             data_ptr = &self.data[0]
@@ -6770,7 +6770,7 @@ static int __pyx_f_8_kd_tree_8NodeHeap_resize(struct __pyx_obj_8_kd_tree_NodeHea
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __PYX_XDEC_MEMVIEW(&__pyx_t_5, 1);
-  __Pyx_AddTraceback("_kd_tree.NodeHeap.resize", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NodeHeap.resize", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_XDECREF((PyObject *)__pyx_v_new_data_arr);
@@ -6787,10 +6787,10 @@ static int __pyx_f_8_kd_tree_8NodeHeap_resize(struct __pyx_obj_8_kd_tree_NodeHea
  *         cdef ITYPE_t i, i_parent
  */
 
-static int __pyx_f_8_kd_tree_8NodeHeap_push(struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self, struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_v_data) {
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_parent;
-  struct __pyx_t_8_kd_tree_NodeHeapData_t *__pyx_v_data_arr;
+static int __pyx_f_4AKNN_8_kd_tree_8NodeHeap_push(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self, struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_v_data) {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_parent;
+  struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *__pyx_v_data_arr;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -6828,7 +6828,7 @@ static int __pyx_f_8_kd_tree_8NodeHeap_push(struct __pyx_obj_8_kd_tree_NodeHeap 
  * 
  *         # put the new element at the end,
  */
-    __pyx_t_2 = ((struct __pyx_vtabstruct_8_kd_tree_NodeHeap *)__pyx_v_self->__pyx_vtab)->resize(__pyx_v_self, (2 * __pyx_v_self->n)); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 729, __pyx_L1_error)
+    __pyx_t_2 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_NodeHeap *)__pyx_v_self->__pyx_vtab)->resize(__pyx_v_self, (2 * __pyx_v_self->n)); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 729, __pyx_L1_error)
 
     /* "AKNN/_binary_tree.pxi":728
  *         cdef NodeHeapData_t* data_arr
@@ -6857,7 +6857,7 @@ static int __pyx_f_8_kd_tree_8NodeHeap_push(struct __pyx_obj_8_kd_tree_NodeHeap 
     __Pyx_RaiseBufferIndexError(__pyx_t_2);
     __PYX_ERR(0, 733, __pyx_L1_error)
   }
-  __pyx_v_data_arr = (&(*((struct __pyx_t_8_kd_tree_NodeHeapData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_8_kd_tree_NodeHeapData_t *) __pyx_v_self->data.data) + __pyx_t_3)) ))));
+  __pyx_v_data_arr = (&(*((struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *) __pyx_v_self->data.data) + __pyx_t_3)) ))));
 
   /* "AKNN/_binary_tree.pxi":734
  *         # and then perform swaps until the heap is in order
@@ -6933,7 +6933,7 @@ static int __pyx_f_8_kd_tree_8NodeHeap_push(struct __pyx_obj_8_kd_tree_NodeHeap 
  *         return 0
  */
     /*else*/ {
-      __pyx_f_8_kd_tree_swap_nodes(__pyx_v_data_arr, __pyx_v_i, __pyx_v_i_parent);
+      __pyx_f_4AKNN_8_kd_tree_swap_nodes(__pyx_v_data_arr, __pyx_v_i, __pyx_v_i_parent);
 
       /* "AKNN/_binary_tree.pxi":743
  *             else:
@@ -6967,7 +6967,7 @@ static int __pyx_f_8_kd_tree_8NodeHeap_push(struct __pyx_obj_8_kd_tree_NodeHeap 
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("_kd_tree.NodeHeap.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NodeHeap.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -6982,8 +6982,8 @@ static int __pyx_f_8_kd_tree_8NodeHeap_push(struct __pyx_obj_8_kd_tree_NodeHeap 
  *         return self.data[0]
  */
 
-static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_f_8_kd_tree_8NodeHeap_peek(struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self) {
-  struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_r;
+static struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_f_4AKNN_8_kd_tree_8NodeHeap_peek(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self) {
+  struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_r;
   __Pyx_RefNannyDeclarations
   Py_ssize_t __pyx_t_1;
   int __pyx_t_2;
@@ -7010,7 +7010,7 @@ static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_f_8_kd_tree_8NodeHeap_peek(
     __Pyx_RaiseBufferIndexError(__pyx_t_2);
     __PYX_ERR(0, 748, __pyx_L1_error)
   }
-  __pyx_r = (*((struct __pyx_t_8_kd_tree_NodeHeapData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_8_kd_tree_NodeHeapData_t *) __pyx_v_self->data.data) + __pyx_t_1)) )));
+  __pyx_r = (*((struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *) __pyx_v_self->data.data) + __pyx_t_1)) )));
   goto __pyx_L0;
 
   /* "AKNN/_binary_tree.pxi":746
@@ -7023,7 +7023,7 @@ static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_f_8_kd_tree_8NodeHeap_peek(
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_WriteUnraisable("_kd_tree.NodeHeap.peek", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
+  __Pyx_WriteUnraisable("AKNN._kd_tree.NodeHeap.peek", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
   __Pyx_pretend_to_initialize(&__pyx_r);
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -7038,14 +7038,14 @@ static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_f_8_kd_tree_8NodeHeap_peek(
  *         if self.n == 0:
  */
 
-static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_f_8_kd_tree_8NodeHeap_pop(struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self) {
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_child1;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_child2;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_swap;
-  struct __pyx_t_8_kd_tree_NodeHeapData_t *__pyx_v_data_arr;
-  struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_v_popped_element;
-  struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_r;
+static struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_f_4AKNN_8_kd_tree_8NodeHeap_pop(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self) {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_child1;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_child2;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_swap;
+  struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *__pyx_v_data_arr;
+  struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_v_popped_element;
+  struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_r;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   PyObject *__pyx_t_2 = NULL;
@@ -7107,7 +7107,7 @@ static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_f_8_kd_tree_8NodeHeap_pop(s
     __Pyx_RaiseBufferIndexError(__pyx_t_4);
     __PYX_ERR(0, 756, __pyx_L1_error)
   }
-  __pyx_v_data_arr = (&(*((struct __pyx_t_8_kd_tree_NodeHeapData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_8_kd_tree_NodeHeapData_t *) __pyx_v_self->data.data) + __pyx_t_3)) ))));
+  __pyx_v_data_arr = (&(*((struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *) __pyx_v_self->data.data) + __pyx_t_3)) ))));
 
   /* "AKNN/_binary_tree.pxi":757
  *         cdef ITYPE_t i, i_child1, i_child2, i_swap
@@ -7310,7 +7310,7 @@ static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_f_8_kd_tree_8NodeHeap_pop(s
  *                 i = i_swap
  *             else:
  */
-      __pyx_f_8_kd_tree_swap_nodes(__pyx_v_data_arr, __pyx_v_i, __pyx_v_i_swap);
+      __pyx_f_4AKNN_8_kd_tree_swap_nodes(__pyx_v_data_arr, __pyx_v_i, __pyx_v_i_swap);
 
       /* "AKNN/_binary_tree.pxi":783
  *             if (i_swap > 0) and (data_arr[i_swap].val <= data_arr[i].val):
@@ -7366,7 +7366,7 @@ static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_f_8_kd_tree_8NodeHeap_pop(s
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_WriteUnraisable("_kd_tree.NodeHeap.pop", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
+  __Pyx_WriteUnraisable("AKNN._kd_tree.NodeHeap.pop", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
   __Pyx_pretend_to_initialize(&__pyx_r);
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -7381,7 +7381,7 @@ static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_f_8_kd_tree_8NodeHeap_pop(s
  *         self.n = 0
  */
 
-static void __pyx_f_8_kd_tree_8NodeHeap_clear(struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self) {
+static void __pyx_f_4AKNN_8_kd_tree_8NodeHeap_clear(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("clear", 0);
 
@@ -7413,19 +7413,19 @@ static void __pyx_f_8_kd_tree_8NodeHeap_clear(struct __pyx_obj_8_kd_tree_NodeHea
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_8NodeHeap_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_8_kd_tree_8NodeHeap_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_8NodeHeap_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_8NodeHeap_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_8NodeHeap_4__reduce_cython__(((struct __pyx_obj_8_kd_tree_NodeHeap *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_8NodeHeap_4__reduce_cython__(((struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_8NodeHeap_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_8NodeHeap_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -7455,7 +7455,7 @@ static PyObject *__pyx_pf_8_kd_tree_8NodeHeap_4__reduce_cython__(CYTHON_UNUSED s
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_kd_tree.NodeHeap.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NodeHeap.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -7470,19 +7470,19 @@ static PyObject *__pyx_pf_8_kd_tree_8NodeHeap_4__reduce_cython__(CYTHON_UNUSED s
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_8NodeHeap_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_8_kd_tree_8NodeHeap_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_8NodeHeap_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_8NodeHeap_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_8NodeHeap_6__setstate_cython__(((struct __pyx_obj_8_kd_tree_NodeHeap *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_8NodeHeap_6__setstate_cython__(((struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_8NodeHeap_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_8NodeHeap_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -7512,7 +7512,7 @@ static PyObject *__pyx_pf_8_kd_tree_8NodeHeap_6__setstate_cython__(CYTHON_UNUSED
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_kd_tree.NodeHeap.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.NodeHeap.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -7528,20 +7528,20 @@ static PyObject *__pyx_pf_8_kd_tree_8NodeHeap_6__setstate_cython__(CYTHON_UNUSED
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_1newObj(PyObject *__pyx_self, PyObject *__pyx_v_obj); /*proto*/
-static PyMethodDef __pyx_mdef_8_kd_tree_1newObj = {"newObj", (PyCFunction)__pyx_pw_8_kd_tree_1newObj, METH_O, 0};
-static PyObject *__pyx_pw_8_kd_tree_1newObj(PyObject *__pyx_self, PyObject *__pyx_v_obj) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_1newObj(PyObject *__pyx_self, PyObject *__pyx_v_obj); /*proto*/
+static PyMethodDef __pyx_mdef_4AKNN_8_kd_tree_1newObj = {"newObj", (PyCFunction)__pyx_pw_4AKNN_8_kd_tree_1newObj, METH_O, 0};
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_1newObj(PyObject *__pyx_self, PyObject *__pyx_v_obj) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("newObj (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_newObj(__pyx_self, ((PyObject *)__pyx_v_obj));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_newObj(__pyx_self, ((PyObject *)__pyx_v_obj));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_newObj(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_obj) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_newObj(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_obj) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -7594,7 +7594,7 @@ static PyObject *__pyx_pf_8_kd_tree_newObj(CYTHON_UNUSED PyObject *__pyx_self, P
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("_kd_tree.newObj", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.newObj", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -7611,22 +7611,22 @@ static PyObject *__pyx_pf_8_kd_tree_newObj(CYTHON_UNUSED PyObject *__pyx_self, P
  */
 
 /* Python wrapper */
-static int __pyx_pw_8_kd_tree_10BinaryTree_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_8_kd_tree_10BinaryTree_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__cinit__ (wrapper)", 0);
   if (unlikely(PyTuple_GET_SIZE(__pyx_args) > 0)) {
     __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 0, 0, PyTuple_GET_SIZE(__pyx_args)); return -1;}
   if (unlikely(__pyx_kwds) && unlikely(PyDict_Size(__pyx_kwds) > 0) && unlikely(!__Pyx_CheckKeywordStrings(__pyx_kwds, "__cinit__", 0))) return -1;
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree___cinit__(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree___cinit__(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_8_kd_tree_10BinaryTree___cinit__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self) {
+static int __pyx_pf_4AKNN_8_kd_tree_10BinaryTree___cinit__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -7767,7 +7767,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree___cinit__(struct __pyx_obj_8_kd_tree_
  * 
  *         self.idx_array = self.idx_array_arr
  */
-  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_8_kd_tree_DTYPE_t__const__(((PyObject *)__pyx_v_self->data_arr), 0); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 846, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__(((PyObject *)__pyx_v_self->data_arr), 0); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 846, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->data, 0);
   __pyx_v_self->data = __pyx_t_4;
   __pyx_t_4.memview = NULL;
@@ -7780,7 +7780,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree___cinit__(struct __pyx_obj_8_kd_tree_
  *         self.node_data = self.node_data_arr
  *         self.node_bounds = self.node_bounds_arr
  */
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_8_kd_tree_ITYPE_t__const__(((PyObject *)__pyx_v_self->idx_array_arr), 0); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 848, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t__const__(((PyObject *)__pyx_v_self->idx_array_arr), 0); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(0, 848, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->idx_array, 0);
   __pyx_v_self->idx_array = __pyx_t_5;
   __pyx_t_5.memview = NULL;
@@ -7793,7 +7793,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree___cinit__(struct __pyx_obj_8_kd_tree_
  *         self.node_bounds = self.node_bounds_arr
  * 
  */
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_8_kd_tree_NodeData_t__const__(((PyObject *)__pyx_v_self->node_data_arr), 0); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 849, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t__const__(((PyObject *)__pyx_v_self->node_data_arr), 0); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 849, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->node_data, 0);
   __pyx_v_self->node_data = __pyx_t_6;
   __pyx_t_6.memview = NULL;
@@ -7806,7 +7806,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree___cinit__(struct __pyx_obj_8_kd_tree_
  * 
  *         self.leaf_size = 0
  */
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_nn___pyx_t_8_kd_tree_DTYPE_t__const__(((PyObject *)__pyx_v_self->node_bounds_arr), 0); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 850, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__(((PyObject *)__pyx_v_self->node_bounds_arr), 0); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 850, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->node_bounds, 0);
   __pyx_v_self->node_bounds = __pyx_t_7;
   __pyx_t_7.memview = NULL;
@@ -7903,7 +7903,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree___cinit__(struct __pyx_obj_8_kd_tree_
   __PYX_XDEC_MEMVIEW(&__pyx_t_5, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_t_6, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_t_7, 1);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -7919,8 +7919,8 @@ static int __pyx_pf_8_kd_tree_10BinaryTree___cinit__(struct __pyx_obj_8_kd_tree_
  */
 
 /* Python wrapper */
-static int __pyx_pw_8_kd_tree_10BinaryTree_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_8_kd_tree_10BinaryTree_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_data = 0;
   PyObject *__pyx_v_leaf_size = 0;
   CYTHON_UNUSED PyObject *__pyx_v_metric = 0;
@@ -7992,11 +7992,11 @@ static int __pyx_pw_8_kd_tree_10BinaryTree_3__init__(PyObject *__pyx_v_self, PyO
   __Pyx_RaiseArgtupleInvalid("__init__", 0, 1, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 863, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_DECREF(__pyx_v_kwargs); __pyx_v_kwargs = 0;
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree_2__init__(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self), __pyx_v_data, __pyx_v_leaf_size, __pyx_v_metric, __pyx_v_kwargs);
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_2__init__(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self), __pyx_v_data, __pyx_v_leaf_size, __pyx_v_metric, __pyx_v_kwargs);
 
   /* function exit code */
   __Pyx_XDECREF(__pyx_v_kwargs);
@@ -8004,7 +8004,7 @@ static int __pyx_pw_8_kd_tree_10BinaryTree_3__init__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static int __pyx_pf_8_kd_tree_10BinaryTree_2__init__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_data, PyObject *__pyx_v_leaf_size, CYTHON_UNUSED PyObject *__pyx_v_metric, CYTHON_UNUSED PyObject *__pyx_v_kwargs) {
+static int __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_2__init__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_data, PyObject *__pyx_v_leaf_size, CYTHON_UNUSED PyObject *__pyx_v_metric, CYTHON_UNUSED PyObject *__pyx_v_kwargs) {
   PyObject *__pyx_v_n_samples = NULL;
   npy_intp __pyx_v_n_features;
   int __pyx_r;
@@ -8014,7 +8014,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_2__init__(struct __pyx_obj_8_kd_tree_
   PyObject *__pyx_t_3 = NULL;
   PyObject *__pyx_t_4 = NULL;
   int __pyx_t_5;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_6;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_6;
   PyObject *__pyx_t_7 = NULL;
   double __pyx_t_8;
   int __pyx_t_9;
@@ -8332,7 +8332,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_2__init__(struct __pyx_obj_8_kd_tree_
  *         self._recursive_build(
  *             node_data=self.node_data_arr,
  */
-  __pyx_t_9 = __pyx_f_8_kd_tree_allocate_data(__pyx_v_self, __pyx_v_self->n_nodes, __pyx_v_n_features); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 896, __pyx_L1_error)
+  __pyx_t_9 = __pyx_f_4AKNN_8_kd_tree_allocate_data(__pyx_v_self, __pyx_v_self->n_nodes, __pyx_v_n_features); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 896, __pyx_L1_error)
 
   /* "AKNN/_binary_tree.pxi":898
  *         allocate_data(self, self.n_nodes, n_features)
@@ -8341,7 +8341,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_2__init__(struct __pyx_obj_8_kd_tree_
  *             i_node=0,
  *             idx_start=0,
  */
-  __pyx_t_10 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_8_kd_tree_NodeData_t(((PyObject *)__pyx_v_self->node_data_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_10.memview)) __PYX_ERR(0, 898, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(((PyObject *)__pyx_v_self->node_data_arr), PyBUF_WRITABLE); if (unlikely(!__pyx_t_10.memview)) __PYX_ERR(0, 898, __pyx_L1_error)
 
   /* "AKNN/_binary_tree.pxi":901
  *             i_node=0,
@@ -8359,7 +8359,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_2__init__(struct __pyx_obj_8_kd_tree_
  *             node_data=self.node_data_arr,
  *             i_node=0,
  */
-  __pyx_t_9 = ((struct __pyx_vtabstruct_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_recursive_build(__pyx_v_self, __pyx_t_10, 0, 0, __pyx_t_6); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 897, __pyx_L1_error)
+  __pyx_t_9 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_recursive_build(__pyx_v_self, __pyx_t_10, 0, 0, __pyx_t_6); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 897, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_t_10, 1);
   __pyx_t_10.memview = NULL;
   __pyx_t_10.data = NULL;
@@ -8382,7 +8382,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_2__init__(struct __pyx_obj_8_kd_tree_
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_7);
   __PYX_XDEC_MEMVIEW(&__pyx_t_10, 1);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_n_samples);
@@ -8399,19 +8399,19 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_2__init__(struct __pyx_obj_8_kd_tree_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_5_update_memviews(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_5_update_memviews(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_5_update_memviews(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_5_update_memviews(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_update_memviews (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree_4_update_memviews(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_4_update_memviews(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_4_update_memviews(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_4_update_memviews(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -8430,7 +8430,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_4_update_memviews(struct __pyx_
  *         self.idx_array = self.idx_array_arr
  *         self.node_data = self.node_data_arr
  */
-  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_8_kd_tree_DTYPE_t__const__(((PyObject *)__pyx_v_self->data_arr), 0); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 906, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__(((PyObject *)__pyx_v_self->data_arr), 0); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 906, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->data, 0);
   __pyx_v_self->data = __pyx_t_1;
   __pyx_t_1.memview = NULL;
@@ -8443,7 +8443,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_4_update_memviews(struct __pyx_
  *         self.node_data = self.node_data_arr
  *         self.node_bounds = self.node_bounds_arr
  */
-  __pyx_t_2 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_8_kd_tree_ITYPE_t__const__(((PyObject *)__pyx_v_self->idx_array_arr), 0); if (unlikely(!__pyx_t_2.memview)) __PYX_ERR(0, 907, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t__const__(((PyObject *)__pyx_v_self->idx_array_arr), 0); if (unlikely(!__pyx_t_2.memview)) __PYX_ERR(0, 907, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->idx_array, 0);
   __pyx_v_self->idx_array = __pyx_t_2;
   __pyx_t_2.memview = NULL;
@@ -8456,7 +8456,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_4_update_memviews(struct __pyx_
  *         self.node_bounds = self.node_bounds_arr
  * 
  */
-  __pyx_t_3 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_8_kd_tree_NodeData_t__const__(((PyObject *)__pyx_v_self->node_data_arr), 0); if (unlikely(!__pyx_t_3.memview)) __PYX_ERR(0, 908, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t__const__(((PyObject *)__pyx_v_self->node_data_arr), 0); if (unlikely(!__pyx_t_3.memview)) __PYX_ERR(0, 908, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->node_data, 0);
   __pyx_v_self->node_data = __pyx_t_3;
   __pyx_t_3.memview = NULL;
@@ -8469,7 +8469,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_4_update_memviews(struct __pyx_
  * 
  * 
  */
-  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_nn___pyx_t_8_kd_tree_DTYPE_t__const__(((PyObject *)__pyx_v_self->node_bounds_arr), 0); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 909, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__(((PyObject *)__pyx_v_self->node_bounds_arr), 0); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 909, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->node_bounds, 0);
   __pyx_v_self->node_bounds = __pyx_t_4;
   __pyx_t_4.memview = NULL;
@@ -8491,7 +8491,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_4_update_memviews(struct __pyx_
   __PYX_XDEC_MEMVIEW(&__pyx_t_2, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_t_3, 1);
   __PYX_XDEC_MEMVIEW(&__pyx_t_4, 1);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree._update_memviews", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree._update_memviews", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -8508,20 +8508,20 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_4_update_memviews(struct __pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_7get_arrays(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_8_kd_tree_10BinaryTree_6get_arrays[] = "\n        get_arrays()\n\n        Get data and node arrays.\n\n        Returns\n        -------\n        arrays: tuple of array\n            Arrays for storing tree data, index, node data and node bounds.\n        ";
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_7get_arrays(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_7get_arrays(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_4AKNN_8_kd_tree_10BinaryTree_6get_arrays[] = "\n        get_arrays()\n\n        Get data and node arrays.\n\n        Returns\n        -------\n        arrays: tuple of array\n            Arrays for storing tree data, index, node data and node bounds.\n        ";
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_7get_arrays(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_arrays (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree_6get_arrays(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_6get_arrays(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_6get_arrays(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_6get_arrays(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -8575,7 +8575,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_6get_arrays(struct __pyx_obj_8_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.get_arrays", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.get_arrays", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -8591,9 +8591,9 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_6get_arrays(struct __pyx_obj_8_
  *         """Compute the distance between arrays x1 and x2"""
  */
 
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_10BinaryTree_dist(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_x1, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_x2, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_size) {
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_r;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_t_1;
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_10BinaryTree_dist(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_x1, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_x2, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_size) {
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_r;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_t_1;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -8614,7 +8614,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_10BinaryTree_di
  * 
  * 
  */
-  __pyx_t_1 = __pyx_f_8_kd_tree_euclidean_dist(__pyx_v_x1, __pyx_v_x2, __pyx_v_size); if (unlikely(__pyx_t_1 == ((__pyx_t_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 933, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_4AKNN_8_kd_tree_euclidean_dist(__pyx_v_x1, __pyx_v_x2, __pyx_v_size); if (unlikely(__pyx_t_1 == ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 933, __pyx_L1_error)
   __pyx_r = __pyx_t_1;
   goto __pyx_L0;
 
@@ -8632,7 +8632,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_10BinaryTree_di
     #ifdef WITH_THREAD
     PyGILState_STATE __pyx_gilstate_save = __Pyx_PyGILState_Ensure();
     #endif
-    __Pyx_AddTraceback("_kd_tree.BinaryTree.dist", __pyx_clineno, __pyx_lineno, __pyx_filename);
+    __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.dist", __pyx_clineno, __pyx_lineno, __pyx_filename);
     #ifdef WITH_THREAD
     __Pyx_PyGILState_Release(__pyx_gilstate_save);
     #endif
@@ -8650,9 +8650,9 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_10BinaryTree_di
  *         """Compute the reduced distance between arrays x1 and x2.
  */
 
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_10BinaryTree_rdist(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_x1, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_x2, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_size) {
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_r;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_t_1;
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_10BinaryTree_rdist(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_x1, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_x2, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_size) {
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_r;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_t_1;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -8673,7 +8673,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_10BinaryTree_rd
  * 
  * 
  */
-  __pyx_t_1 = __pyx_f_8_kd_tree_euclidean_rdist(__pyx_v_x1, __pyx_v_x2, __pyx_v_size); if (unlikely(__pyx_t_1 == ((__pyx_t_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 947, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_4AKNN_8_kd_tree_euclidean_rdist(__pyx_v_x1, __pyx_v_x2, __pyx_v_size); if (unlikely(__pyx_t_1 == ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 947, __pyx_L1_error)
   __pyx_r = __pyx_t_1;
   goto __pyx_L0;
 
@@ -8691,7 +8691,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_10BinaryTree_rd
     #ifdef WITH_THREAD
     PyGILState_STATE __pyx_gilstate_save = __Pyx_PyGILState_Ensure();
     #endif
-    __Pyx_AddTraceback("_kd_tree.BinaryTree.rdist", __pyx_clineno, __pyx_lineno, __pyx_filename);
+    __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.rdist", __pyx_clineno, __pyx_lineno, __pyx_filename);
     #ifdef WITH_THREAD
     __Pyx_PyGILState_Release(__pyx_gilstate_save);
     #endif
@@ -8709,14 +8709,14 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_10BinaryTree_rd
  *         """Recursively build the tree.
  */
 
-static int __pyx_f_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, __Pyx_memviewslice __pyx_v_node_data, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_idx_start, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_idx_end) {
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_n_features;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_n_points;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_n_mid;
-  __pyx_t_8_kd_tree_ITYPE_t *__pyx_v_idx_array;
-  __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_data;
+static int __pyx_f_4AKNN_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, __Pyx_memviewslice __pyx_v_node_data, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_idx_start, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_idx_end) {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_n_features;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_n_points;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_n_mid;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t *__pyx_v_idx_array;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_data;
   PyObject *__pyx_v_warnings = NULL;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_max;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_max;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   Py_ssize_t __pyx_t_1;
@@ -8726,7 +8726,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_8_kd
   PyObject *__pyx_t_5 = NULL;
   PyObject *__pyx_t_6 = NULL;
   PyObject *__pyx_t_7 = NULL;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_8;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_8;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -8778,7 +8778,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_8_kd
     __Pyx_RaiseBufferIndexError(__pyx_t_2);
     __PYX_ERR(0, 966, __pyx_L1_error)
   }
-  __pyx_v_idx_array = (&(*((__pyx_t_8_kd_tree_ITYPE_t const  *) ( /* dim=0 */ ((char *) (((__pyx_t_8_kd_tree_ITYPE_t const  *) __pyx_v_self->idx_array.data) + __pyx_t_1)) ))));
+  __pyx_v_idx_array = (&(*((__pyx_t_4AKNN_8_kd_tree_ITYPE_t const  *) ( /* dim=0 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_ITYPE_t const  *) __pyx_v_self->idx_array.data) + __pyx_t_1)) ))));
 
   /* "AKNN/_binary_tree.pxi":967
  *         cdef ITYPE_t n_mid = n_points / 2
@@ -8803,7 +8803,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_8_kd
     __Pyx_RaiseBufferIndexError(__pyx_t_2);
     __PYX_ERR(0, 967, __pyx_L1_error)
   }
-  __pyx_v_data = (&(*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=0 */ (__pyx_v_self->data.data + __pyx_t_1 * __pyx_v_self->data.strides[0]) )) + __pyx_t_3)) ))));
+  __pyx_v_data = (&(*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=0 */ (__pyx_v_self->data.data + __pyx_t_1 * __pyx_v_self->data.strides[0]) )) + __pyx_t_3)) ))));
 
   /* "AKNN/_binary_tree.pxi":970
  * 
@@ -8812,7 +8812,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_8_kd
  * 
  *         if 2 * i_node + 1 >= self.n_nodes:
  */
-  __pyx_t_2 = __pyx_f_8_kd_tree_init_node(__pyx_v_self, __pyx_v_node_data, __pyx_v_i_node, __pyx_v_idx_start, __pyx_v_idx_end); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 970, __pyx_L1_error)
+  __pyx_t_2 = __pyx_f_4AKNN_8_kd_tree_init_node(__pyx_v_self, __pyx_v_node_data, __pyx_v_i_node, __pyx_v_idx_start, __pyx_v_idx_end); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 970, __pyx_L1_error)
 
   /* "AKNN/_binary_tree.pxi":972
  *         init_node(self, node_data, i_node, idx_start, idx_end)
@@ -8841,7 +8841,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_8_kd
       __Pyx_RaiseBufferIndexError(__pyx_t_2);
       __PYX_ERR(0, 973, __pyx_L1_error)
     }
-    (*((struct __pyx_t_8_kd_tree_NodeData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_8_kd_tree_NodeData_t *) __pyx_v_node_data.data) + __pyx_t_3)) ))).is_leaf = 1;
+    (*((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *) __pyx_v_node_data.data) + __pyx_t_3)) ))).is_leaf = 1;
 
     /* "AKNN/_binary_tree.pxi":974
  *         if 2 * i_node + 1 >= self.n_nodes:
@@ -8975,7 +8975,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_8_kd
       __Pyx_RaiseBufferIndexError(__pyx_t_2);
       __PYX_ERR(0, 988, __pyx_L1_error)
     }
-    (*((struct __pyx_t_8_kd_tree_NodeData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_8_kd_tree_NodeData_t *) __pyx_v_node_data.data) + __pyx_t_3)) ))).is_leaf = 1;
+    (*((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *) __pyx_v_node_data.data) + __pyx_t_3)) ))).is_leaf = 1;
 
     /* "AKNN/_binary_tree.pxi":982
  *                               "not enough nodes allocated")
@@ -9005,7 +9005,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_8_kd
       __Pyx_RaiseBufferIndexError(__pyx_t_2);
       __PYX_ERR(0, 992, __pyx_L1_error)
     }
-    (*((struct __pyx_t_8_kd_tree_NodeData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_8_kd_tree_NodeData_t *) __pyx_v_node_data.data) + __pyx_t_3)) ))).is_leaf = 0;
+    (*((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *) __pyx_v_node_data.data) + __pyx_t_3)) ))).is_leaf = 0;
 
     /* "AKNN/_binary_tree.pxi":993
  *             # split node and recursively construct child nodes.
@@ -9014,7 +9014,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_8_kd
  *                                         n_features, n_points)
  *             partition_node_indices(data, idx_array, i_max, n_mid,
  */
-    __pyx_t_8 = __pyx_f_8_kd_tree_find_node_split_dim(__pyx_v_data, __pyx_v_idx_array, __pyx_v_n_features, __pyx_v_n_points); if (unlikely(__pyx_t_8 == ((__pyx_t_8_kd_tree_ITYPE_t)-1))) __PYX_ERR(0, 993, __pyx_L1_error)
+    __pyx_t_8 = __pyx_f_4AKNN_8_kd_tree_find_node_split_dim(__pyx_v_data, __pyx_v_idx_array, __pyx_v_n_features, __pyx_v_n_points); if (unlikely(__pyx_t_8 == ((__pyx_t_4AKNN_8_kd_tree_ITYPE_t)-1))) __PYX_ERR(0, 993, __pyx_L1_error)
     __pyx_v_i_max = __pyx_t_8;
 
     /* "AKNN/_binary_tree.pxi":995
@@ -9033,7 +9033,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_8_kd
  *                                   idx_start, idx_start + n_mid)
  *             self._recursive_build(node_data, 2 * i_node + 2,
  */
-    __pyx_t_2 = ((struct __pyx_vtabstruct_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_recursive_build(__pyx_v_self, __pyx_v_node_data, ((2 * __pyx_v_i_node) + 1), __pyx_v_idx_start, (__pyx_v_idx_start + __pyx_v_n_mid)); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 997, __pyx_L1_error)
+    __pyx_t_2 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_recursive_build(__pyx_v_self, __pyx_v_node_data, ((2 * __pyx_v_i_node) + 1), __pyx_v_idx_start, (__pyx_v_idx_start + __pyx_v_n_mid)); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 997, __pyx_L1_error)
 
     /* "AKNN/_binary_tree.pxi":999
  *             self._recursive_build(node_data,2 * i_node + 1,
@@ -9042,7 +9042,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_8_kd
  *                                   idx_start + n_mid, idx_end)
  * 
  */
-    __pyx_t_2 = ((struct __pyx_vtabstruct_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_recursive_build(__pyx_v_self, __pyx_v_node_data, ((2 * __pyx_v_i_node) + 2), (__pyx_v_idx_start + __pyx_v_n_mid), __pyx_v_idx_end); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 999, __pyx_L1_error)
+    __pyx_t_2 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_recursive_build(__pyx_v_self, __pyx_v_node_data, ((2 * __pyx_v_i_node) + 2), (__pyx_v_idx_start + __pyx_v_n_mid), __pyx_v_idx_end); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 999, __pyx_L1_error)
   }
   __pyx_L3:;
 
@@ -9061,7 +9061,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_8_kd
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree._recursive_build", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree._recursive_build", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_warnings);
@@ -9078,9 +9078,9 @@ static int __pyx_f_8_kd_tree_10BinaryTree__recursive_build(struct __pyx_obj_8_kd
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_9query(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_8_kd_tree_10BinaryTree_8query[] = "\n        query(X, k=1, return_distance=True,\n              dualtree=False, breadth_first=False)\n\n        query the tree for the k nearest neighbors\n\n        Parameters\n        ----------\n        X : array-like of shape (n_samples, n_features)\n            An array of points to query\n        k : int, default=1\n            The number of nearest neighbors to return\n        return_distance : bool, default=True\n            if True, return a tuple (d, i) of distances and indices\n            if False, return array i\n        dualtree : bool, default=False\n            if True, use the dual tree formalism for the query: a tree is\n            built for the query points, and the pair of trees is used to\n            efficiently search this space.  This can lead to better\n            performance as the number of points grows large.\n        breadth_first : bool, default=False\n            if True, then query the nodes in a breadth-first manner.\n            Otherwise, query the nodes in a depth-first manner.\n        sort_results : bool, default=True\n            if True, then distances and indices of each point are sorted\n            on return, so that the first column contains the closest points.\n            Otherwise, neighbors are returned in an arbitrary order.\n\n        Returns\n        -------\n        i    : if return_distance == False\n        (d,i) : if return_distance == True\n\n        d : ndarray of shape X.shape[:-1] + (k,), dtype=double\n            Each entry gives the list of distances to the neighbors of the\n            corresponding point.\n\n        i : ndarray of shape X.shape[:-1] + (k,), dtype=int\n            Each entry gives the list of indices of neighbors of the\n            corresponding point.\n        ";
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_9query(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_9query(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_4AKNN_8_kd_tree_10BinaryTree_8query[] = "\n        query(X, k=1, return_distance=True,\n              dualtree=False, breadth_first=False)\n\n        query the tree for the k nearest neighbors\n\n        Parameters\n        ----------\n        X : array-like of shape (n_samples, n_features)\n            An array of points to query\n        k : int, default=1\n            The number of nearest neighbors to return\n        return_distance : bool, default=True\n            if True, return a tuple (d, i) of distances and indices\n            if False, return array i\n        dualtree : bool, default=False\n            if True, use the dual tree formalism for the query: a tree is\n            built for the query points, and the pair of trees is used to\n            efficiently search this space.  This can lead to better\n            performance as the number of points grows large.\n        breadth_first : bool, default=False\n            if True, then query the nodes in a breadth-first manner.\n            Otherwise, query the nodes in a depth-first manner.\n        sort_results : bool, default=True\n            if True, then distances and indices of each point are sorted\n            on return, so that the first column contains the closest points.\n            Otherwise, neighbors are returned in an arbitrary order.\n\n        Returns\n        -------\n        i    : if return_distance == False\n        (d,i) : if return_distance == True\n\n        d : ndarray of shape X.shape[:-1] + (k,), dtype=double\n            Each entry gives the list of distances to the neighbors of the\n            corresponding point.\n\n        i : ndarray of shape X.shape[:-1] + (k,), dtype=int\n            Each entry gives the list of indices of neighbors of the\n            corresponding point.\n        ";
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_9query(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_X = 0;
   PyObject *__pyx_v_k = 0;
   PyObject *__pyx_v_return_distance = 0;
@@ -9203,11 +9203,11 @@ static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_9query(PyObject *__pyx_v_self, 
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("query", 0, 1, 6, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 1002, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.query", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.query", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree_8query(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self), __pyx_v_X, __pyx_v_k, __pyx_v_return_distance, __pyx_v_dualtree, __pyx_v_breadth_first, __pyx_v_sort_results);
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_8query(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self), __pyx_v_X, __pyx_v_k, __pyx_v_return_distance, __pyx_v_dualtree, __pyx_v_breadth_first, __pyx_v_sort_results);
 
   /* "AKNN/_binary_tree.pxi":1002
  *                                   idx_start + n_mid, idx_end)
@@ -9222,14 +9222,14 @@ static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_9query(PyObject *__pyx_v_self, 
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_8query(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_X, PyObject *__pyx_v_k, PyObject *__pyx_v_return_distance, CYTHON_UNUSED PyObject *__pyx_v_dualtree, PyObject *__pyx_v_breadth_first, PyObject *__pyx_v_sort_results) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_8query(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_X, PyObject *__pyx_v_k, PyObject *__pyx_v_return_distance, CYTHON_UNUSED PyObject *__pyx_v_dualtree, PyObject *__pyx_v_breadth_first, PyObject *__pyx_v_sort_results) {
   PyObject *__pyx_v_np_Xarr = NULL;
   __Pyx_memviewslice __pyx_v_Xarr = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_reduced_dist_LB;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i;
-  __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_pt;
-  struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_heap = 0;
-  struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_nodeheap = 0;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_reduced_dist_LB;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_pt;
+  struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_heap = 0;
+  struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_nodeheap = 0;
   PyObject *__pyx_v_distances = NULL;
   PyObject *__pyx_v_indices = NULL;
   PyObject *__pyx_r = NULL;
@@ -9245,8 +9245,8 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_8query(struct __pyx_obj_8_kd_tr
   int __pyx_t_9;
   Py_ssize_t __pyx_t_10;
   Py_ssize_t __pyx_t_11;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_12;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_t_13;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_12;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_t_13;
   PyObject *(*__pyx_t_14)(PyObject *);
   PyObject *__pyx_t_15 = NULL;
   PyObject *__pyx_t_16 = NULL;
@@ -9419,7 +9419,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_8query(struct __pyx_obj_8_kd_tr
  *         cdef DTYPE_t reduced_dist_LB
  *         cdef ITYPE_t i
  */
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_8_kd_tree_DTYPE_t__const__(__pyx_v_np_Xarr, 0); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 1059, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__(__pyx_v_np_Xarr, 0); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 1059, __pyx_L1_error)
   __pyx_v_Xarr = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
@@ -9441,10 +9441,10 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_8query(struct __pyx_obj_8_kd_tr
   __Pyx_GIVEREF(__pyx_v_k);
   PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_v_k);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_8_kd_tree_NeighborsHeap), __pyx_t_4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1065, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4AKNN_8_kd_tree_NeighborsHeap), __pyx_t_4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1065, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_v_heap = ((struct __pyx_obj_8_kd_tree_NeighborsHeap *)__pyx_t_2);
+  __pyx_v_heap = ((struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *)__pyx_t_2);
   __pyx_t_2 = 0;
 
   /* "AKNN/_binary_tree.pxi":1069
@@ -9469,16 +9469,16 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_8query(struct __pyx_obj_8_kd_tr
       PyErr_SetString(PyExc_ZeroDivisionError, "integer division or modulo by zero");
       __PYX_ERR(0, 1070, __pyx_L1_error)
     }
-    else if (sizeof(Py_ssize_t) == sizeof(long) && (!(((__pyx_t_8_kd_tree_ITYPE_t)-1) > 0)) && unlikely(__pyx_v_self->leaf_size == (__pyx_t_8_kd_tree_ITYPE_t)-1)  && unlikely(UNARY_NEG_WOULD_OVERFLOW((__pyx_v_self->data.shape[0])))) {
+    else if (sizeof(Py_ssize_t) == sizeof(long) && (!(((__pyx_t_4AKNN_8_kd_tree_ITYPE_t)-1) > 0)) && unlikely(__pyx_v_self->leaf_size == (__pyx_t_4AKNN_8_kd_tree_ITYPE_t)-1)  && unlikely(UNARY_NEG_WOULD_OVERFLOW((__pyx_v_self->data.shape[0])))) {
       PyErr_SetString(PyExc_OverflowError, "value too large to perform division");
       __PYX_ERR(0, 1070, __pyx_L1_error)
     }
     __pyx_t_2 = PyInt_FromSsize_t(__Pyx_div_Py_ssize_t((__pyx_v_self->data.shape[0]), __pyx_v_self->leaf_size)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1070, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_8_kd_tree_NodeHeap), __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1070, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_4AKNN_8_kd_tree_NodeHeap), __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1070, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_v_nodeheap = ((struct __pyx_obj_8_kd_tree_NodeHeap *)__pyx_t_4);
+    __pyx_v_nodeheap = ((struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *)__pyx_t_4);
     __pyx_t_4 = 0;
 
     /* "AKNN/_binary_tree.pxi":1069
@@ -9539,7 +9539,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_8query(struct __pyx_obj_8_kd_tr
     __Pyx_RaiseBufferIndexError(__pyx_t_9);
     __PYX_ERR(0, 1080, __pyx_L1_error)
   }
-  __pyx_v_pt = (&(*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=0 */ (__pyx_v_Xarr.data + __pyx_t_7 * __pyx_v_Xarr.strides[0]) )) + __pyx_t_8)) ))));
+  __pyx_v_pt = (&(*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=0 */ (__pyx_v_Xarr.data + __pyx_t_7 * __pyx_v_Xarr.strides[0]) )) + __pyx_t_8)) ))));
 
   /* "AKNN/_binary_tree.pxi":1081
  * 
@@ -9571,7 +9571,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_8query(struct __pyx_obj_8_kd_tr
  *         else:
  */
       if (unlikely(!__pyx_v_nodeheap)) { __Pyx_RaiseUnboundLocalError("nodeheap"); __PYX_ERR(0, 1083, __pyx_L1_error) }
-      __pyx_t_9 = ((struct __pyx_vtabstruct_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_query_single_breadthfirst(__pyx_v_self, __pyx_v_pt, __pyx_v_i, __pyx_v_heap, __pyx_v_nodeheap); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 1083, __pyx_L1_error)
+      __pyx_t_9 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_query_single_breadthfirst(__pyx_v_self, __pyx_v_pt, __pyx_v_i, __pyx_v_heap, __pyx_v_nodeheap); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 1083, __pyx_L1_error)
 
       /* "AKNN/_binary_tree.pxi":1084
  *             for i in range(Xarr.shape[0]):
@@ -9628,7 +9628,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_8query(struct __pyx_obj_8_kd_tr
  *                     self._query_single_depthfirst(0, pt, i, heap,
  *                                                   reduced_dist_LB)
  */
-            __pyx_t_13 = __pyx_f_8_kd_tree_min_rdist(__pyx_v_self, 0, __pyx_v_pt); if (unlikely(__pyx_t_13 == ((__pyx_t_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1088, __pyx_L10_error)
+            __pyx_t_13 = __pyx_f_4AKNN_8_kd_tree_min_rdist(__pyx_v_self, 0, __pyx_v_pt); if (unlikely(__pyx_t_13 == ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1088, __pyx_L10_error)
             __pyx_v_reduced_dist_LB = __pyx_t_13;
 
             /* "AKNN/_binary_tree.pxi":1089
@@ -9638,7 +9638,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_8query(struct __pyx_obj_8_kd_tr
  *                                                   reduced_dist_LB)
  *                     pt += Xarr.shape[1]
  */
-            __pyx_t_9 = ((struct __pyx_vtabstruct_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_query_single_depthfirst(__pyx_v_self, 0, __pyx_v_pt, __pyx_v_i, __pyx_v_heap, __pyx_v_reduced_dist_LB); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 1089, __pyx_L10_error)
+            __pyx_t_9 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_query_single_depthfirst(__pyx_v_self, 0, __pyx_v_pt, __pyx_v_i, __pyx_v_heap, __pyx_v_reduced_dist_LB); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 1089, __pyx_L10_error)
 
             /* "AKNN/_binary_tree.pxi":1091
  *                     self._query_single_depthfirst(0, pt, i, heap,
@@ -9958,7 +9958,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_8query(struct __pyx_obj_8_kd_tr
   __PYX_XDEC_MEMVIEW(&__pyx_t_6, 1);
   __Pyx_XDECREF(__pyx_t_15);
   __Pyx_XDECREF(__pyx_t_16);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.query", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.query", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_np_Xarr);
@@ -9981,24 +9981,24 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_8query(struct __pyx_obj_8_kd_tr
  *                                       NeighborsHeap heap,
  */
 
-static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_pt, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_pt, struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_heap, __pyx_t_8_kd_tree_DTYPE_t __pyx_v_reduced_dist_LB) {
-  struct __pyx_t_8_kd_tree_NodeData_t __pyx_v_node_info;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_dist_pt;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_reduced_dist_LB_1;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_reduced_dist_LB_2;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i1;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i2;
-  CYTHON_UNUSED __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_data;
+static int __pyx_f_4AKNN_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_pt, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_pt, struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_heap, __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_reduced_dist_LB) {
+  struct __pyx_t_4AKNN_8_kd_tree_NodeData_t __pyx_v_node_info;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_dist_pt;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_reduced_dist_LB_1;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_reduced_dist_LB_2;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i1;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i2;
+  CYTHON_UNUSED __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_data;
   int __pyx_r;
   Py_ssize_t __pyx_t_1;
   int __pyx_t_2;
   Py_ssize_t __pyx_t_3;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_t_4;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_t_4;
   int __pyx_t_5;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_6;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_7;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_8;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_6;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_7;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_8;
   Py_ssize_t __pyx_t_9;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -10022,7 +10022,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_
     __Pyx_RaiseBufferIndexErrorNogil(__pyx_t_2);
     __PYX_ERR(0, 1113, __pyx_L1_error)
   }
-  __pyx_v_node_info = (*((struct __pyx_t_8_kd_tree_NodeData_t const  *) ( /* dim=0 */ ((char *) (((struct __pyx_t_8_kd_tree_NodeData_t const  *) __pyx_v_self->node_data.data) + __pyx_t_1)) )));
+  __pyx_v_node_info = (*((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t const  *) ( /* dim=0 */ ((char *) (((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t const  *) __pyx_v_self->node_data.data) + __pyx_t_1)) )));
 
   /* "AKNN/_binary_tree.pxi":1118
  *         cdef ITYPE_t i, i1, i2
@@ -10047,7 +10047,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_
     __Pyx_RaiseBufferIndexErrorNogil(__pyx_t_2);
     __PYX_ERR(0, 1118, __pyx_L1_error)
   }
-  __pyx_v_data = (&(*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=0 */ (__pyx_v_self->data.data + __pyx_t_1 * __pyx_v_self->data.strides[0]) )) + __pyx_t_3)) ))));
+  __pyx_v_data = (&(*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=0 */ (__pyx_v_self->data.data + __pyx_t_1 * __pyx_v_self->data.strides[0]) )) + __pyx_t_3)) ))));
 
   /* "AKNN/_binary_tree.pxi":1123
  *         # Case 1: query point is outside node radius:
@@ -10056,7 +10056,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_
  *             self.n_trims += 1
  * 
  */
-  __pyx_t_4 = __pyx_f_8_kd_tree_13NeighborsHeap_largest(__pyx_v_heap, __pyx_v_i_pt); if (unlikely(__pyx_t_4 == ((__pyx_t_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1123, __pyx_L1_error)
+  __pyx_t_4 = __pyx_f_4AKNN_8_kd_tree_13NeighborsHeap_largest(__pyx_v_heap, __pyx_v_i_pt); if (unlikely(__pyx_t_4 == ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1123, __pyx_L1_error)
   __pyx_t_5 = ((__pyx_v_reduced_dist_LB > __pyx_t_4) != 0);
   if (__pyx_t_5) {
 
@@ -10129,7 +10129,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_
         __Pyx_RaiseBufferIndexErrorNogil(__pyx_t_2);
         __PYX_ERR(0, 1132, __pyx_L1_error)
       }
-      __pyx_t_1 = (*((__pyx_t_8_kd_tree_ITYPE_t const  *) ( /* dim=0 */ ((char *) (((__pyx_t_8_kd_tree_ITYPE_t const  *) __pyx_v_self->idx_array.data) + __pyx_t_3)) )));
+      __pyx_t_1 = (*((__pyx_t_4AKNN_8_kd_tree_ITYPE_t const  *) ( /* dim=0 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_ITYPE_t const  *) __pyx_v_self->idx_array.data) + __pyx_t_3)) )));
       __pyx_t_9 = 0;
       __pyx_t_2 = -1;
       if (__pyx_t_1 < 0) {
@@ -10161,7 +10161,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_
  *                                      &self.data[self.idx_array[i], 0],
  *                                      self.data.shape[1])
  */
-      __pyx_t_4 = __pyx_f_8_kd_tree_10BinaryTree_rdist(__pyx_v_self, __pyx_v_pt, (&(*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=0 */ (__pyx_v_self->data.data + __pyx_t_1 * __pyx_v_self->data.strides[0]) )) + __pyx_t_9)) )))), (__pyx_v_self->data.shape[1])); if (unlikely(__pyx_t_4 == ((__pyx_t_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1131, __pyx_L1_error)
+      __pyx_t_4 = __pyx_f_4AKNN_8_kd_tree_10BinaryTree_rdist(__pyx_v_self, __pyx_v_pt, (&(*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=0 */ (__pyx_v_self->data.data + __pyx_t_1 * __pyx_v_self->data.strides[0]) )) + __pyx_t_9)) )))), (__pyx_v_self->data.shape[1])); if (unlikely(__pyx_t_4 == ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1131, __pyx_L1_error)
       __pyx_v_dist_pt = __pyx_t_4;
 
       /* "AKNN/_binary_tree.pxi":1134
@@ -10182,7 +10182,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_
         __Pyx_RaiseBufferIndexErrorNogil(__pyx_t_2);
         __PYX_ERR(0, 1134, __pyx_L1_error)
       }
-      __pyx_t_2 = ((struct __pyx_vtabstruct_8_kd_tree_NeighborsHeap *)__pyx_v_heap->__pyx_vtab)->_push(__pyx_v_heap, __pyx_v_i_pt, __pyx_v_dist_pt, (*((__pyx_t_8_kd_tree_ITYPE_t const  *) ( /* dim=0 */ ((char *) (((__pyx_t_8_kd_tree_ITYPE_t const  *) __pyx_v_self->idx_array.data) + __pyx_t_3)) )))); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1134, __pyx_L1_error)
+      __pyx_t_2 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_NeighborsHeap *)__pyx_v_heap->__pyx_vtab)->_push(__pyx_v_heap, __pyx_v_i_pt, __pyx_v_dist_pt, (*((__pyx_t_4AKNN_8_kd_tree_ITYPE_t const  *) ( /* dim=0 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_ITYPE_t const  *) __pyx_v_self->idx_array.data) + __pyx_t_3)) )))); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1134, __pyx_L1_error)
     }
 
     /* "AKNN/_binary_tree.pxi":1128
@@ -10230,7 +10230,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_
  *             reduced_dist_LB_2 = min_rdist(self, i2, pt)
  * 
  */
-    __pyx_t_4 = __pyx_f_8_kd_tree_min_rdist(__pyx_v_self, __pyx_v_i1, __pyx_v_pt); if (unlikely(__pyx_t_4 == ((__pyx_t_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1143, __pyx_L1_error)
+    __pyx_t_4 = __pyx_f_4AKNN_8_kd_tree_min_rdist(__pyx_v_self, __pyx_v_i1, __pyx_v_pt); if (unlikely(__pyx_t_4 == ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1143, __pyx_L1_error)
     __pyx_v_reduced_dist_LB_1 = __pyx_t_4;
 
     /* "AKNN/_binary_tree.pxi":1144
@@ -10240,7 +10240,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_
  * 
  *             # recursively query subnodes
  */
-    __pyx_t_4 = __pyx_f_8_kd_tree_min_rdist(__pyx_v_self, __pyx_v_i2, __pyx_v_pt); if (unlikely(__pyx_t_4 == ((__pyx_t_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1144, __pyx_L1_error)
+    __pyx_t_4 = __pyx_f_4AKNN_8_kd_tree_min_rdist(__pyx_v_self, __pyx_v_i2, __pyx_v_pt); if (unlikely(__pyx_t_4 == ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1144, __pyx_L1_error)
     __pyx_v_reduced_dist_LB_2 = __pyx_t_4;
 
     /* "AKNN/_binary_tree.pxi":1147
@@ -10260,7 +10260,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_
  *                                               reduced_dist_LB_1)
  *                 self._query_single_depthfirst(i2, pt, i_pt, heap,
  */
-      __pyx_t_2 = ((struct __pyx_vtabstruct_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_query_single_depthfirst(__pyx_v_self, __pyx_v_i1, __pyx_v_pt, __pyx_v_i_pt, __pyx_v_heap, __pyx_v_reduced_dist_LB_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1148, __pyx_L1_error)
+      __pyx_t_2 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_query_single_depthfirst(__pyx_v_self, __pyx_v_i1, __pyx_v_pt, __pyx_v_i_pt, __pyx_v_heap, __pyx_v_reduced_dist_LB_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1148, __pyx_L1_error)
 
       /* "AKNN/_binary_tree.pxi":1150
  *                 self._query_single_depthfirst(i1, pt, i_pt, heap,
@@ -10269,7 +10269,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_
  *                                               reduced_dist_LB_2)
  *             else:
  */
-      __pyx_t_2 = ((struct __pyx_vtabstruct_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_query_single_depthfirst(__pyx_v_self, __pyx_v_i2, __pyx_v_pt, __pyx_v_i_pt, __pyx_v_heap, __pyx_v_reduced_dist_LB_2); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1150, __pyx_L1_error)
+      __pyx_t_2 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_query_single_depthfirst(__pyx_v_self, __pyx_v_i2, __pyx_v_pt, __pyx_v_i_pt, __pyx_v_heap, __pyx_v_reduced_dist_LB_2); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1150, __pyx_L1_error)
 
       /* "AKNN/_binary_tree.pxi":1147
  * 
@@ -10297,7 +10297,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_
  *                 self._query_single_depthfirst(i1, pt, i_pt, heap,
  *                                               reduced_dist_LB_1)
  */
-      __pyx_t_2 = ((struct __pyx_vtabstruct_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_query_single_depthfirst(__pyx_v_self, __pyx_v_i2, __pyx_v_pt, __pyx_v_i_pt, __pyx_v_heap, __pyx_v_reduced_dist_LB_2); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1153, __pyx_L1_error)
+      __pyx_t_2 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_query_single_depthfirst(__pyx_v_self, __pyx_v_i2, __pyx_v_pt, __pyx_v_i_pt, __pyx_v_heap, __pyx_v_reduced_dist_LB_2); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1153, __pyx_L1_error)
 
       /* "AKNN/_binary_tree.pxi":1155
  *                 self._query_single_depthfirst(i2, pt, i_pt, heap,
@@ -10306,7 +10306,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_
  *                                               reduced_dist_LB_1)
  *         return 0
  */
-      __pyx_t_2 = ((struct __pyx_vtabstruct_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_query_single_depthfirst(__pyx_v_self, __pyx_v_i1, __pyx_v_pt, __pyx_v_i_pt, __pyx_v_heap, __pyx_v_reduced_dist_LB_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1155, __pyx_L1_error)
+      __pyx_t_2 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self->__pyx_vtab)->_query_single_depthfirst(__pyx_v_self, __pyx_v_i1, __pyx_v_pt, __pyx_v_i_pt, __pyx_v_heap, __pyx_v_reduced_dist_LB_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1155, __pyx_L1_error)
     }
     __pyx_L6:;
   }
@@ -10336,7 +10336,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_
     #ifdef WITH_THREAD
     PyGILState_STATE __pyx_gilstate_save = __Pyx_PyGILState_Ensure();
     #endif
-    __Pyx_AddTraceback("_kd_tree.BinaryTree._query_single_depthfirst", __pyx_clineno, __pyx_lineno, __pyx_filename);
+    __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree._query_single_depthfirst", __pyx_clineno, __pyx_lineno, __pyx_filename);
     #ifdef WITH_THREAD
     __Pyx_PyGILState_Release(__pyx_gilstate_save);
     #endif
@@ -10354,25 +10354,25 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst(struct __pyx_
  *                                         NeighborsHeap heap,
  */
 
-static int __pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_pt, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_pt, struct __pyx_obj_8_kd_tree_NeighborsHeap *__pyx_v_heap, struct __pyx_obj_8_kd_tree_NodeHeap *__pyx_v_nodeheap) {
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_dist_pt;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_reduced_dist_LB;
-  struct __pyx_t_8_kd_tree_NodeData_t *__pyx_v_node_data;
-  CYTHON_UNUSED __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_data;
-  struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_v_nodeheap_item;
-  CYTHON_UNUSED struct __pyx_t_8_kd_tree_NodeData_t __pyx_v_node_info;
+static int __pyx_f_4AKNN_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_pt, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_pt, struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *__pyx_v_heap, struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *__pyx_v_nodeheap) {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_dist_pt;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_reduced_dist_LB;
+  struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *__pyx_v_node_data;
+  CYTHON_UNUSED __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_data;
+  struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_v_nodeheap_item;
+  CYTHON_UNUSED struct __pyx_t_4AKNN_8_kd_tree_NodeData_t __pyx_v_node_info;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   Py_ssize_t __pyx_t_1;
   int __pyx_t_2;
   Py_ssize_t __pyx_t_3;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_t_4;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_t_4;
   int __pyx_t_5;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_6;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_7;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_8;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_6;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_7;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_8;
   Py_ssize_t __pyx_t_9;
   long __pyx_t_10;
   long __pyx_t_11;
@@ -10399,7 +10399,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __py
     __Pyx_RaiseBufferIndexError(__pyx_t_2);
     __PYX_ERR(0, 1166, __pyx_L1_error)
   }
-  __pyx_v_node_data = (&(*((struct __pyx_t_8_kd_tree_NodeData_t const  *) ( /* dim=0 */ ((char *) (((struct __pyx_t_8_kd_tree_NodeData_t const  *) __pyx_v_self->node_data.data) + __pyx_t_1)) ))));
+  __pyx_v_node_data = (&(*((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t const  *) ( /* dim=0 */ ((char *) (((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t const  *) __pyx_v_self->node_data.data) + __pyx_t_1)) ))));
 
   /* "AKNN/_binary_tree.pxi":1167
  *         cdef DTYPE_t dist_pt, reduced_dist_LB
@@ -10424,7 +10424,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __py
     __Pyx_RaiseBufferIndexError(__pyx_t_2);
     __PYX_ERR(0, 1167, __pyx_L1_error)
   }
-  __pyx_v_data = (&(*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=0 */ (__pyx_v_self->data.data + __pyx_t_1 * __pyx_v_self->data.strides[0]) )) + __pyx_t_3)) ))));
+  __pyx_v_data = (&(*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=0 */ (__pyx_v_self->data.data + __pyx_t_1 * __pyx_v_self->data.strides[0]) )) + __pyx_t_3)) ))));
 
   /* "AKNN/_binary_tree.pxi":1171
  *         # Set up the node heap and push the head node onto it
@@ -10433,7 +10433,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __py
  *         nodeheap_item.i1 = 0
  *         nodeheap.push(nodeheap_item)
  */
-  __pyx_t_4 = __pyx_f_8_kd_tree_min_rdist(__pyx_v_self, 0, __pyx_v_pt); if (unlikely(__pyx_t_4 == ((__pyx_t_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1171, __pyx_L1_error)
+  __pyx_t_4 = __pyx_f_4AKNN_8_kd_tree_min_rdist(__pyx_v_self, 0, __pyx_v_pt); if (unlikely(__pyx_t_4 == ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1171, __pyx_L1_error)
   __pyx_v_nodeheap_item.val = __pyx_t_4;
 
   /* "AKNN/_binary_tree.pxi":1172
@@ -10452,7 +10452,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __py
  * 
  *         while nodeheap.n > 0:
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_8_kd_tree_NodeHeap *)__pyx_v_nodeheap->__pyx_vtab)->push(__pyx_v_nodeheap, __pyx_v_nodeheap_item); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1173, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_NodeHeap *)__pyx_v_nodeheap->__pyx_vtab)->push(__pyx_v_nodeheap, __pyx_v_nodeheap_item); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1173, __pyx_L1_error)
 
   /* "AKNN/_binary_tree.pxi":1175
  *         nodeheap.push(nodeheap_item)
@@ -10472,7 +10472,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __py
  *             reduced_dist_LB = nodeheap_item.val
  *             i_node = nodeheap_item.i1
  */
-    __pyx_v_nodeheap_item = ((struct __pyx_vtabstruct_8_kd_tree_NodeHeap *)__pyx_v_nodeheap->__pyx_vtab)->pop(__pyx_v_nodeheap);
+    __pyx_v_nodeheap_item = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_NodeHeap *)__pyx_v_nodeheap->__pyx_vtab)->pop(__pyx_v_nodeheap);
 
     /* "AKNN/_binary_tree.pxi":1177
  *         while nodeheap.n > 0:
@@ -10510,7 +10510,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __py
  *                 self.n_trims += 1
  * 
  */
-    __pyx_t_4 = __pyx_f_8_kd_tree_13NeighborsHeap_largest(__pyx_v_heap, __pyx_v_i_pt); if (unlikely(__pyx_t_4 == ((__pyx_t_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1184, __pyx_L1_error)
+    __pyx_t_4 = __pyx_f_4AKNN_8_kd_tree_13NeighborsHeap_largest(__pyx_v_heap, __pyx_v_i_pt); if (unlikely(__pyx_t_4 == ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1184, __pyx_L1_error)
     __pyx_t_5 = ((__pyx_v_reduced_dist_LB > __pyx_t_4) != 0);
     if (__pyx_t_5) {
 
@@ -10591,7 +10591,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __py
           __Pyx_RaiseBufferIndexError(__pyx_t_2);
           __PYX_ERR(0, 1194, __pyx_L1_error)
         }
-        __pyx_t_1 = (*((__pyx_t_8_kd_tree_ITYPE_t const  *) ( /* dim=0 */ ((char *) (((__pyx_t_8_kd_tree_ITYPE_t const  *) __pyx_v_self->idx_array.data) + __pyx_t_3)) )));
+        __pyx_t_1 = (*((__pyx_t_4AKNN_8_kd_tree_ITYPE_t const  *) ( /* dim=0 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_ITYPE_t const  *) __pyx_v_self->idx_array.data) + __pyx_t_3)) )));
         __pyx_t_9 = 0;
         __pyx_t_2 = -1;
         if (__pyx_t_1 < 0) {
@@ -10623,7 +10623,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __py
  *                                          &self.data[self.idx_array[i], 0],
  *                                          self.data.shape[1])
  */
-        __pyx_t_4 = __pyx_f_8_kd_tree_10BinaryTree_rdist(__pyx_v_self, __pyx_v_pt, (&(*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=0 */ (__pyx_v_self->data.data + __pyx_t_1 * __pyx_v_self->data.strides[0]) )) + __pyx_t_9)) )))), (__pyx_v_self->data.shape[1])); if (unlikely(__pyx_t_4 == ((__pyx_t_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1193, __pyx_L1_error)
+        __pyx_t_4 = __pyx_f_4AKNN_8_kd_tree_10BinaryTree_rdist(__pyx_v_self, __pyx_v_pt, (&(*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=0 */ (__pyx_v_self->data.data + __pyx_t_1 * __pyx_v_self->data.strides[0]) )) + __pyx_t_9)) )))), (__pyx_v_self->data.shape[1])); if (unlikely(__pyx_t_4 == ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1193, __pyx_L1_error)
         __pyx_v_dist_pt = __pyx_t_4;
 
         /* "AKNN/_binary_tree.pxi":1196
@@ -10644,7 +10644,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __py
           __Pyx_RaiseBufferIndexError(__pyx_t_2);
           __PYX_ERR(0, 1196, __pyx_L1_error)
         }
-        __pyx_t_2 = ((struct __pyx_vtabstruct_8_kd_tree_NeighborsHeap *)__pyx_v_heap->__pyx_vtab)->_push(__pyx_v_heap, __pyx_v_i_pt, __pyx_v_dist_pt, (*((__pyx_t_8_kd_tree_ITYPE_t const  *) ( /* dim=0 */ ((char *) (((__pyx_t_8_kd_tree_ITYPE_t const  *) __pyx_v_self->idx_array.data) + __pyx_t_3)) )))); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1196, __pyx_L1_error)
+        __pyx_t_2 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_NeighborsHeap *)__pyx_v_heap->__pyx_vtab)->_push(__pyx_v_heap, __pyx_v_i_pt, __pyx_v_dist_pt, (*((__pyx_t_4AKNN_8_kd_tree_ITYPE_t const  *) ( /* dim=0 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_ITYPE_t const  *) __pyx_v_self->idx_array.data) + __pyx_t_3)) )))); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1196, __pyx_L1_error)
       }
 
       /* "AKNN/_binary_tree.pxi":1189
@@ -10695,7 +10695,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __py
  *                     nodeheap.push(nodeheap_item)
  *         return 0
  */
-        __pyx_t_4 = __pyx_f_8_kd_tree_min_rdist(__pyx_v_self, __pyx_v_i, __pyx_v_pt); if (unlikely(__pyx_t_4 == ((__pyx_t_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1204, __pyx_L1_error)
+        __pyx_t_4 = __pyx_f_4AKNN_8_kd_tree_min_rdist(__pyx_v_self, __pyx_v_i, __pyx_v_pt); if (unlikely(__pyx_t_4 == ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(0, 1204, __pyx_L1_error)
         __pyx_v_nodeheap_item.val = __pyx_t_4;
 
         /* "AKNN/_binary_tree.pxi":1205
@@ -10705,7 +10705,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __py
  *         return 0
  * 
  */
-        __pyx_t_2 = ((struct __pyx_vtabstruct_8_kd_tree_NodeHeap *)__pyx_v_nodeheap->__pyx_vtab)->push(__pyx_v_nodeheap, __pyx_v_nodeheap_item); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1205, __pyx_L1_error)
+        __pyx_t_2 = ((struct __pyx_vtabstruct_4AKNN_8_kd_tree_NodeHeap *)__pyx_v_nodeheap->__pyx_vtab)->push(__pyx_v_nodeheap, __pyx_v_nodeheap_item); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 1205, __pyx_L1_error)
       }
     }
     __pyx_L5:;
@@ -10731,7 +10731,7 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __py
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("_kd_tree.BinaryTree._query_single_breadthfirst", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree._query_single_breadthfirst", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -10747,19 +10747,19 @@ static int __pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst(struct __py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_4data_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_4data_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_4data_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_4data_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree_4data___get__(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_4data___get__(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_4data___get__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_4data___get__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -10769,7 +10769,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_4data___get__(struct __pyx_obj_
   __Pyx_RefNannySetupContext("__get__", 0);
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(!__pyx_v_self->data.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(0, 813, __pyx_L1_error)}
-  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_self->data, 2, (PyObject *(*)(char *)) __pyx_memview_get_nn___pyx_t_8_kd_tree_DTYPE_t__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 813, __pyx_L1_error)
+  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_self->data, 2, (PyObject *(*)(char *)) __pyx_memview_get_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 813, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -10778,7 +10778,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_4data___get__(struct __pyx_obj_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.data.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.data.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -10795,19 +10795,19 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_4data___get__(struct __pyx_obj_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_10sum_weight_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_10sum_weight_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_10sum_weight_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_10sum_weight_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree_10sum_weight___get__(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_10sum_weight___get__(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_10sum_weight___get__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_10sum_weight___get__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -10825,7 +10825,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_10sum_weight___get__(struct __p
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.sum_weight.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.sum_weight.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -10834,22 +10834,22 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_10sum_weight___get__(struct __p
 }
 
 /* Python wrapper */
-static int __pyx_pw_8_kd_tree_10BinaryTree_10sum_weight_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-static int __pyx_pw_8_kd_tree_10BinaryTree_10sum_weight_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_10sum_weight_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
+static int __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_10sum_weight_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree_10sum_weight_2__set__(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self), ((PyObject *)__pyx_v_value));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_10sum_weight_2__set__(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self), ((PyObject *)__pyx_v_value));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_8_kd_tree_10BinaryTree_10sum_weight_2__set__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_10sum_weight_2__set__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_t_1;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_t_1;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -10861,7 +10861,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_10sum_weight_2__set__(struct __pyx_ob
   __pyx_r = 0;
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.sum_weight.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.sum_weight.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -10877,19 +10877,19 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_10sum_weight_2__set__(struct __pyx_ob
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_9idx_array_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_9idx_array_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_9idx_array_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_9idx_array_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree_9idx_array___get__(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_9idx_array___get__(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_9idx_array___get__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_9idx_array___get__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -10899,7 +10899,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_9idx_array___get__(struct __pyx
   __Pyx_RefNannySetupContext("__get__", 0);
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(!__pyx_v_self->idx_array.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(0, 820, __pyx_L1_error)}
-  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_self->idx_array, 1, (PyObject *(*)(char *)) __pyx_memview_get_nn___pyx_t_8_kd_tree_ITYPE_t__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 820, __pyx_L1_error)
+  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_self->idx_array, 1, (PyObject *(*)(char *)) __pyx_memview_get_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 820, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -10908,7 +10908,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_9idx_array___get__(struct __pyx
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.idx_array.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.idx_array.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -10917,19 +10917,19 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_9idx_array___get__(struct __pyx
 }
 
 /* Python wrapper */
-static int __pyx_pw_8_kd_tree_10BinaryTree_9idx_array_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-static int __pyx_pw_8_kd_tree_10BinaryTree_9idx_array_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_9idx_array_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
+static int __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_9idx_array_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree_9idx_array_2__set__(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self), ((PyObject *)__pyx_v_value));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_9idx_array_2__set__(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self), ((PyObject *)__pyx_v_value));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_8_kd_tree_10BinaryTree_9idx_array_2__set__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_9idx_array_2__set__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -10937,7 +10937,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_9idx_array_2__set__(struct __pyx_obj_
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__set__", 0);
-  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_8_kd_tree_ITYPE_t__const__(__pyx_v_value, 0); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 820, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t__const__(__pyx_v_value, 0); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 820, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->idx_array, 0);
   __pyx_v_self->idx_array = __pyx_t_1;
   __pyx_t_1.memview = NULL;
@@ -10948,7 +10948,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_9idx_array_2__set__(struct __pyx_obj_
   goto __pyx_L0;
   __pyx_L1_error:;
   __PYX_XDEC_MEMVIEW(&__pyx_t_1, 1);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.idx_array.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.idx_array.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -10964,19 +10964,19 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_9idx_array_2__set__(struct __pyx_obj_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_9node_data_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_9node_data_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_9node_data_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_9node_data_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree_9node_data___get__(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_9node_data___get__(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_9node_data___get__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_9node_data___get__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -10986,7 +10986,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_9node_data___get__(struct __pyx
   __Pyx_RefNannySetupContext("__get__", 0);
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(!__pyx_v_self->node_data.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(0, 821, __pyx_L1_error)}
-  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_self->node_data, 1, (PyObject *(*)(char *)) __pyx_memview_get_nn_struct____pyx_t_8_kd_tree_NodeData_t__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 821, __pyx_L1_error)
+  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_self->node_data, 1, (PyObject *(*)(char *)) __pyx_memview_get_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 821, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -10995,7 +10995,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_9node_data___get__(struct __pyx
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.node_data.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.node_data.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -11004,19 +11004,19 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_9node_data___get__(struct __pyx
 }
 
 /* Python wrapper */
-static int __pyx_pw_8_kd_tree_10BinaryTree_9node_data_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-static int __pyx_pw_8_kd_tree_10BinaryTree_9node_data_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_9node_data_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
+static int __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_9node_data_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree_9node_data_2__set__(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self), ((PyObject *)__pyx_v_value));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_9node_data_2__set__(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self), ((PyObject *)__pyx_v_value));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_8_kd_tree_10BinaryTree_9node_data_2__set__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_9node_data_2__set__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -11024,7 +11024,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_9node_data_2__set__(struct __pyx_obj_
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__set__", 0);
-  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_8_kd_tree_NodeData_t__const__(__pyx_v_value, 0); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 821, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t__const__(__pyx_v_value, 0); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 821, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->node_data, 0);
   __pyx_v_self->node_data = __pyx_t_1;
   __pyx_t_1.memview = NULL;
@@ -11035,7 +11035,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_9node_data_2__set__(struct __pyx_obj_
   goto __pyx_L0;
   __pyx_L1_error:;
   __PYX_XDEC_MEMVIEW(&__pyx_t_1, 1);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.node_data.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.node_data.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -11051,19 +11051,19 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_9node_data_2__set__(struct __pyx_obj_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_11node_bounds_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_11node_bounds_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_11node_bounds_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_11node_bounds_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree_11node_bounds___get__(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_11node_bounds___get__(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_11node_bounds___get__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_11node_bounds___get__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -11073,7 +11073,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_11node_bounds___get__(struct __
   __Pyx_RefNannySetupContext("__get__", 0);
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(!__pyx_v_self->node_bounds.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(0, 822, __pyx_L1_error)}
-  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_self->node_bounds, 3, (PyObject *(*)(char *)) __pyx_memview_get_nn___pyx_t_8_kd_tree_DTYPE_t__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 822, __pyx_L1_error)
+  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_self->node_bounds, 3, (PyObject *(*)(char *)) __pyx_memview_get_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__, (int (*)(char *, PyObject *)) NULL, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 822, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -11082,7 +11082,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_11node_bounds___get__(struct __
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.node_bounds.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.node_bounds.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -11091,19 +11091,19 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_11node_bounds___get__(struct __
 }
 
 /* Python wrapper */
-static int __pyx_pw_8_kd_tree_10BinaryTree_11node_bounds_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-static int __pyx_pw_8_kd_tree_10BinaryTree_11node_bounds_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_11node_bounds_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
+static int __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_11node_bounds_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree_11node_bounds_2__set__(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self), ((PyObject *)__pyx_v_value));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_11node_bounds_2__set__(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self), ((PyObject *)__pyx_v_value));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_8_kd_tree_10BinaryTree_11node_bounds_2__set__(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_11node_bounds_2__set__(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -11111,7 +11111,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_11node_bounds_2__set__(struct __pyx_o
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__set__", 0);
-  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_nn___pyx_t_8_kd_tree_DTYPE_t__const__(__pyx_v_value, 0); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 822, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__(__pyx_v_value, 0); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 822, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->node_bounds, 0);
   __pyx_v_self->node_bounds = __pyx_t_1;
   __pyx_t_1.memview = NULL;
@@ -11122,7 +11122,7 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_11node_bounds_2__set__(struct __pyx_o
   goto __pyx_L0;
   __pyx_L1_error:;
   __PYX_XDEC_MEMVIEW(&__pyx_t_1, 1);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.node_bounds.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.node_bounds.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -11136,19 +11136,19 @@ static int __pyx_pf_8_kd_tree_10BinaryTree_11node_bounds_2__set__(struct __pyx_o
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_11__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_11__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_11__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_11__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree_10__reduce_cython__(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_10__reduce_cython__(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_10__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_10__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -11178,7 +11178,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_10__reduce_cython__(CYTHON_UNUS
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -11193,19 +11193,19 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_10__reduce_cython__(CYTHON_UNUS
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_13__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_8_kd_tree_10BinaryTree_13__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_13__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_13__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_10BinaryTree_12__setstate_cython__(((struct __pyx_obj_8_kd_tree_BinaryTree *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_10BinaryTree_12__setstate_cython__(((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_12__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_10BinaryTree_12__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -11235,7 +11235,7 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_12__setstate_cython__(CYTHON_UN
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_kd_tree.BinaryTree.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.BinaryTree.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -11249,19 +11249,19 @@ static PyObject *__pyx_pf_8_kd_tree_10BinaryTree_12__setstate_cython__(CYTHON_UN
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_6KDTree_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_8_kd_tree_6KDTree_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_6KDTree_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_6KDTree_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_6KDTree___reduce_cython__(((struct __pyx_obj_8_kd_tree_KDTree *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_6KDTree___reduce_cython__(((struct __pyx_obj_4AKNN_8_kd_tree_KDTree *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_6KDTree___reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_KDTree *__pyx_v_self) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_6KDTree___reduce_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_KDTree *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -11291,7 +11291,7 @@ static PyObject *__pyx_pf_8_kd_tree_6KDTree___reduce_cython__(CYTHON_UNUSED stru
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_kd_tree.KDTree.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.KDTree.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -11306,19 +11306,19 @@ static PyObject *__pyx_pf_8_kd_tree_6KDTree___reduce_cython__(CYTHON_UNUSED stru
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8_kd_tree_6KDTree_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_8_kd_tree_6KDTree_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_6KDTree_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_4AKNN_8_kd_tree_6KDTree_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_8_kd_tree_6KDTree_2__setstate_cython__(((struct __pyx_obj_8_kd_tree_KDTree *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_4AKNN_8_kd_tree_6KDTree_2__setstate_cython__(((struct __pyx_obj_4AKNN_8_kd_tree_KDTree *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8_kd_tree_6KDTree_2__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8_kd_tree_KDTree *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_4AKNN_8_kd_tree_6KDTree_2__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_4AKNN_8_kd_tree_KDTree *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -11348,14 +11348,14 @@ static PyObject *__pyx_pf_8_kd_tree_6KDTree_2__setstate_cython__(CYTHON_UNUSED s
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("_kd_tree.KDTree.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.KDTree.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_kd_tree.pyx":29
+/* "AKNN/_kd_tree.pyx":29
  * 
  * 
  * cdef int allocate_data(BinaryTree tree, ITYPE_t n_nodes,             # <<<<<<<<<<<<<<
@@ -11363,7 +11363,7 @@ static PyObject *__pyx_pf_8_kd_tree_6KDTree_2__setstate_cython__(CYTHON_UNUSED s
  *     """Allocate arrays needed for the KD Tree"""
  */
 
-static int __pyx_f_8_kd_tree_allocate_data(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_tree, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_n_nodes, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_n_features) {
+static int __pyx_f_4AKNN_8_kd_tree_allocate_data(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_tree, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_n_nodes, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_n_features) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -11376,7 +11376,7 @@ static int __pyx_f_8_kd_tree_allocate_data(struct __pyx_obj_8_kd_tree_BinaryTree
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("allocate_data", 0);
 
-  /* "_kd_tree.pyx":32
+  /* "AKNN/_kd_tree.pyx":32
  *                        ITYPE_t n_features) except -1:
  *     """Allocate arrays needed for the KD Tree"""
  *     tree.node_bounds_arr = np.zeros((2, n_nodes, n_features), dtype=DTYPE)             # <<<<<<<<<<<<<<
@@ -11426,20 +11426,20 @@ static int __pyx_f_8_kd_tree_allocate_data(struct __pyx_obj_8_kd_tree_BinaryTree
   __pyx_v_tree->node_bounds_arr = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "_kd_tree.pyx":33
+  /* "AKNN/_kd_tree.pyx":33
  *     """Allocate arrays needed for the KD Tree"""
  *     tree.node_bounds_arr = np.zeros((2, n_nodes, n_features), dtype=DTYPE)
  *     tree.node_bounds = tree.node_bounds_arr             # <<<<<<<<<<<<<<
  *     return 0
  * 
  */
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_nn___pyx_t_8_kd_tree_DTYPE_t__const__(((PyObject *)__pyx_v_tree->node_bounds_arr), 0); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(2, 33, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__(((PyObject *)__pyx_v_tree->node_bounds_arr), 0); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(2, 33, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_tree->node_bounds, 0);
   __pyx_v_tree->node_bounds = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "_kd_tree.pyx":34
+  /* "AKNN/_kd_tree.pyx":34
  *     tree.node_bounds_arr = np.zeros((2, n_nodes, n_features), dtype=DTYPE)
  *     tree.node_bounds = tree.node_bounds_arr
  *     return 0             # <<<<<<<<<<<<<<
@@ -11449,7 +11449,7 @@ static int __pyx_f_8_kd_tree_allocate_data(struct __pyx_obj_8_kd_tree_BinaryTree
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_kd_tree.pyx":29
+  /* "AKNN/_kd_tree.pyx":29
  * 
  * 
  * cdef int allocate_data(BinaryTree tree, ITYPE_t n_nodes,             # <<<<<<<<<<<<<<
@@ -11464,14 +11464,14 @@ static int __pyx_f_8_kd_tree_allocate_data(struct __pyx_obj_8_kd_tree_BinaryTree
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __PYX_XDEC_MEMVIEW(&__pyx_t_5, 1);
-  __Pyx_AddTraceback("_kd_tree.allocate_data", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.allocate_data", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_kd_tree.pyx":37
+/* "AKNN/_kd_tree.pyx":37
  * 
  * 
  * cdef int init_node(BinaryTree tree, NodeData_t[::1] node_data, ITYPE_t i_node,             # <<<<<<<<<<<<<<
@@ -11479,34 +11479,34 @@ static int __pyx_f_8_kd_tree_allocate_data(struct __pyx_obj_8_kd_tree_BinaryTree
  *     """Initialize the node for the dataset stored in tree.data"""
  */
 
-static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_tree, __Pyx_memviewslice __pyx_v_node_data, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_idx_start, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_idx_end) {
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_n_features;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_j;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_rad;
-  __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_lower_bounds;
-  __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_upper_bounds;
-  __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_data;
-  __pyx_t_8_kd_tree_ITYPE_t *__pyx_v_idx_array;
-  __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_data_row;
+static int __pyx_f_4AKNN_8_kd_tree_init_node(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_tree, __Pyx_memviewslice __pyx_v_node_data, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_idx_start, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_idx_end) {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_n_features;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_j;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_rad;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_lower_bounds;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_upper_bounds;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_data;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t *__pyx_v_idx_array;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_data_row;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   Py_ssize_t __pyx_t_1;
   Py_ssize_t __pyx_t_2;
   Py_ssize_t __pyx_t_3;
   int __pyx_t_4;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_5;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_6;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_7;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_8;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_9;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_10;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_5;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_6;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_7;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_8;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_9;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_10;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("init_node", 0);
 
-  /* "_kd_tree.pyx":40
+  /* "AKNN/_kd_tree.pyx":40
  *                    ITYPE_t idx_start, ITYPE_t idx_end) except -1:
  *     """Initialize the node for the dataset stored in tree.data"""
  *     cdef ITYPE_t n_features = tree.data.shape[1]             # <<<<<<<<<<<<<<
@@ -11516,7 +11516,7 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
   if (unlikely(!__pyx_v_tree->data.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(2, 40, __pyx_L1_error)}
   __pyx_v_n_features = (__pyx_v_tree->data.shape[1]);
 
-  /* "_kd_tree.pyx":42
+  /* "AKNN/_kd_tree.pyx":42
  *     cdef ITYPE_t n_features = tree.data.shape[1]
  *     cdef ITYPE_t i, j
  *     cdef DTYPE_t rad = 0             # <<<<<<<<<<<<<<
@@ -11525,7 +11525,7 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
  */
   __pyx_v_rad = 0.0;
 
-  /* "_kd_tree.pyx":44
+  /* "AKNN/_kd_tree.pyx":44
  *     cdef DTYPE_t rad = 0
  * 
  *     cdef DTYPE_t* lower_bounds = &tree.node_bounds[0, i_node, 0]             # <<<<<<<<<<<<<<
@@ -11553,9 +11553,9 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
     __Pyx_RaiseBufferIndexError(__pyx_t_4);
     __PYX_ERR(2, 44, __pyx_L1_error)
   }
-  __pyx_v_lower_bounds = (&(*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_1 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_2 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_3)) ))));
+  __pyx_v_lower_bounds = (&(*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_1 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_2 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_3)) ))));
 
-  /* "_kd_tree.pyx":45
+  /* "AKNN/_kd_tree.pyx":45
  * 
  *     cdef DTYPE_t* lower_bounds = &tree.node_bounds[0, i_node, 0]
  *     cdef DTYPE_t* upper_bounds = &tree.node_bounds[1, i_node, 0]             # <<<<<<<<<<<<<<
@@ -11583,9 +11583,9 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
     __Pyx_RaiseBufferIndexError(__pyx_t_4);
     __PYX_ERR(2, 45, __pyx_L1_error)
   }
-  __pyx_v_upper_bounds = (&(*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_3 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_2 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_1)) ))));
+  __pyx_v_upper_bounds = (&(*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_3 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_2 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_1)) ))));
 
-  /* "_kd_tree.pyx":46
+  /* "AKNN/_kd_tree.pyx":46
  *     cdef DTYPE_t* lower_bounds = &tree.node_bounds[0, i_node, 0]
  *     cdef DTYPE_t* upper_bounds = &tree.node_bounds[1, i_node, 0]
  *     cdef DTYPE_t* data = &tree.data[0, 0]             # <<<<<<<<<<<<<<
@@ -11608,9 +11608,9 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
     __Pyx_RaiseBufferIndexError(__pyx_t_4);
     __PYX_ERR(2, 46, __pyx_L1_error)
   }
-  __pyx_v_data = (&(*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=0 */ (__pyx_v_tree->data.data + __pyx_t_1 * __pyx_v_tree->data.strides[0]) )) + __pyx_t_2)) ))));
+  __pyx_v_data = (&(*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=0 */ (__pyx_v_tree->data.data + __pyx_t_1 * __pyx_v_tree->data.strides[0]) )) + __pyx_t_2)) ))));
 
-  /* "_kd_tree.pyx":47
+  /* "AKNN/_kd_tree.pyx":47
  *     cdef DTYPE_t* upper_bounds = &tree.node_bounds[1, i_node, 0]
  *     cdef DTYPE_t* data = &tree.data[0, 0]
  *     cdef ITYPE_t* idx_array = &tree.idx_array[0]             # <<<<<<<<<<<<<<
@@ -11628,9 +11628,9 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
     __Pyx_RaiseBufferIndexError(__pyx_t_4);
     __PYX_ERR(2, 47, __pyx_L1_error)
   }
-  __pyx_v_idx_array = (&(*((__pyx_t_8_kd_tree_ITYPE_t const  *) ( /* dim=0 */ ((char *) (((__pyx_t_8_kd_tree_ITYPE_t const  *) __pyx_v_tree->idx_array.data) + __pyx_t_2)) ))));
+  __pyx_v_idx_array = (&(*((__pyx_t_4AKNN_8_kd_tree_ITYPE_t const  *) ( /* dim=0 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_ITYPE_t const  *) __pyx_v_tree->idx_array.data) + __pyx_t_2)) ))));
 
-  /* "_kd_tree.pyx":52
+  /* "AKNN/_kd_tree.pyx":52
  * 
  *     # determine Node bounds
  *     for j in range(n_features):             # <<<<<<<<<<<<<<
@@ -11642,26 +11642,26 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
   for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
     __pyx_v_j = __pyx_t_7;
 
-    /* "_kd_tree.pyx":53
+    /* "AKNN/_kd_tree.pyx":53
  *     # determine Node bounds
  *     for j in range(n_features):
  *         lower_bounds[j] = INF             # <<<<<<<<<<<<<<
  *         upper_bounds[j] = -INF
  * 
  */
-    (__pyx_v_lower_bounds[__pyx_v_j]) = __pyx_v_8_kd_tree_INF;
+    (__pyx_v_lower_bounds[__pyx_v_j]) = __pyx_v_4AKNN_8_kd_tree_INF;
 
-    /* "_kd_tree.pyx":54
+    /* "AKNN/_kd_tree.pyx":54
  *     for j in range(n_features):
  *         lower_bounds[j] = INF
  *         upper_bounds[j] = -INF             # <<<<<<<<<<<<<<
  * 
  *     # Compute the actual data range.  At build time, this is slightly
  */
-    (__pyx_v_upper_bounds[__pyx_v_j]) = (-__pyx_v_8_kd_tree_INF);
+    (__pyx_v_upper_bounds[__pyx_v_j]) = (-__pyx_v_4AKNN_8_kd_tree_INF);
   }
 
-  /* "_kd_tree.pyx":59
+  /* "AKNN/_kd_tree.pyx":59
  *     # slower than using the previously-computed bounds of the parent node,
  *     # but leads to more compact trees and thus faster queries.
  *     for i in range(idx_start, idx_end):             # <<<<<<<<<<<<<<
@@ -11673,7 +11673,7 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
   for (__pyx_t_7 = __pyx_v_idx_start; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
     __pyx_v_i = __pyx_t_7;
 
-    /* "_kd_tree.pyx":60
+    /* "AKNN/_kd_tree.pyx":60
  *     # but leads to more compact trees and thus faster queries.
  *     for i in range(idx_start, idx_end):
  *         data_row = data + idx_array[i] * n_features             # <<<<<<<<<<<<<<
@@ -11682,7 +11682,7 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
  */
     __pyx_v_data_row = (__pyx_v_data + ((__pyx_v_idx_array[__pyx_v_i]) * __pyx_v_n_features));
 
-    /* "_kd_tree.pyx":61
+    /* "AKNN/_kd_tree.pyx":61
  *     for i in range(idx_start, idx_end):
  *         data_row = data + idx_array[i] * n_features
  *         for j in range(n_features):             # <<<<<<<<<<<<<<
@@ -11694,7 +11694,7 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
     for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
       __pyx_v_j = __pyx_t_10;
 
-      /* "_kd_tree.pyx":62
+      /* "AKNN/_kd_tree.pyx":62
  *         data_row = data + idx_array[i] * n_features
  *         for j in range(n_features):
  *             lower_bounds[j] = fmin(lower_bounds[j], data_row[j])             # <<<<<<<<<<<<<<
@@ -11703,7 +11703,7 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
  */
       (__pyx_v_lower_bounds[__pyx_v_j]) = fmin((__pyx_v_lower_bounds[__pyx_v_j]), (__pyx_v_data_row[__pyx_v_j]));
 
-      /* "_kd_tree.pyx":63
+      /* "AKNN/_kd_tree.pyx":63
  *         for j in range(n_features):
  *             lower_bounds[j] = fmin(lower_bounds[j], data_row[j])
  *             upper_bounds[j] = fmax(upper_bounds[j], data_row[j])             # <<<<<<<<<<<<<<
@@ -11714,7 +11714,7 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
     }
   }
 
-  /* "_kd_tree.pyx":65
+  /* "AKNN/_kd_tree.pyx":65
  *             upper_bounds[j] = fmax(upper_bounds[j], data_row[j])
  * 
  *     for j in range(n_features):             # <<<<<<<<<<<<<<
@@ -11726,7 +11726,7 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
   for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
     __pyx_v_j = __pyx_t_7;
 
-    /* "_kd_tree.pyx":67
+    /* "AKNN/_kd_tree.pyx":67
  *     for j in range(n_features):
  * 
  *         rad += pow(0.5 * abs(upper_bounds[j] - lower_bounds[j]),             # <<<<<<<<<<<<<<
@@ -11736,7 +11736,7 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
     __pyx_v_rad = (__pyx_v_rad + pow((0.5 * fabs(((__pyx_v_upper_bounds[__pyx_v_j]) - (__pyx_v_lower_bounds[__pyx_v_j])))), 2.0));
   }
 
-  /* "_kd_tree.pyx":70
+  /* "AKNN/_kd_tree.pyx":70
  *                    2)
  * 
  *     node_data[i_node].idx_start = idx_start             # <<<<<<<<<<<<<<
@@ -11753,9 +11753,9 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
     __Pyx_RaiseBufferIndexError(__pyx_t_4);
     __PYX_ERR(2, 70, __pyx_L1_error)
   }
-  (*((struct __pyx_t_8_kd_tree_NodeData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_8_kd_tree_NodeData_t *) __pyx_v_node_data.data) + __pyx_t_2)) ))).idx_start = __pyx_v_idx_start;
+  (*((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *) __pyx_v_node_data.data) + __pyx_t_2)) ))).idx_start = __pyx_v_idx_start;
 
-  /* "_kd_tree.pyx":71
+  /* "AKNN/_kd_tree.pyx":71
  * 
  *     node_data[i_node].idx_start = idx_start
  *     node_data[i_node].idx_end = idx_end             # <<<<<<<<<<<<<<
@@ -11772,9 +11772,9 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
     __Pyx_RaiseBufferIndexError(__pyx_t_4);
     __PYX_ERR(2, 71, __pyx_L1_error)
   }
-  (*((struct __pyx_t_8_kd_tree_NodeData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_8_kd_tree_NodeData_t *) __pyx_v_node_data.data) + __pyx_t_2)) ))).idx_end = __pyx_v_idx_end;
+  (*((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *) __pyx_v_node_data.data) + __pyx_t_2)) ))).idx_end = __pyx_v_idx_end;
 
-  /* "_kd_tree.pyx":76
+  /* "AKNN/_kd_tree.pyx":76
  *     # with the specified metric: in querying, this is used as a measure of the
  *     # size of each node when deciding which nodes to split.
  *     node_data[i_node].radius = pow(rad, 1. / 2)             # <<<<<<<<<<<<<<
@@ -11791,9 +11791,9 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
     __Pyx_RaiseBufferIndexError(__pyx_t_4);
     __PYX_ERR(2, 76, __pyx_L1_error)
   }
-  (*((struct __pyx_t_8_kd_tree_NodeData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_8_kd_tree_NodeData_t *) __pyx_v_node_data.data) + __pyx_t_2)) ))).radius = pow(__pyx_v_rad, (1. / 2.0));
+  (*((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *) ( /* dim=0 */ ((char *) (((struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *) __pyx_v_node_data.data) + __pyx_t_2)) ))).radius = pow(__pyx_v_rad, (1. / 2.0));
 
-  /* "_kd_tree.pyx":77
+  /* "AKNN/_kd_tree.pyx":77
  *     # size of each node when deciding which nodes to split.
  *     node_data[i_node].radius = pow(rad, 1. / 2)
  *     return 0             # <<<<<<<<<<<<<<
@@ -11803,7 +11803,7 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_kd_tree.pyx":37
+  /* "AKNN/_kd_tree.pyx":37
  * 
  * 
  * cdef int init_node(BinaryTree tree, NodeData_t[::1] node_data, ITYPE_t i_node,             # <<<<<<<<<<<<<<
@@ -11813,14 +11813,14 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("_kd_tree.init_node", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.init_node", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_kd_tree.pyx":80
+/* "AKNN/_kd_tree.pyx":80
  * 
  * 
  * cdef DTYPE_t min_rdist(BinaryTree tree, ITYPE_t i_node,             # <<<<<<<<<<<<<<
@@ -11828,17 +11828,17 @@ static int __pyx_f_8_kd_tree_init_node(struct __pyx_obj_8_kd_tree_BinaryTree *__
  *     """Compute the minimum reduced-distance between a point and a node"""
  */
 
-static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_tree, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_pt) {
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_n_features;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_d;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_d_lo;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_d_hi;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_rdist;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_j;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_r;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_1;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_2;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_3;
+static __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_min_rdist(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_tree, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_pt) {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_n_features;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_d;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_d_lo;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_d_hi;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_rdist;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_j;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_r;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_1;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_2;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_3;
   Py_ssize_t __pyx_t_4;
   Py_ssize_t __pyx_t_5;
   Py_ssize_t __pyx_t_6;
@@ -11847,7 +11847,7 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist(struct __pyx_obj_8_
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "_kd_tree.pyx":83
+  /* "AKNN/_kd_tree.pyx":83
  *                        DTYPE_t* pt) nogil except -1:
  *     """Compute the minimum reduced-distance between a point and a node"""
  *     cdef ITYPE_t n_features = tree.data.shape[1]             # <<<<<<<<<<<<<<
@@ -11857,7 +11857,7 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist(struct __pyx_obj_8_
   if (unlikely(!__pyx_v_tree->data.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(2, 83, __pyx_L1_error)}
   __pyx_v_n_features = (__pyx_v_tree->data.shape[1]);
 
-  /* "_kd_tree.pyx":84
+  /* "AKNN/_kd_tree.pyx":84
  *     """Compute the minimum reduced-distance between a point and a node"""
  *     cdef ITYPE_t n_features = tree.data.shape[1]
  *     cdef DTYPE_t d, d_lo, d_hi, rdist=0.0             # <<<<<<<<<<<<<<
@@ -11866,7 +11866,7 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist(struct __pyx_obj_8_
  */
   __pyx_v_rdist = 0.0;
 
-  /* "_kd_tree.pyx":88
+  /* "AKNN/_kd_tree.pyx":88
  * 
  * 
  *     for j in range(n_features):             # <<<<<<<<<<<<<<
@@ -11878,7 +11878,7 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist(struct __pyx_obj_8_
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_j = __pyx_t_3;
 
-    /* "_kd_tree.pyx":89
+    /* "AKNN/_kd_tree.pyx":89
  * 
  *     for j in range(n_features):
  *         d_lo = tree.node_bounds[0, i_node, j] - pt[j]             # <<<<<<<<<<<<<<
@@ -11906,9 +11906,9 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist(struct __pyx_obj_8_
       __Pyx_RaiseBufferIndexErrorNogil(__pyx_t_7);
       __PYX_ERR(2, 89, __pyx_L1_error)
     }
-    __pyx_v_d_lo = ((*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_4 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_5 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_6)) ))) - (__pyx_v_pt[__pyx_v_j]));
+    __pyx_v_d_lo = ((*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_4 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_5 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_6)) ))) - (__pyx_v_pt[__pyx_v_j]));
 
-    /* "_kd_tree.pyx":90
+    /* "AKNN/_kd_tree.pyx":90
  *     for j in range(n_features):
  *         d_lo = tree.node_bounds[0, i_node, j] - pt[j]
  *         d_hi = pt[j] - tree.node_bounds[1, i_node, j]             # <<<<<<<<<<<<<<
@@ -11936,9 +11936,9 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist(struct __pyx_obj_8_
       __Pyx_RaiseBufferIndexErrorNogil(__pyx_t_7);
       __PYX_ERR(2, 90, __pyx_L1_error)
     }
-    __pyx_v_d_hi = ((__pyx_v_pt[__pyx_v_j]) - (*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_6 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_5 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_4)) ))));
+    __pyx_v_d_hi = ((__pyx_v_pt[__pyx_v_j]) - (*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_6 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_5 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_4)) ))));
 
-    /* "_kd_tree.pyx":91
+    /* "AKNN/_kd_tree.pyx":91
  *         d_lo = tree.node_bounds[0, i_node, j] - pt[j]
  *         d_hi = pt[j] - tree.node_bounds[1, i_node, j]
  *         d = (d_lo + fabs(d_lo)) + (d_hi + fabs(d_hi))             # <<<<<<<<<<<<<<
@@ -11947,7 +11947,7 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist(struct __pyx_obj_8_
  */
     __pyx_v_d = ((__pyx_v_d_lo + fabs(__pyx_v_d_lo)) + (__pyx_v_d_hi + fabs(__pyx_v_d_hi)));
 
-    /* "_kd_tree.pyx":92
+    /* "AKNN/_kd_tree.pyx":92
  *         d_hi = pt[j] - tree.node_bounds[1, i_node, j]
  *         d = (d_lo + fabs(d_lo)) + (d_hi + fabs(d_hi))
  *         rdist += pow(0.5 * d, 2)             # <<<<<<<<<<<<<<
@@ -11957,7 +11957,7 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist(struct __pyx_obj_8_
     __pyx_v_rdist = (__pyx_v_rdist + pow((0.5 * __pyx_v_d), 2.0));
   }
 
-  /* "_kd_tree.pyx":94
+  /* "AKNN/_kd_tree.pyx":94
  *         rdist += pow(0.5 * d, 2)
  * 
  *     return rdist             # <<<<<<<<<<<<<<
@@ -11967,7 +11967,7 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist(struct __pyx_obj_8_
   __pyx_r = __pyx_v_rdist;
   goto __pyx_L0;
 
-  /* "_kd_tree.pyx":80
+  /* "AKNN/_kd_tree.pyx":80
  * 
  * 
  * cdef DTYPE_t min_rdist(BinaryTree tree, ITYPE_t i_node,             # <<<<<<<<<<<<<<
@@ -11981,7 +11981,7 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist(struct __pyx_obj_8_
     #ifdef WITH_THREAD
     PyGILState_STATE __pyx_gilstate_save = __Pyx_PyGILState_Ensure();
     #endif
-    __Pyx_AddTraceback("_kd_tree.min_rdist", __pyx_clineno, __pyx_lineno, __pyx_filename);
+    __Pyx_AddTraceback("AKNN._kd_tree.min_rdist", __pyx_clineno, __pyx_lineno, __pyx_filename);
     #ifdef WITH_THREAD
     __Pyx_PyGILState_Release(__pyx_gilstate_save);
     #endif
@@ -11991,7 +11991,7 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist(struct __pyx_obj_8_
   return __pyx_r;
 }
 
-/* "_kd_tree.pyx":97
+/* "AKNN/_kd_tree.pyx":97
  * 
  * 
  * cdef DTYPE_t min_dist(BinaryTree tree, ITYPE_t i_node, DTYPE_t* pt) except -1:             # <<<<<<<<<<<<<<
@@ -11999,27 +11999,27 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist(struct __pyx_obj_8_
  * 
  */
 
-static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_dist(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_tree, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_pt) {
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_r;
+static __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_min_dist(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_tree, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_pt) {
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_r;
   __Pyx_RefNannyDeclarations
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_t_1;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_t_1;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("min_dist", 0);
 
-  /* "_kd_tree.pyx":100
+  /* "AKNN/_kd_tree.pyx":100
  *     """Compute the minimum distance between a point and a node"""
  * 
  *     return pow(min_rdist(tree, i_node, pt), 1. / 2)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = __pyx_f_8_kd_tree_min_rdist(__pyx_v_tree, __pyx_v_i_node, __pyx_v_pt); if (unlikely(__pyx_t_1 == ((__pyx_t_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(2, 100, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_4AKNN_8_kd_tree_min_rdist(__pyx_v_tree, __pyx_v_i_node, __pyx_v_pt); if (unlikely(__pyx_t_1 == ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(2, 100, __pyx_L1_error)
   __pyx_r = pow(__pyx_t_1, (1. / 2.0));
   goto __pyx_L0;
 
-  /* "_kd_tree.pyx":97
+  /* "AKNN/_kd_tree.pyx":97
  * 
  * 
  * cdef DTYPE_t min_dist(BinaryTree tree, ITYPE_t i_node, DTYPE_t* pt) except -1:             # <<<<<<<<<<<<<<
@@ -12029,14 +12029,14 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_dist(struct __pyx_obj_8_k
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("_kd_tree.min_dist", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.min_dist", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1.0;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_kd_tree.pyx":103
+/* "AKNN/_kd_tree.pyx":103
  * 
  * 
  * cdef DTYPE_t max_rdist(BinaryTree tree,             # <<<<<<<<<<<<<<
@@ -12044,17 +12044,17 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_dist(struct __pyx_obj_8_k
  *     """Compute the maximum reduced-distance between a point and a node"""
  */
 
-static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_tree, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_pt) {
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_n_features;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_d_lo;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_d_hi;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_rdist;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_j;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_r;
+static __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_max_rdist(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_tree, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_pt) {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_n_features;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_d_lo;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_d_hi;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_rdist;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_j;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_r;
   __Pyx_RefNannyDeclarations
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_1;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_2;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_3;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_1;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_2;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_3;
   Py_ssize_t __pyx_t_4;
   Py_ssize_t __pyx_t_5;
   Py_ssize_t __pyx_t_6;
@@ -12064,7 +12064,7 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist(struct __pyx_obj_8_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("max_rdist", 0);
 
-  /* "_kd_tree.pyx":106
+  /* "AKNN/_kd_tree.pyx":106
  *                        ITYPE_t i_node, DTYPE_t* pt) except -1:
  *     """Compute the maximum reduced-distance between a point and a node"""
  *     cdef ITYPE_t n_features = tree.data.shape[1]             # <<<<<<<<<<<<<<
@@ -12074,7 +12074,7 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist(struct __pyx_obj_8_
   if (unlikely(!__pyx_v_tree->data.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(2, 106, __pyx_L1_error)}
   __pyx_v_n_features = (__pyx_v_tree->data.shape[1]);
 
-  /* "_kd_tree.pyx":108
+  /* "AKNN/_kd_tree.pyx":108
  *     cdef ITYPE_t n_features = tree.data.shape[1]
  * 
  *     cdef DTYPE_t d_lo, d_hi, rdist=0.0             # <<<<<<<<<<<<<<
@@ -12083,7 +12083,7 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist(struct __pyx_obj_8_
  */
   __pyx_v_rdist = 0.0;
 
-  /* "_kd_tree.pyx":112
+  /* "AKNN/_kd_tree.pyx":112
  * 
  * 
  *     for j in range(n_features):             # <<<<<<<<<<<<<<
@@ -12095,7 +12095,7 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist(struct __pyx_obj_8_
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_j = __pyx_t_3;
 
-    /* "_kd_tree.pyx":113
+    /* "AKNN/_kd_tree.pyx":113
  * 
  *     for j in range(n_features):
  *         d_lo = fabs(pt[j] - tree.node_bounds[0, i_node, j])             # <<<<<<<<<<<<<<
@@ -12123,9 +12123,9 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist(struct __pyx_obj_8_
       __Pyx_RaiseBufferIndexError(__pyx_t_7);
       __PYX_ERR(2, 113, __pyx_L1_error)
     }
-    __pyx_v_d_lo = fabs(((__pyx_v_pt[__pyx_v_j]) - (*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_4 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_5 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_6)) )))));
+    __pyx_v_d_lo = fabs(((__pyx_v_pt[__pyx_v_j]) - (*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_4 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_5 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_6)) )))));
 
-    /* "_kd_tree.pyx":114
+    /* "AKNN/_kd_tree.pyx":114
  *     for j in range(n_features):
  *         d_lo = fabs(pt[j] - tree.node_bounds[0, i_node, j])
  *         d_hi = fabs(pt[j] - tree.node_bounds[1, i_node, j])             # <<<<<<<<<<<<<<
@@ -12153,9 +12153,9 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist(struct __pyx_obj_8_
       __Pyx_RaiseBufferIndexError(__pyx_t_7);
       __PYX_ERR(2, 114, __pyx_L1_error)
     }
-    __pyx_v_d_hi = fabs(((__pyx_v_pt[__pyx_v_j]) - (*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_6 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_5 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_4)) )))));
+    __pyx_v_d_hi = fabs(((__pyx_v_pt[__pyx_v_j]) - (*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_6 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_5 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_4)) )))));
 
-    /* "_kd_tree.pyx":115
+    /* "AKNN/_kd_tree.pyx":115
  *         d_lo = fabs(pt[j] - tree.node_bounds[0, i_node, j])
  *         d_hi = fabs(pt[j] - tree.node_bounds[1, i_node, j])
  *         rdist += pow(fmax(d_lo, d_hi), 2)             # <<<<<<<<<<<<<<
@@ -12165,7 +12165,7 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist(struct __pyx_obj_8_
     __pyx_v_rdist = (__pyx_v_rdist + pow(fmax(__pyx_v_d_lo, __pyx_v_d_hi), 2.0));
   }
 
-  /* "_kd_tree.pyx":117
+  /* "AKNN/_kd_tree.pyx":117
  *         rdist += pow(fmax(d_lo, d_hi), 2)
  * 
  *     return rdist             # <<<<<<<<<<<<<<
@@ -12175,7 +12175,7 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist(struct __pyx_obj_8_
   __pyx_r = __pyx_v_rdist;
   goto __pyx_L0;
 
-  /* "_kd_tree.pyx":103
+  /* "AKNN/_kd_tree.pyx":103
  * 
  * 
  * cdef DTYPE_t max_rdist(BinaryTree tree,             # <<<<<<<<<<<<<<
@@ -12185,14 +12185,14 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist(struct __pyx_obj_8_
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("_kd_tree.max_rdist", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.max_rdist", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1.0;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_kd_tree.pyx":120
+/* "AKNN/_kd_tree.pyx":120
  * 
  * 
  * cdef DTYPE_t max_dist(BinaryTree tree, ITYPE_t i_node, DTYPE_t* pt) except -1:             # <<<<<<<<<<<<<<
@@ -12200,27 +12200,27 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist(struct __pyx_obj_8_
  * 
  */
 
-static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_dist(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_tree, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_pt) {
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_r;
+static __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_max_dist(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_tree, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_pt) {
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_r;
   __Pyx_RefNannyDeclarations
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_t_1;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_t_1;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("max_dist", 0);
 
-  /* "_kd_tree.pyx":123
+  /* "AKNN/_kd_tree.pyx":123
  *     """Compute the maximum distance between a point and a node"""
  * 
  *     return pow(max_rdist(tree, i_node, pt), 1. / 2)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = __pyx_f_8_kd_tree_max_rdist(__pyx_v_tree, __pyx_v_i_node, __pyx_v_pt); if (unlikely(__pyx_t_1 == ((__pyx_t_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(2, 123, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_4AKNN_8_kd_tree_max_rdist(__pyx_v_tree, __pyx_v_i_node, __pyx_v_pt); if (unlikely(__pyx_t_1 == ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(2, 123, __pyx_L1_error)
   __pyx_r = pow(__pyx_t_1, (1. / 2.0));
   goto __pyx_L0;
 
-  /* "_kd_tree.pyx":120
+  /* "AKNN/_kd_tree.pyx":120
  * 
  * 
  * cdef DTYPE_t max_dist(BinaryTree tree, ITYPE_t i_node, DTYPE_t* pt) except -1:             # <<<<<<<<<<<<<<
@@ -12230,14 +12230,14 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_dist(struct __pyx_obj_8_k
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("_kd_tree.max_dist", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.max_dist", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1.0;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_kd_tree.pyx":126
+/* "AKNN/_kd_tree.pyx":126
  * 
  * 
  * cdef inline int min_max_dist(BinaryTree tree, ITYPE_t i_node, DTYPE_t* pt,             # <<<<<<<<<<<<<<
@@ -12245,16 +12245,16 @@ static __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_dist(struct __pyx_obj_8_k
  *     """Compute the minimum and maximum distance between a point and a node"""
  */
 
-static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_tree, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_pt, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_min_dist, __pyx_t_8_kd_tree_DTYPE_t *__pyx_v_max_dist) {
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_n_features;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_d;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_d_lo;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_d_hi;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_j;
+static CYTHON_INLINE int __pyx_f_4AKNN_8_kd_tree_min_max_dist(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_tree, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_pt, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_min_dist, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *__pyx_v_max_dist) {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_n_features;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_d;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_d_lo;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_d_hi;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_j;
   int __pyx_r;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_1;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_2;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_3;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_1;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_2;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_3;
   Py_ssize_t __pyx_t_4;
   Py_ssize_t __pyx_t_5;
   Py_ssize_t __pyx_t_6;
@@ -12264,7 +12264,7 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "_kd_tree.pyx":129
+  /* "AKNN/_kd_tree.pyx":129
  *                              DTYPE_t* min_dist, DTYPE_t* max_dist) nogil except -1:
  *     """Compute the minimum and maximum distance between a point and a node"""
  *     cdef ITYPE_t n_features = tree.data.shape[1]             # <<<<<<<<<<<<<<
@@ -12274,7 +12274,7 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
   if (unlikely(!__pyx_v_tree->data.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(2, 129, __pyx_L1_error)}
   __pyx_v_n_features = (__pyx_v_tree->data.shape[1]);
 
-  /* "_kd_tree.pyx":134
+  /* "AKNN/_kd_tree.pyx":134
  *     cdef ITYPE_t j
  * 
  *     min_dist[0] = 0.0             # <<<<<<<<<<<<<<
@@ -12283,7 +12283,7 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
  */
   (__pyx_v_min_dist[0]) = 0.0;
 
-  /* "_kd_tree.pyx":135
+  /* "AKNN/_kd_tree.pyx":135
  * 
  *     min_dist[0] = 0.0
  *     max_dist[0] = 0.0             # <<<<<<<<<<<<<<
@@ -12292,7 +12292,7 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
  */
   (__pyx_v_max_dist[0]) = 0.0;
 
-  /* "_kd_tree.pyx":138
+  /* "AKNN/_kd_tree.pyx":138
  * 
  * 
  *     for j in range(n_features):             # <<<<<<<<<<<<<<
@@ -12304,7 +12304,7 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_j = __pyx_t_3;
 
-    /* "_kd_tree.pyx":139
+    /* "AKNN/_kd_tree.pyx":139
  * 
  *     for j in range(n_features):
  *         d_lo = tree.node_bounds[0, i_node, j] - pt[j]             # <<<<<<<<<<<<<<
@@ -12332,9 +12332,9 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
       __Pyx_RaiseBufferIndexErrorNogil(__pyx_t_7);
       __PYX_ERR(2, 139, __pyx_L1_error)
     }
-    __pyx_v_d_lo = ((*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_4 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_5 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_6)) ))) - (__pyx_v_pt[__pyx_v_j]));
+    __pyx_v_d_lo = ((*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_4 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_5 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_6)) ))) - (__pyx_v_pt[__pyx_v_j]));
 
-    /* "_kd_tree.pyx":140
+    /* "AKNN/_kd_tree.pyx":140
  *     for j in range(n_features):
  *         d_lo = tree.node_bounds[0, i_node, j] - pt[j]
  *         d_hi = pt[j] - tree.node_bounds[1, i_node, j]             # <<<<<<<<<<<<<<
@@ -12362,9 +12362,9 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
       __Pyx_RaiseBufferIndexErrorNogil(__pyx_t_7);
       __PYX_ERR(2, 140, __pyx_L1_error)
     }
-    __pyx_v_d_hi = ((__pyx_v_pt[__pyx_v_j]) - (*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_6 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_5 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_4)) ))));
+    __pyx_v_d_hi = ((__pyx_v_pt[__pyx_v_j]) - (*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree->node_bounds.data + __pyx_t_6 * __pyx_v_tree->node_bounds.strides[0]) ) + __pyx_t_5 * __pyx_v_tree->node_bounds.strides[1]) )) + __pyx_t_4)) ))));
 
-    /* "_kd_tree.pyx":141
+    /* "AKNN/_kd_tree.pyx":141
  *         d_lo = tree.node_bounds[0, i_node, j] - pt[j]
  *         d_hi = pt[j] - tree.node_bounds[1, i_node, j]
  *         d = (d_lo + fabs(d_lo)) + (d_hi + fabs(d_hi))             # <<<<<<<<<<<<<<
@@ -12373,7 +12373,7 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
  */
     __pyx_v_d = ((__pyx_v_d_lo + fabs(__pyx_v_d_lo)) + (__pyx_v_d_hi + fabs(__pyx_v_d_hi)));
 
-    /* "_kd_tree.pyx":142
+    /* "AKNN/_kd_tree.pyx":142
  *         d_hi = pt[j] - tree.node_bounds[1, i_node, j]
  *         d = (d_lo + fabs(d_lo)) + (d_hi + fabs(d_hi))
  *         min_dist[0] += pow(0.5 * d, 2)             # <<<<<<<<<<<<<<
@@ -12383,7 +12383,7 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
     __pyx_t_8 = 0;
     (__pyx_v_min_dist[__pyx_t_8]) = ((__pyx_v_min_dist[__pyx_t_8]) + pow((0.5 * __pyx_v_d), 2.0));
 
-    /* "_kd_tree.pyx":143
+    /* "AKNN/_kd_tree.pyx":143
  *         d = (d_lo + fabs(d_lo)) + (d_hi + fabs(d_hi))
  *         min_dist[0] += pow(0.5 * d, 2)
  *         max_dist[0] += pow(fmax(fabs(d_lo), fabs(d_hi)),             # <<<<<<<<<<<<<<
@@ -12394,7 +12394,7 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
     (__pyx_v_max_dist[__pyx_t_8]) = ((__pyx_v_max_dist[__pyx_t_8]) + pow(fmax(fabs(__pyx_v_d_lo), fabs(__pyx_v_d_hi)), 2.0));
   }
 
-  /* "_kd_tree.pyx":146
+  /* "AKNN/_kd_tree.pyx":146
  *                            2)
  * 
  *     min_dist[0] = pow(min_dist[0], 1. /2)             # <<<<<<<<<<<<<<
@@ -12403,7 +12403,7 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
  */
   (__pyx_v_min_dist[0]) = pow((__pyx_v_min_dist[0]), (1. / 2.0));
 
-  /* "_kd_tree.pyx":147
+  /* "AKNN/_kd_tree.pyx":147
  * 
  *     min_dist[0] = pow(min_dist[0], 1. /2)
  *     max_dist[0] = pow(max_dist[0], 1. /2)             # <<<<<<<<<<<<<<
@@ -12412,7 +12412,7 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
  */
   (__pyx_v_max_dist[0]) = pow((__pyx_v_max_dist[0]), (1. / 2.0));
 
-  /* "_kd_tree.pyx":149
+  /* "AKNN/_kd_tree.pyx":149
  *     max_dist[0] = pow(max_dist[0], 1. /2)
  * 
  *     return 0             # <<<<<<<<<<<<<<
@@ -12422,7 +12422,7 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "_kd_tree.pyx":126
+  /* "AKNN/_kd_tree.pyx":126
  * 
  * 
  * cdef inline int min_max_dist(BinaryTree tree, ITYPE_t i_node, DTYPE_t* pt,             # <<<<<<<<<<<<<<
@@ -12436,7 +12436,7 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
     #ifdef WITH_THREAD
     PyGILState_STATE __pyx_gilstate_save = __Pyx_PyGILState_Ensure();
     #endif
-    __Pyx_AddTraceback("_kd_tree.min_max_dist", __pyx_clineno, __pyx_lineno, __pyx_filename);
+    __Pyx_AddTraceback("AKNN._kd_tree.min_max_dist", __pyx_clineno, __pyx_lineno, __pyx_filename);
     #ifdef WITH_THREAD
     __Pyx_PyGILState_Release(__pyx_gilstate_save);
     #endif
@@ -12446,7 +12446,7 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
   return __pyx_r;
 }
 
-/* "_kd_tree.pyx":152
+/* "AKNN/_kd_tree.pyx":152
  * 
  * 
  * cdef inline DTYPE_t min_rdist_dual(BinaryTree tree1, ITYPE_t i_node1,             # <<<<<<<<<<<<<<
@@ -12454,22 +12454,22 @@ static CYTHON_INLINE int __pyx_f_8_kd_tree_min_max_dist(struct __pyx_obj_8_kd_tr
  *     """Compute the minimum reduced distance between two nodes"""
  */
 
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_tree1, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node1, struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_tree2, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node2) {
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_n_features;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_d;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_d1;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_d2;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_rdist;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_j;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_r;
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_min_rdist_dual(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_tree1, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node1, struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_tree2, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node2) {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_n_features;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_d;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_d1;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_d2;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_rdist;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_j;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   PyObject *__pyx_t_2 = NULL;
   PyObject *__pyx_t_3 = NULL;
   int __pyx_t_4;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_5;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_6;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_7;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_5;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_6;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_7;
   Py_ssize_t __pyx_t_8;
   Py_ssize_t __pyx_t_9;
   Py_ssize_t __pyx_t_10;
@@ -12483,7 +12483,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("min_rdist_dual", 0);
 
-  /* "_kd_tree.pyx":155
+  /* "AKNN/_kd_tree.pyx":155
  *                                    BinaryTree tree2, ITYPE_t i_node2) except -1:
  *     """Compute the minimum reduced distance between two nodes"""
  *     cdef ITYPE_t n_features = tree1.data.shape[1]             # <<<<<<<<<<<<<<
@@ -12493,7 +12493,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
   if (unlikely(!__pyx_v_tree1->data.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(2, 155, __pyx_L1_error)}
   __pyx_v_n_features = (__pyx_v_tree1->data.shape[1]);
 
-  /* "_kd_tree.pyx":157
+  /* "AKNN/_kd_tree.pyx":157
  *     cdef ITYPE_t n_features = tree1.data.shape[1]
  * 
  *     cdef DTYPE_t d, d1, d2, rdist=0.0             # <<<<<<<<<<<<<<
@@ -12502,7 +12502,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
  */
   __pyx_v_rdist = 0.0;
 
-  /* "_kd_tree.pyx":160
+  /* "AKNN/_kd_tree.pyx":160
  *     cdef ITYPE_t j
  * 
  *     if tree1.dist_metric.p == INF:             # <<<<<<<<<<<<<<
@@ -12514,7 +12514,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_p); if (unlikely(!__pyx_t_2)) __PYX_ERR(2, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_8_kd_tree_INF); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 160, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_4AKNN_8_kd_tree_INF); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3 = PyObject_RichCompare(__pyx_t_2, __pyx_t_1, Py_EQ); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 160, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -12523,7 +12523,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_4) {
 
-    /* "_kd_tree.pyx":161
+    /* "AKNN/_kd_tree.pyx":161
  * 
  *     if tree1.dist_metric.p == INF:
  *         for j in range(n_features):             # <<<<<<<<<<<<<<
@@ -12535,7 +12535,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
     for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
       __pyx_v_j = __pyx_t_7;
 
-      /* "_kd_tree.pyx":162
+      /* "AKNN/_kd_tree.pyx":162
  *     if tree1.dist_metric.p == INF:
  *         for j in range(n_features):
  *             d1 = (tree1.node_bounds[0, i_node1, j]             # <<<<<<<<<<<<<<
@@ -12564,7 +12564,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
         __PYX_ERR(2, 162, __pyx_L1_error)
       }
 
-      /* "_kd_tree.pyx":163
+      /* "AKNN/_kd_tree.pyx":163
  *         for j in range(n_features):
  *             d1 = (tree1.node_bounds[0, i_node1, j]
  *                   - tree2.node_bounds[1, i_node2, j])             # <<<<<<<<<<<<<<
@@ -12592,9 +12592,9 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
         __Pyx_RaiseBufferIndexError(__pyx_t_11);
         __PYX_ERR(2, 163, __pyx_L1_error)
       }
-      __pyx_v_d1 = ((*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_8 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_10)) ))) - (*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_12 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_14)) ))));
+      __pyx_v_d1 = ((*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_8 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_10)) ))) - (*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_12 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_14)) ))));
 
-      /* "_kd_tree.pyx":164
+      /* "AKNN/_kd_tree.pyx":164
  *             d1 = (tree1.node_bounds[0, i_node1, j]
  *                   - tree2.node_bounds[1, i_node2, j])
  *             d2 = (tree2.node_bounds[0, i_node2, j]             # <<<<<<<<<<<<<<
@@ -12623,7 +12623,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
         __PYX_ERR(2, 164, __pyx_L1_error)
       }
 
-      /* "_kd_tree.pyx":165
+      /* "AKNN/_kd_tree.pyx":165
  *                   - tree2.node_bounds[1, i_node2, j])
  *             d2 = (tree2.node_bounds[0, i_node2, j]
  *                   - tree1.node_bounds[1, i_node1, j])             # <<<<<<<<<<<<<<
@@ -12651,9 +12651,9 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
         __Pyx_RaiseBufferIndexError(__pyx_t_11);
         __PYX_ERR(2, 165, __pyx_L1_error)
       }
-      __pyx_v_d2 = ((*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_14 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_12)) ))) - (*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_10 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_8)) ))));
+      __pyx_v_d2 = ((*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_14 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_12)) ))) - (*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_10 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_8)) ))));
 
-      /* "_kd_tree.pyx":166
+      /* "AKNN/_kd_tree.pyx":166
  *             d2 = (tree2.node_bounds[0, i_node2, j]
  *                   - tree1.node_bounds[1, i_node1, j])
  *             d = (d1 + fabs(d1)) + (d2 + fabs(d2))             # <<<<<<<<<<<<<<
@@ -12662,7 +12662,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
  */
       __pyx_v_d = ((__pyx_v_d1 + fabs(__pyx_v_d1)) + (__pyx_v_d2 + fabs(__pyx_v_d2)));
 
-      /* "_kd_tree.pyx":168
+      /* "AKNN/_kd_tree.pyx":168
  *             d = (d1 + fabs(d1)) + (d2 + fabs(d2))
  * 
  *             rdist = fmax(rdist, 0.5 * d)             # <<<<<<<<<<<<<<
@@ -12672,7 +12672,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
       __pyx_v_rdist = fmax(__pyx_v_rdist, (0.5 * __pyx_v_d));
     }
 
-    /* "_kd_tree.pyx":160
+    /* "AKNN/_kd_tree.pyx":160
  *     cdef ITYPE_t j
  * 
  *     if tree1.dist_metric.p == INF:             # <<<<<<<<<<<<<<
@@ -12682,7 +12682,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
     goto __pyx_L3;
   }
 
-  /* "_kd_tree.pyx":171
+  /* "AKNN/_kd_tree.pyx":171
  *     else:
  *         # here we'll use the fact that x + abs(x) = 2 * max(x, 0)
  *         for j in range(n_features):             # <<<<<<<<<<<<<<
@@ -12695,7 +12695,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
     for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
       __pyx_v_j = __pyx_t_7;
 
-      /* "_kd_tree.pyx":172
+      /* "AKNN/_kd_tree.pyx":172
  *         # here we'll use the fact that x + abs(x) = 2 * max(x, 0)
  *         for j in range(n_features):
  *             d1 = (tree1.node_bounds[0, i_node1, j]             # <<<<<<<<<<<<<<
@@ -12724,7 +12724,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
         __PYX_ERR(2, 172, __pyx_L1_error)
       }
 
-      /* "_kd_tree.pyx":173
+      /* "AKNN/_kd_tree.pyx":173
  *         for j in range(n_features):
  *             d1 = (tree1.node_bounds[0, i_node1, j]
  *                   - tree2.node_bounds[1, i_node2, j])             # <<<<<<<<<<<<<<
@@ -12752,9 +12752,9 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
         __Pyx_RaiseBufferIndexError(__pyx_t_11);
         __PYX_ERR(2, 173, __pyx_L1_error)
       }
-      __pyx_v_d1 = ((*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_8 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_10)) ))) - (*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_12 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_14)) ))));
+      __pyx_v_d1 = ((*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_8 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_10)) ))) - (*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_12 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_14)) ))));
 
-      /* "_kd_tree.pyx":174
+      /* "AKNN/_kd_tree.pyx":174
  *             d1 = (tree1.node_bounds[0, i_node1, j]
  *                   - tree2.node_bounds[1, i_node2, j])
  *             d2 = (tree2.node_bounds[0, i_node2, j]             # <<<<<<<<<<<<<<
@@ -12783,7 +12783,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
         __PYX_ERR(2, 174, __pyx_L1_error)
       }
 
-      /* "_kd_tree.pyx":175
+      /* "AKNN/_kd_tree.pyx":175
  *                   - tree2.node_bounds[1, i_node2, j])
  *             d2 = (tree2.node_bounds[0, i_node2, j]
  *                   - tree1.node_bounds[1, i_node1, j])             # <<<<<<<<<<<<<<
@@ -12811,9 +12811,9 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
         __Pyx_RaiseBufferIndexError(__pyx_t_11);
         __PYX_ERR(2, 175, __pyx_L1_error)
       }
-      __pyx_v_d2 = ((*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_14 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_12)) ))) - (*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_10 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_8)) ))));
+      __pyx_v_d2 = ((*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_14 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_12)) ))) - (*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_10 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_8)) ))));
 
-      /* "_kd_tree.pyx":176
+      /* "AKNN/_kd_tree.pyx":176
  *             d2 = (tree2.node_bounds[0, i_node2, j]
  *                   - tree1.node_bounds[1, i_node1, j])
  *             d = (d1 + fabs(d1)) + (d2 + fabs(d2))             # <<<<<<<<<<<<<<
@@ -12822,7 +12822,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
  */
       __pyx_v_d = ((__pyx_v_d1 + fabs(__pyx_v_d1)) + (__pyx_v_d2 + fabs(__pyx_v_d2)));
 
-      /* "_kd_tree.pyx":178
+      /* "AKNN/_kd_tree.pyx":178
  *             d = (d1 + fabs(d1)) + (d2 + fabs(d2))
  * 
  *             rdist += pow(0.5 * d, tree1.dist_metric.p)             # <<<<<<<<<<<<<<
@@ -12841,7 +12841,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
   }
   __pyx_L3:;
 
-  /* "_kd_tree.pyx":180
+  /* "AKNN/_kd_tree.pyx":180
  *             rdist += pow(0.5 * d, tree1.dist_metric.p)
  * 
  *     return rdist             # <<<<<<<<<<<<<<
@@ -12851,7 +12851,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
   __pyx_r = __pyx_v_rdist;
   goto __pyx_L0;
 
-  /* "_kd_tree.pyx":152
+  /* "AKNN/_kd_tree.pyx":152
  * 
  * 
  * cdef inline DTYPE_t min_rdist_dual(BinaryTree tree1, ITYPE_t i_node1,             # <<<<<<<<<<<<<<
@@ -12864,14 +12864,14 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("_kd_tree.min_rdist_dual", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.min_rdist_dual", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1.0;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_kd_tree.pyx":183
+/* "AKNN/_kd_tree.pyx":183
  * 
  * 
  * cdef inline DTYPE_t min_dist_dual(BinaryTree tree1, ITYPE_t i_node1,             # <<<<<<<<<<<<<<
@@ -12879,20 +12879,20 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_rdist_dual(
  *     """Compute the minimum distance between two nodes"""
  */
 
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_dist_dual(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_tree1, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node1, struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_tree2, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node2) {
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_r;
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_min_dist_dual(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_tree1, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node1, struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_tree2, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node2) {
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   PyObject *__pyx_t_2 = NULL;
   PyObject *__pyx_t_3 = NULL;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_t_4;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_t_4;
   PyObject *__pyx_t_5 = NULL;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("min_dist_dual", 0);
 
-  /* "_kd_tree.pyx":186
+  /* "AKNN/_kd_tree.pyx":186
  *                                   BinaryTree tree2, ITYPE_t i_node2) except -1:
  *     """Compute the minimum distance between two nodes"""
  *     return tree1.dist_metric._rdist_to_dist(min_rdist_dual(tree1, i_node1,             # <<<<<<<<<<<<<<
@@ -12905,16 +12905,16 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_dist_dual(s
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "_kd_tree.pyx":187
+  /* "AKNN/_kd_tree.pyx":187
  *     """Compute the minimum distance between two nodes"""
  *     return tree1.dist_metric._rdist_to_dist(min_rdist_dual(tree1, i_node1,
  *                                                            tree2, i_node2))             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_4 = __pyx_f_8_kd_tree_min_rdist_dual(__pyx_v_tree1, __pyx_v_i_node1, __pyx_v_tree2, __pyx_v_i_node2); if (unlikely(__pyx_t_4 == ((__pyx_t_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(2, 186, __pyx_L1_error)
+  __pyx_t_4 = __pyx_f_4AKNN_8_kd_tree_min_rdist_dual(__pyx_v_tree1, __pyx_v_i_node1, __pyx_v_tree2, __pyx_v_i_node2); if (unlikely(__pyx_t_4 == ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(2, 186, __pyx_L1_error)
 
-  /* "_kd_tree.pyx":186
+  /* "AKNN/_kd_tree.pyx":186
  *                                   BinaryTree tree2, ITYPE_t i_node2) except -1:
  *     """Compute the minimum distance between two nodes"""
  *     return tree1.dist_metric._rdist_to_dist(min_rdist_dual(tree1, i_node1,             # <<<<<<<<<<<<<<
@@ -12944,7 +12944,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_dist_dual(s
   __pyx_r = __pyx_t_4;
   goto __pyx_L0;
 
-  /* "_kd_tree.pyx":183
+  /* "AKNN/_kd_tree.pyx":183
  * 
  * 
  * cdef inline DTYPE_t min_dist_dual(BinaryTree tree1, ITYPE_t i_node1,             # <<<<<<<<<<<<<<
@@ -12958,14 +12958,14 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_dist_dual(s
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("_kd_tree.min_dist_dual", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.min_dist_dual", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1.0;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_kd_tree.pyx":190
+/* "AKNN/_kd_tree.pyx":190
  * 
  * 
  * cdef inline DTYPE_t max_rdist_dual(BinaryTree tree1, ITYPE_t i_node1,             # <<<<<<<<<<<<<<
@@ -12973,21 +12973,21 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_min_dist_dual(s
  *     """Compute the maximum reduced distance between two nodes"""
  */
 
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_tree1, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node1, struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_tree2, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node2) {
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_n_features;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_d1;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_d2;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_v_rdist;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_v_j;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_r;
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_max_rdist_dual(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_tree1, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node1, struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_tree2, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node2) {
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_n_features;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_d1;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_d2;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_v_rdist;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_j;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   PyObject *__pyx_t_2 = NULL;
   PyObject *__pyx_t_3 = NULL;
   int __pyx_t_4;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_5;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_6;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_7;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_5;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_6;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_7;
   Py_ssize_t __pyx_t_8;
   Py_ssize_t __pyx_t_9;
   Py_ssize_t __pyx_t_10;
@@ -13001,7 +13001,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("max_rdist_dual", 0);
 
-  /* "_kd_tree.pyx":193
+  /* "AKNN/_kd_tree.pyx":193
  *                                    BinaryTree tree2, ITYPE_t i_node2) except -1:
  *     """Compute the maximum reduced distance between two nodes"""
  *     cdef ITYPE_t n_features = tree1.data.shape[1]             # <<<<<<<<<<<<<<
@@ -13011,7 +13011,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
   if (unlikely(!__pyx_v_tree1->data.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(2, 193, __pyx_L1_error)}
   __pyx_v_n_features = (__pyx_v_tree1->data.shape[1]);
 
-  /* "_kd_tree.pyx":195
+  /* "AKNN/_kd_tree.pyx":195
  *     cdef ITYPE_t n_features = tree1.data.shape[1]
  * 
  *     cdef DTYPE_t d1, d2, rdist=0.0             # <<<<<<<<<<<<<<
@@ -13020,7 +13020,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
  */
   __pyx_v_rdist = 0.0;
 
-  /* "_kd_tree.pyx":198
+  /* "AKNN/_kd_tree.pyx":198
  *     cdef ITYPE_t j
  * 
  *     if tree1.dist_metric.p == INF:             # <<<<<<<<<<<<<<
@@ -13032,7 +13032,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_p); if (unlikely(!__pyx_t_2)) __PYX_ERR(2, 198, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_8_kd_tree_INF); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 198, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_4AKNN_8_kd_tree_INF); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 198, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3 = PyObject_RichCompare(__pyx_t_2, __pyx_t_1, Py_EQ); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 198, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -13041,7 +13041,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_4) {
 
-    /* "_kd_tree.pyx":199
+    /* "AKNN/_kd_tree.pyx":199
  * 
  *     if tree1.dist_metric.p == INF:
  *         for j in range(n_features):             # <<<<<<<<<<<<<<
@@ -13053,7 +13053,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
     for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
       __pyx_v_j = __pyx_t_7;
 
-      /* "_kd_tree.pyx":200
+      /* "AKNN/_kd_tree.pyx":200
  *     if tree1.dist_metric.p == INF:
  *         for j in range(n_features):
  *             rdist = fmax(rdist, fabs(tree1.node_bounds[0, i_node1, j]             # <<<<<<<<<<<<<<
@@ -13082,7 +13082,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
         __PYX_ERR(2, 200, __pyx_L1_error)
       }
 
-      /* "_kd_tree.pyx":201
+      /* "AKNN/_kd_tree.pyx":201
  *         for j in range(n_features):
  *             rdist = fmax(rdist, fabs(tree1.node_bounds[0, i_node1, j]
  *                                      - tree2.node_bounds[1, i_node2, j]))             # <<<<<<<<<<<<<<
@@ -13111,16 +13111,16 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
         __PYX_ERR(2, 201, __pyx_L1_error)
       }
 
-      /* "_kd_tree.pyx":200
+      /* "AKNN/_kd_tree.pyx":200
  *     if tree1.dist_metric.p == INF:
  *         for j in range(n_features):
  *             rdist = fmax(rdist, fabs(tree1.node_bounds[0, i_node1, j]             # <<<<<<<<<<<<<<
  *                                      - tree2.node_bounds[1, i_node2, j]))
  *             rdist = fmax(rdist, fabs(tree1.node_bounds[1, i_node1, j]
  */
-      __pyx_v_rdist = fmax(__pyx_v_rdist, fabs(((*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_8 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_10)) ))) - (*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_12 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_14)) ))))));
+      __pyx_v_rdist = fmax(__pyx_v_rdist, fabs(((*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_8 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_10)) ))) - (*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_12 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_14)) ))))));
 
-      /* "_kd_tree.pyx":202
+      /* "AKNN/_kd_tree.pyx":202
  *             rdist = fmax(rdist, fabs(tree1.node_bounds[0, i_node1, j]
  *                                      - tree2.node_bounds[1, i_node2, j]))
  *             rdist = fmax(rdist, fabs(tree1.node_bounds[1, i_node1, j]             # <<<<<<<<<<<<<<
@@ -13149,7 +13149,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
         __PYX_ERR(2, 202, __pyx_L1_error)
       }
 
-      /* "_kd_tree.pyx":203
+      /* "AKNN/_kd_tree.pyx":203
  *                                      - tree2.node_bounds[1, i_node2, j]))
  *             rdist = fmax(rdist, fabs(tree1.node_bounds[1, i_node1, j]
  *                                      - tree2.node_bounds[0, i_node2, j]))             # <<<<<<<<<<<<<<
@@ -13178,17 +13178,17 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
         __PYX_ERR(2, 203, __pyx_L1_error)
       }
 
-      /* "_kd_tree.pyx":202
+      /* "AKNN/_kd_tree.pyx":202
  *             rdist = fmax(rdist, fabs(tree1.node_bounds[0, i_node1, j]
  *                                      - tree2.node_bounds[1, i_node2, j]))
  *             rdist = fmax(rdist, fabs(tree1.node_bounds[1, i_node1, j]             # <<<<<<<<<<<<<<
  *                                      - tree2.node_bounds[0, i_node2, j]))
  *     else:
  */
-      __pyx_v_rdist = fmax(__pyx_v_rdist, fabs(((*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_14 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_12)) ))) - (*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_10 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_8)) ))))));
+      __pyx_v_rdist = fmax(__pyx_v_rdist, fabs(((*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_14 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_12)) ))) - (*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_10 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_8)) ))))));
     }
 
-    /* "_kd_tree.pyx":198
+    /* "AKNN/_kd_tree.pyx":198
  *     cdef ITYPE_t j
  * 
  *     if tree1.dist_metric.p == INF:             # <<<<<<<<<<<<<<
@@ -13198,7 +13198,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
     goto __pyx_L3;
   }
 
-  /* "_kd_tree.pyx":205
+  /* "AKNN/_kd_tree.pyx":205
  *                                      - tree2.node_bounds[0, i_node2, j]))
  *     else:
  *         for j in range(n_features):             # <<<<<<<<<<<<<<
@@ -13211,7 +13211,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
     for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
       __pyx_v_j = __pyx_t_7;
 
-      /* "_kd_tree.pyx":206
+      /* "AKNN/_kd_tree.pyx":206
  *     else:
  *         for j in range(n_features):
  *             d1 = fabs(tree1.node_bounds[0, i_node1, j]             # <<<<<<<<<<<<<<
@@ -13240,7 +13240,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
         __PYX_ERR(2, 206, __pyx_L1_error)
       }
 
-      /* "_kd_tree.pyx":207
+      /* "AKNN/_kd_tree.pyx":207
  *         for j in range(n_features):
  *             d1 = fabs(tree1.node_bounds[0, i_node1, j]
  *                       - tree2.node_bounds[1, i_node2, j])             # <<<<<<<<<<<<<<
@@ -13269,16 +13269,16 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
         __PYX_ERR(2, 207, __pyx_L1_error)
       }
 
-      /* "_kd_tree.pyx":206
+      /* "AKNN/_kd_tree.pyx":206
  *     else:
  *         for j in range(n_features):
  *             d1 = fabs(tree1.node_bounds[0, i_node1, j]             # <<<<<<<<<<<<<<
  *                       - tree2.node_bounds[1, i_node2, j])
  *             d2 = fabs(tree1.node_bounds[1, i_node1, j]
  */
-      __pyx_v_d1 = fabs(((*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_8 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_10)) ))) - (*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_12 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_14)) )))));
+      __pyx_v_d1 = fabs(((*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_8 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_10)) ))) - (*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_12 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_14)) )))));
 
-      /* "_kd_tree.pyx":208
+      /* "AKNN/_kd_tree.pyx":208
  *             d1 = fabs(tree1.node_bounds[0, i_node1, j]
  *                       - tree2.node_bounds[1, i_node2, j])
  *             d2 = fabs(tree1.node_bounds[1, i_node1, j]             # <<<<<<<<<<<<<<
@@ -13307,7 +13307,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
         __PYX_ERR(2, 208, __pyx_L1_error)
       }
 
-      /* "_kd_tree.pyx":209
+      /* "AKNN/_kd_tree.pyx":209
  *                       - tree2.node_bounds[1, i_node2, j])
  *             d2 = fabs(tree1.node_bounds[1, i_node1, j]
  *                       - tree2.node_bounds[0, i_node2, j])             # <<<<<<<<<<<<<<
@@ -13336,16 +13336,16 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
         __PYX_ERR(2, 209, __pyx_L1_error)
       }
 
-      /* "_kd_tree.pyx":208
+      /* "AKNN/_kd_tree.pyx":208
  *             d1 = fabs(tree1.node_bounds[0, i_node1, j]
  *                       - tree2.node_bounds[1, i_node2, j])
  *             d2 = fabs(tree1.node_bounds[1, i_node1, j]             # <<<<<<<<<<<<<<
  *                       - tree2.node_bounds[0, i_node2, j])
  *             rdist += pow(fmax(d1, d2), tree1.dist_metric.p)
  */
-      __pyx_v_d2 = fabs(((*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_14 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_12)) ))) - (*((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_10 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_8)) )))));
+      __pyx_v_d2 = fabs(((*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree1->node_bounds.data + __pyx_t_14 * __pyx_v_tree1->node_bounds.strides[0]) ) + __pyx_t_13 * __pyx_v_tree1->node_bounds.strides[1]) )) + __pyx_t_12)) ))) - (*((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=2 */ ((char *) (((__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_tree2->node_bounds.data + __pyx_t_10 * __pyx_v_tree2->node_bounds.strides[0]) ) + __pyx_t_9 * __pyx_v_tree2->node_bounds.strides[1]) )) + __pyx_t_8)) )))));
 
-      /* "_kd_tree.pyx":210
+      /* "AKNN/_kd_tree.pyx":210
  *             d2 = fabs(tree1.node_bounds[1, i_node1, j]
  *                       - tree2.node_bounds[0, i_node2, j])
  *             rdist += pow(fmax(d1, d2), tree1.dist_metric.p)             # <<<<<<<<<<<<<<
@@ -13364,7 +13364,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
   }
   __pyx_L3:;
 
-  /* "_kd_tree.pyx":212
+  /* "AKNN/_kd_tree.pyx":212
  *             rdist += pow(fmax(d1, d2), tree1.dist_metric.p)
  * 
  *     return rdist             # <<<<<<<<<<<<<<
@@ -13374,7 +13374,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
   __pyx_r = __pyx_v_rdist;
   goto __pyx_L0;
 
-  /* "_kd_tree.pyx":190
+  /* "AKNN/_kd_tree.pyx":190
  * 
  * 
  * cdef inline DTYPE_t max_rdist_dual(BinaryTree tree1, ITYPE_t i_node1,             # <<<<<<<<<<<<<<
@@ -13387,14 +13387,14 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("_kd_tree.max_rdist_dual", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.max_rdist_dual", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1.0;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "_kd_tree.pyx":215
+/* "AKNN/_kd_tree.pyx":215
  * 
  * 
  * cdef inline DTYPE_t max_dist_dual(BinaryTree tree1, ITYPE_t i_node1,             # <<<<<<<<<<<<<<
@@ -13402,20 +13402,20 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_rdist_dual(
  *     """Compute the maximum distance between two nodes"""
  */
 
-static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_dist_dual(struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_tree1, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node1, struct __pyx_obj_8_kd_tree_BinaryTree *__pyx_v_tree2, __pyx_t_8_kd_tree_ITYPE_t __pyx_v_i_node2) {
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_r;
+static CYTHON_INLINE __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_f_4AKNN_8_kd_tree_max_dist_dual(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_tree1, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node1, struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *__pyx_v_tree2, __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_v_i_node2) {
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   PyObject *__pyx_t_2 = NULL;
   PyObject *__pyx_t_3 = NULL;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_t_4;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_t_4;
   PyObject *__pyx_t_5 = NULL;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("max_dist_dual", 0);
 
-  /* "_kd_tree.pyx":218
+  /* "AKNN/_kd_tree.pyx":218
  *                                   BinaryTree tree2, ITYPE_t i_node2) except -1:
  *     """Compute the maximum distance between two nodes"""
  *     return tree1.dist_metric._rdist_to_dist(max_rdist_dual(tree1, i_node1,             # <<<<<<<<<<<<<<
@@ -13427,14 +13427,14 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_dist_dual(s
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "_kd_tree.pyx":219
+  /* "AKNN/_kd_tree.pyx":219
  *     """Compute the maximum distance between two nodes"""
  *     return tree1.dist_metric._rdist_to_dist(max_rdist_dual(tree1, i_node1,
  *                                                            tree2, i_node2))             # <<<<<<<<<<<<<<
  */
-  __pyx_t_4 = __pyx_f_8_kd_tree_max_rdist_dual(__pyx_v_tree1, __pyx_v_i_node1, __pyx_v_tree2, __pyx_v_i_node2); if (unlikely(__pyx_t_4 == ((__pyx_t_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(2, 218, __pyx_L1_error)
+  __pyx_t_4 = __pyx_f_4AKNN_8_kd_tree_max_rdist_dual(__pyx_v_tree1, __pyx_v_i_node1, __pyx_v_tree2, __pyx_v_i_node2); if (unlikely(__pyx_t_4 == ((__pyx_t_4AKNN_8_kd_tree_DTYPE_t)-1.0))) __PYX_ERR(2, 218, __pyx_L1_error)
 
-  /* "_kd_tree.pyx":218
+  /* "AKNN/_kd_tree.pyx":218
  *                                   BinaryTree tree2, ITYPE_t i_node2) except -1:
  *     """Compute the maximum distance between two nodes"""
  *     return tree1.dist_metric._rdist_to_dist(max_rdist_dual(tree1, i_node1,             # <<<<<<<<<<<<<<
@@ -13463,7 +13463,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_dist_dual(s
   __pyx_r = __pyx_t_4;
   goto __pyx_L0;
 
-  /* "_kd_tree.pyx":215
+  /* "AKNN/_kd_tree.pyx":215
  * 
  * 
  * cdef inline DTYPE_t max_dist_dual(BinaryTree tree1, ITYPE_t i_node1,             # <<<<<<<<<<<<<<
@@ -13477,7 +13477,7 @@ static CYTHON_INLINE __pyx_t_8_kd_tree_DTYPE_t __pyx_f_8_kd_tree_max_dist_dual(s
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("_kd_tree.max_dist_dual", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("AKNN._kd_tree.max_dist_dual", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1.0;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -14503,16 +14503,16 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
 
 /* "FromPyStructUtility":11
  * 
- * @cname("__pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeHeapData_t")
- * cdef struct_type __pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeHeapData_t(obj) except *:             # <<<<<<<<<<<<<<
+ * @cname("__pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t")
+ * cdef struct_type __pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(obj) except *:             # <<<<<<<<<<<<<<
  *     cdef struct_type result
  *     if not PyMapping_Check(obj):
  */
 
-static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeHeapData_t(PyObject *__pyx_v_obj) {
-  struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_v_result;
+static struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(PyObject *__pyx_v_obj) {
+  struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_v_result;
   PyObject *__pyx_v_value = NULL;
-  struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_r;
+  struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t __pyx_r;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   PyObject *__pyx_t_2 = NULL;
@@ -14523,15 +14523,15 @@ static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_convert__from_py_struct____
   PyObject *__pyx_t_7 = NULL;
   PyObject *__pyx_t_8 = NULL;
   PyObject *__pyx_t_9 = NULL;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_t_10;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_11;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_t_10;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_11;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("__pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeHeapData_t", 0);
+  __Pyx_RefNannySetupContext("__pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t", 0);
 
   /* "FromPyStructUtility":13
- * cdef struct_type __pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeHeapData_t(obj) except *:
+ * cdef struct_type __pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(obj) except *:
  *     cdef struct_type result
  *     if not PyMapping_Check(obj):             # <<<<<<<<<<<<<<
  *         PyErr_Format(TypeError, b"Expected %.16s, got %.200s", b"a mapping", Py_TYPE(obj).tp_name)
@@ -14552,7 +14552,7 @@ static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_convert__from_py_struct____
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "FromPyStructUtility":13
- * cdef struct_type __pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeHeapData_t(obj) except *:
+ * cdef struct_type __pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(obj) except *:
  *     cdef struct_type result
  *     if not PyMapping_Check(obj):             # <<<<<<<<<<<<<<
  *         PyErr_Format(TypeError, b"Expected %.16s, got %.200s", b"a mapping", Py_TYPE(obj).tp_name)
@@ -14612,7 +14612,7 @@ static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_convert__from_py_struct____
  */
     __pyx_t_6 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
     if (__pyx_t_6) {
-      __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeHeapData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_7, &__pyx_t_8) < 0) __PYX_ERR(1, 18, __pyx_L6_except_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_GOTREF(__pyx_t_7);
@@ -14714,7 +14714,7 @@ static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_convert__from_py_struct____
  */
     __pyx_t_6 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
     if (__pyx_t_6) {
-      __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeHeapData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_8, &__pyx_t_7, &__pyx_t_2) < 0) __PYX_ERR(1, 23, __pyx_L14_except_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_GOTREF(__pyx_t_7);
@@ -14816,7 +14816,7 @@ static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_convert__from_py_struct____
  */
     __pyx_t_6 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
     if (__pyx_t_6) {
-      __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeHeapData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_7, &__pyx_t_8) < 0) __PYX_ERR(1, 28, __pyx_L22_except_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_GOTREF(__pyx_t_7);
@@ -14875,8 +14875,8 @@ static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_convert__from_py_struct____
 
   /* "FromPyStructUtility":11
  * 
- * @cname("__pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeHeapData_t")
- * cdef struct_type __pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeHeapData_t(obj) except *:             # <<<<<<<<<<<<<<
+ * @cname("__pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t")
+ * cdef struct_type __pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(obj) except *:             # <<<<<<<<<<<<<<
  *     cdef struct_type result
  *     if not PyMapping_Check(obj):
  */
@@ -14887,7 +14887,7 @@ static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_convert__from_py_struct____
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeHeapData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_pretend_to_initialize(&__pyx_r);
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_value);
@@ -14895,10 +14895,10 @@ static struct __pyx_t_8_kd_tree_NodeHeapData_t __pyx_convert__from_py_struct____
   return __pyx_r;
 }
 
-static struct __pyx_t_8_kd_tree_NodeData_t __pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeData_t(PyObject *__pyx_v_obj) {
-  struct __pyx_t_8_kd_tree_NodeData_t __pyx_v_result;
+static struct __pyx_t_4AKNN_8_kd_tree_NodeData_t __pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(PyObject *__pyx_v_obj) {
+  struct __pyx_t_4AKNN_8_kd_tree_NodeData_t __pyx_v_result;
   PyObject *__pyx_v_value = NULL;
-  struct __pyx_t_8_kd_tree_NodeData_t __pyx_r;
+  struct __pyx_t_4AKNN_8_kd_tree_NodeData_t __pyx_r;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   PyObject *__pyx_t_2 = NULL;
@@ -14909,15 +14909,15 @@ static struct __pyx_t_8_kd_tree_NodeData_t __pyx_convert__from_py_struct____pyx_
   PyObject *__pyx_t_7 = NULL;
   PyObject *__pyx_t_8 = NULL;
   PyObject *__pyx_t_9 = NULL;
-  __pyx_t_8_kd_tree_ITYPE_t __pyx_t_10;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_t_11;
+  __pyx_t_4AKNN_8_kd_tree_ITYPE_t __pyx_t_10;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_t_11;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("__pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeData_t", 0);
+  __Pyx_RefNannySetupContext("__pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t", 0);
 
   /* "FromPyStructUtility":13
- * cdef struct_type __pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeData_t(obj) except *:
+ * cdef struct_type __pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(obj) except *:
  *     cdef struct_type result
  *     if not PyMapping_Check(obj):             # <<<<<<<<<<<<<<
  *         PyErr_Format(TypeError, b"Expected %.16s, got %.200s", b"a mapping", Py_TYPE(obj).tp_name)
@@ -14938,7 +14938,7 @@ static struct __pyx_t_8_kd_tree_NodeData_t __pyx_convert__from_py_struct____pyx_
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "FromPyStructUtility":13
- * cdef struct_type __pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeData_t(obj) except *:
+ * cdef struct_type __pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(obj) except *:
  *     cdef struct_type result
  *     if not PyMapping_Check(obj):             # <<<<<<<<<<<<<<
  *         PyErr_Format(TypeError, b"Expected %.16s, got %.200s", b"a mapping", Py_TYPE(obj).tp_name)
@@ -14998,7 +14998,7 @@ static struct __pyx_t_8_kd_tree_NodeData_t __pyx_convert__from_py_struct____pyx_
  */
     __pyx_t_6 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
     if (__pyx_t_6) {
-      __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_7, &__pyx_t_8) < 0) __PYX_ERR(1, 18, __pyx_L6_except_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_GOTREF(__pyx_t_7);
@@ -15100,7 +15100,7 @@ static struct __pyx_t_8_kd_tree_NodeData_t __pyx_convert__from_py_struct____pyx_
  */
     __pyx_t_6 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
     if (__pyx_t_6) {
-      __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_8, &__pyx_t_7, &__pyx_t_2) < 0) __PYX_ERR(1, 23, __pyx_L14_except_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_GOTREF(__pyx_t_7);
@@ -15202,7 +15202,7 @@ static struct __pyx_t_8_kd_tree_NodeData_t __pyx_convert__from_py_struct____pyx_
  */
     __pyx_t_6 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
     if (__pyx_t_6) {
-      __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_7, &__pyx_t_8) < 0) __PYX_ERR(1, 28, __pyx_L22_except_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_GOTREF(__pyx_t_7);
@@ -15304,7 +15304,7 @@ static struct __pyx_t_8_kd_tree_NodeData_t __pyx_convert__from_py_struct____pyx_
  */
     __pyx_t_6 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_KeyError);
     if (__pyx_t_6) {
-      __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_8, &__pyx_t_7, &__pyx_t_2) < 0) __PYX_ERR(1, 33, __pyx_L30_except_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_GOTREF(__pyx_t_7);
@@ -15363,8 +15363,8 @@ static struct __pyx_t_8_kd_tree_NodeData_t __pyx_convert__from_py_struct____pyx_
 
   /* "FromPyStructUtility":11
  * 
- * @cname("__pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeData_t")
- * cdef struct_type __pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeData_t(obj) except *:             # <<<<<<<<<<<<<<
+ * @cname("__pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t")
+ * cdef struct_type __pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(obj) except *:             # <<<<<<<<<<<<<<
  *     cdef struct_type result
  *     if not PyMapping_Check(obj):
  */
@@ -15375,7 +15375,7 @@ static struct __pyx_t_8_kd_tree_NodeData_t __pyx_convert__from_py_struct____pyx_
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("FromPyStructUtility.__pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_pretend_to_initialize(&__pyx_r);
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_value);
@@ -28778,10 +28778,10 @@ static PyObject *__pyx_format_from_typeinfo(__Pyx_TypeInfo *__pyx_v_type) {
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static struct __pyx_vtabstruct_8_kd_tree_NeighborsHeap __pyx_vtable_8_kd_tree_NeighborsHeap;
+static struct __pyx_vtabstruct_4AKNN_8_kd_tree_NeighborsHeap __pyx_vtable_4AKNN_8_kd_tree_NeighborsHeap;
 
-static PyObject *__pyx_tp_new_8_kd_tree_NeighborsHeap(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
-  struct __pyx_obj_8_kd_tree_NeighborsHeap *p;
+static PyObject *__pyx_tp_new_4AKNN_8_kd_tree_NeighborsHeap(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -28789,23 +28789,23 @@ static PyObject *__pyx_tp_new_8_kd_tree_NeighborsHeap(PyTypeObject *t, CYTHON_UN
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_8_kd_tree_NeighborsHeap *)o);
-  p->__pyx_vtab = __pyx_vtabptr_8_kd_tree_NeighborsHeap;
+  p = ((struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *)o);
+  p->__pyx_vtab = __pyx_vtabptr_4AKNN_8_kd_tree_NeighborsHeap;
   p->distances_arr = ((PyArrayObject *)Py_None); Py_INCREF(Py_None);
   p->indices_arr = ((PyArrayObject *)Py_None); Py_INCREF(Py_None);
   p->distances.data = NULL;
   p->distances.memview = NULL;
   p->indices.data = NULL;
   p->indices.memview = NULL;
-  if (unlikely(__pyx_pw_8_kd_tree_13NeighborsHeap_1__cinit__(o, __pyx_empty_tuple, NULL) < 0)) goto bad;
+  if (unlikely(__pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_1__cinit__(o, __pyx_empty_tuple, NULL) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_8_kd_tree_NeighborsHeap(PyObject *o) {
-  struct __pyx_obj_8_kd_tree_NeighborsHeap *p = (struct __pyx_obj_8_kd_tree_NeighborsHeap *)o;
+static void __pyx_tp_dealloc_4AKNN_8_kd_tree_NeighborsHeap(PyObject *o) {
+  struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *p = (struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && !_PyGC_FINALIZED(o)) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -28819,9 +28819,9 @@ static void __pyx_tp_dealloc_8_kd_tree_NeighborsHeap(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static int __pyx_tp_traverse_8_kd_tree_NeighborsHeap(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_4AKNN_8_kd_tree_NeighborsHeap(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_8_kd_tree_NeighborsHeap *p = (struct __pyx_obj_8_kd_tree_NeighborsHeap *)o;
+  struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *p = (struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *)o;
   if (p->distances_arr) {
     e = (*v)(((PyObject *)p->distances_arr), a); if (e) return e;
   }
@@ -28831,9 +28831,9 @@ static int __pyx_tp_traverse_8_kd_tree_NeighborsHeap(PyObject *o, visitproc v, v
   return 0;
 }
 
-static int __pyx_tp_clear_8_kd_tree_NeighborsHeap(PyObject *o) {
+static int __pyx_tp_clear_4AKNN_8_kd_tree_NeighborsHeap(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_8_kd_tree_NeighborsHeap *p = (struct __pyx_obj_8_kd_tree_NeighborsHeap *)o;
+  struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *p = (struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *)o;
   tmp = ((PyObject*)p->distances_arr);
   p->distances_arr = ((PyArrayObject *)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
@@ -28843,20 +28843,20 @@ static int __pyx_tp_clear_8_kd_tree_NeighborsHeap(PyObject *o) {
   return 0;
 }
 
-static PyMethodDef __pyx_methods_8_kd_tree_NeighborsHeap[] = {
-  {"get_arrays", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8_kd_tree_13NeighborsHeap_5get_arrays, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8_kd_tree_13NeighborsHeap_4get_arrays},
-  {"push", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8_kd_tree_13NeighborsHeap_7push, METH_VARARGS|METH_KEYWORDS, 0},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_8_kd_tree_13NeighborsHeap_9__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_8_kd_tree_13NeighborsHeap_11__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_4AKNN_8_kd_tree_NeighborsHeap[] = {
+  {"get_arrays", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_5get_arrays, METH_VARARGS|METH_KEYWORDS, __pyx_doc_4AKNN_8_kd_tree_13NeighborsHeap_4get_arrays},
+  {"push", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_7push, METH_VARARGS|METH_KEYWORDS, 0},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_9__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_11__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_8_kd_tree_NeighborsHeap = {
+static PyTypeObject __pyx_type_4AKNN_8_kd_tree_NeighborsHeap = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_kd_tree.NeighborsHeap", /*tp_name*/
-  sizeof(struct __pyx_obj_8_kd_tree_NeighborsHeap), /*tp_basicsize*/
+  "AKNN._kd_tree.NeighborsHeap", /*tp_name*/
+  sizeof(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_8_kd_tree_NeighborsHeap, /*tp_dealloc*/
+  __pyx_tp_dealloc_4AKNN_8_kd_tree_NeighborsHeap, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -28883,13 +28883,13 @@ static PyTypeObject __pyx_type_8_kd_tree_NeighborsHeap = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   "A max-heap structure to keep track of distances/indices of neighbors\n\n    This implements an efficient pre-allocated set of fixed-size heaps\n    for chasing neighbors, holding both an index and a distance.\n    When any row of the heap is full, adding an additional point will push\n    the furthest point off the heap.\n\n    Parameters\n    ----------\n    n_pts : int\n        the number of heaps to use\n    n_nbrs : int\n        the size of each heap.\n    ", /*tp_doc*/
-  __pyx_tp_traverse_8_kd_tree_NeighborsHeap, /*tp_traverse*/
-  __pyx_tp_clear_8_kd_tree_NeighborsHeap, /*tp_clear*/
+  __pyx_tp_traverse_4AKNN_8_kd_tree_NeighborsHeap, /*tp_traverse*/
+  __pyx_tp_clear_4AKNN_8_kd_tree_NeighborsHeap, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_8_kd_tree_NeighborsHeap, /*tp_methods*/
+  __pyx_methods_4AKNN_8_kd_tree_NeighborsHeap, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -28897,9 +28897,9 @@ static PyTypeObject __pyx_type_8_kd_tree_NeighborsHeap = {
   0, /*tp_descr_get*/
   0, /*tp_descr_set*/
   0, /*tp_dictoffset*/
-  __pyx_pw_8_kd_tree_13NeighborsHeap_3__init__, /*tp_init*/
+  __pyx_pw_4AKNN_8_kd_tree_13NeighborsHeap_3__init__, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_8_kd_tree_NeighborsHeap, /*tp_new*/
+  __pyx_tp_new_4AKNN_8_kd_tree_NeighborsHeap, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -28922,10 +28922,10 @@ static PyTypeObject __pyx_type_8_kd_tree_NeighborsHeap = {
   0, /*tp_pypy_flags*/
   #endif
 };
-static struct __pyx_vtabstruct_8_kd_tree_NodeHeap __pyx_vtable_8_kd_tree_NodeHeap;
+static struct __pyx_vtabstruct_4AKNN_8_kd_tree_NodeHeap __pyx_vtable_4AKNN_8_kd_tree_NodeHeap;
 
-static PyObject *__pyx_tp_new_8_kd_tree_NodeHeap(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
-  struct __pyx_obj_8_kd_tree_NodeHeap *p;
+static PyObject *__pyx_tp_new_4AKNN_8_kd_tree_NodeHeap(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -28933,20 +28933,20 @@ static PyObject *__pyx_tp_new_8_kd_tree_NodeHeap(PyTypeObject *t, CYTHON_UNUSED 
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_8_kd_tree_NodeHeap *)o);
-  p->__pyx_vtab = __pyx_vtabptr_8_kd_tree_NodeHeap;
+  p = ((struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *)o);
+  p->__pyx_vtab = __pyx_vtabptr_4AKNN_8_kd_tree_NodeHeap;
   p->data_arr = ((PyArrayObject *)Py_None); Py_INCREF(Py_None);
   p->data.data = NULL;
   p->data.memview = NULL;
-  if (unlikely(__pyx_pw_8_kd_tree_8NodeHeap_1__cinit__(o, __pyx_empty_tuple, NULL) < 0)) goto bad;
+  if (unlikely(__pyx_pw_4AKNN_8_kd_tree_8NodeHeap_1__cinit__(o, __pyx_empty_tuple, NULL) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_8_kd_tree_NodeHeap(PyObject *o) {
-  struct __pyx_obj_8_kd_tree_NodeHeap *p = (struct __pyx_obj_8_kd_tree_NodeHeap *)o;
+static void __pyx_tp_dealloc_4AKNN_8_kd_tree_NodeHeap(PyObject *o) {
+  struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *p = (struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && !_PyGC_FINALIZED(o)) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -28958,36 +28958,36 @@ static void __pyx_tp_dealloc_8_kd_tree_NodeHeap(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static int __pyx_tp_traverse_8_kd_tree_NodeHeap(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_4AKNN_8_kd_tree_NodeHeap(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_8_kd_tree_NodeHeap *p = (struct __pyx_obj_8_kd_tree_NodeHeap *)o;
+  struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *p = (struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *)o;
   if (p->data_arr) {
     e = (*v)(((PyObject *)p->data_arr), a); if (e) return e;
   }
   return 0;
 }
 
-static int __pyx_tp_clear_8_kd_tree_NodeHeap(PyObject *o) {
+static int __pyx_tp_clear_4AKNN_8_kd_tree_NodeHeap(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_8_kd_tree_NodeHeap *p = (struct __pyx_obj_8_kd_tree_NodeHeap *)o;
+  struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *p = (struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *)o;
   tmp = ((PyObject*)p->data_arr);
   p->data_arr = ((PyArrayObject *)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   return 0;
 }
 
-static PyMethodDef __pyx_methods_8_kd_tree_NodeHeap[] = {
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_8_kd_tree_8NodeHeap_5__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_8_kd_tree_8NodeHeap_7__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_4AKNN_8_kd_tree_NodeHeap[] = {
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_4AKNN_8_kd_tree_8NodeHeap_5__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_4AKNN_8_kd_tree_8NodeHeap_7__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_8_kd_tree_NodeHeap = {
+static PyTypeObject __pyx_type_4AKNN_8_kd_tree_NodeHeap = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_kd_tree.NodeHeap", /*tp_name*/
-  sizeof(struct __pyx_obj_8_kd_tree_NodeHeap), /*tp_basicsize*/
+  "AKNN._kd_tree.NodeHeap", /*tp_name*/
+  sizeof(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_8_kd_tree_NodeHeap, /*tp_dealloc*/
+  __pyx_tp_dealloc_4AKNN_8_kd_tree_NodeHeap, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -29014,13 +29014,13 @@ static PyTypeObject __pyx_type_8_kd_tree_NodeHeap = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   "NodeHeap\n\n    This is a min-heap implementation for keeping track of nodes\n    during a breadth-first search.  Unlike the NeighborsHeap above,\n    the NodeHeap does not have a fixed size and must be able to grow\n    as elements are added.\n\n    Internally, the data is stored in a simple binary heap which meets\n    the min heap condition:\n\n        heap[i].val < min(heap[2 * i + 1].val, heap[2 * i + 2].val)\n    ", /*tp_doc*/
-  __pyx_tp_traverse_8_kd_tree_NodeHeap, /*tp_traverse*/
-  __pyx_tp_clear_8_kd_tree_NodeHeap, /*tp_clear*/
+  __pyx_tp_traverse_4AKNN_8_kd_tree_NodeHeap, /*tp_traverse*/
+  __pyx_tp_clear_4AKNN_8_kd_tree_NodeHeap, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_8_kd_tree_NodeHeap, /*tp_methods*/
+  __pyx_methods_4AKNN_8_kd_tree_NodeHeap, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -29028,9 +29028,9 @@ static PyTypeObject __pyx_type_8_kd_tree_NodeHeap = {
   0, /*tp_descr_get*/
   0, /*tp_descr_set*/
   0, /*tp_dictoffset*/
-  __pyx_pw_8_kd_tree_8NodeHeap_3__init__, /*tp_init*/
+  __pyx_pw_4AKNN_8_kd_tree_8NodeHeap_3__init__, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_8_kd_tree_NodeHeap, /*tp_new*/
+  __pyx_tp_new_4AKNN_8_kd_tree_NodeHeap, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -29053,10 +29053,10 @@ static PyTypeObject __pyx_type_8_kd_tree_NodeHeap = {
   0, /*tp_pypy_flags*/
   #endif
 };
-static struct __pyx_vtabstruct_8_kd_tree_BinaryTree __pyx_vtable_8_kd_tree_BinaryTree;
+static struct __pyx_vtabstruct_4AKNN_8_kd_tree_BinaryTree __pyx_vtable_4AKNN_8_kd_tree_BinaryTree;
 
-static PyObject *__pyx_tp_new_8_kd_tree_BinaryTree(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
-  struct __pyx_obj_8_kd_tree_BinaryTree *p;
+static PyObject *__pyx_tp_new_4AKNN_8_kd_tree_BinaryTree(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -29064,8 +29064,8 @@ static PyObject *__pyx_tp_new_8_kd_tree_BinaryTree(PyTypeObject *t, CYTHON_UNUSE
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_8_kd_tree_BinaryTree *)o);
-  p->__pyx_vtab = __pyx_vtabptr_8_kd_tree_BinaryTree;
+  p = ((struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)o);
+  p->__pyx_vtab = __pyx_vtabptr_4AKNN_8_kd_tree_BinaryTree;
   p->data_arr = ((PyArrayObject *)Py_None); Py_INCREF(Py_None);
   p->idx_array_arr = ((PyArrayObject *)Py_None); Py_INCREF(Py_None);
   p->node_data_arr = ((PyArrayObject *)Py_None); Py_INCREF(Py_None);
@@ -29078,15 +29078,15 @@ static PyObject *__pyx_tp_new_8_kd_tree_BinaryTree(PyTypeObject *t, CYTHON_UNUSE
   p->node_data.memview = NULL;
   p->node_bounds.data = NULL;
   p->node_bounds.memview = NULL;
-  if (unlikely(__pyx_pw_8_kd_tree_10BinaryTree_1__cinit__(o, __pyx_empty_tuple, NULL) < 0)) goto bad;
+  if (unlikely(__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_1__cinit__(o, __pyx_empty_tuple, NULL) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_8_kd_tree_BinaryTree(PyObject *o) {
-  struct __pyx_obj_8_kd_tree_BinaryTree *p = (struct __pyx_obj_8_kd_tree_BinaryTree *)o;
+static void __pyx_tp_dealloc_4AKNN_8_kd_tree_BinaryTree(PyObject *o) {
+  struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *p = (struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && !_PyGC_FINALIZED(o)) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -29104,9 +29104,9 @@ static void __pyx_tp_dealloc_8_kd_tree_BinaryTree(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static int __pyx_tp_traverse_8_kd_tree_BinaryTree(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_4AKNN_8_kd_tree_BinaryTree(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_8_kd_tree_BinaryTree *p = (struct __pyx_obj_8_kd_tree_BinaryTree *)o;
+  struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *p = (struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)o;
   if (p->data_arr) {
     e = (*v)(((PyObject *)p->data_arr), a); if (e) return e;
   }
@@ -29122,9 +29122,9 @@ static int __pyx_tp_traverse_8_kd_tree_BinaryTree(PyObject *o, visitproc v, void
   return 0;
 }
 
-static int __pyx_tp_clear_8_kd_tree_BinaryTree(PyObject *o) {
+static int __pyx_tp_clear_4AKNN_8_kd_tree_BinaryTree(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_8_kd_tree_BinaryTree *p = (struct __pyx_obj_8_kd_tree_BinaryTree *)o;
+  struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *p = (struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *)o;
   tmp = ((PyObject*)p->data_arr);
   p->data_arr = ((PyArrayObject *)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
@@ -29140,17 +29140,17 @@ static int __pyx_tp_clear_8_kd_tree_BinaryTree(PyObject *o) {
   return 0;
 }
 
-static PyObject *__pyx_getprop_8_kd_tree_10BinaryTree_data(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8_kd_tree_10BinaryTree_4data_1__get__(o);
+static PyObject *__pyx_getprop_4AKNN_8_kd_tree_10BinaryTree_data(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_4data_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_8_kd_tree_10BinaryTree_sum_weight(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8_kd_tree_10BinaryTree_10sum_weight_1__get__(o);
+static PyObject *__pyx_getprop_4AKNN_8_kd_tree_10BinaryTree_sum_weight(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_10sum_weight_1__get__(o);
 }
 
-static int __pyx_setprop_8_kd_tree_10BinaryTree_sum_weight(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
+static int __pyx_setprop_4AKNN_8_kd_tree_10BinaryTree_sum_weight(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
   if (v) {
-    return __pyx_pw_8_kd_tree_10BinaryTree_10sum_weight_3__set__(o, v);
+    return __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_10sum_weight_3__set__(o, v);
   }
   else {
     PyErr_SetString(PyExc_NotImplementedError, "__del__");
@@ -29158,13 +29158,13 @@ static int __pyx_setprop_8_kd_tree_10BinaryTree_sum_weight(PyObject *o, PyObject
   }
 }
 
-static PyObject *__pyx_getprop_8_kd_tree_10BinaryTree_idx_array(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8_kd_tree_10BinaryTree_9idx_array_1__get__(o);
+static PyObject *__pyx_getprop_4AKNN_8_kd_tree_10BinaryTree_idx_array(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_9idx_array_1__get__(o);
 }
 
-static int __pyx_setprop_8_kd_tree_10BinaryTree_idx_array(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
+static int __pyx_setprop_4AKNN_8_kd_tree_10BinaryTree_idx_array(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
   if (v) {
-    return __pyx_pw_8_kd_tree_10BinaryTree_9idx_array_3__set__(o, v);
+    return __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_9idx_array_3__set__(o, v);
   }
   else {
     PyErr_SetString(PyExc_NotImplementedError, "__del__");
@@ -29172,13 +29172,13 @@ static int __pyx_setprop_8_kd_tree_10BinaryTree_idx_array(PyObject *o, PyObject 
   }
 }
 
-static PyObject *__pyx_getprop_8_kd_tree_10BinaryTree_node_data(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8_kd_tree_10BinaryTree_9node_data_1__get__(o);
+static PyObject *__pyx_getprop_4AKNN_8_kd_tree_10BinaryTree_node_data(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_9node_data_1__get__(o);
 }
 
-static int __pyx_setprop_8_kd_tree_10BinaryTree_node_data(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
+static int __pyx_setprop_4AKNN_8_kd_tree_10BinaryTree_node_data(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
   if (v) {
-    return __pyx_pw_8_kd_tree_10BinaryTree_9node_data_3__set__(o, v);
+    return __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_9node_data_3__set__(o, v);
   }
   else {
     PyErr_SetString(PyExc_NotImplementedError, "__del__");
@@ -29186,13 +29186,13 @@ static int __pyx_setprop_8_kd_tree_10BinaryTree_node_data(PyObject *o, PyObject 
   }
 }
 
-static PyObject *__pyx_getprop_8_kd_tree_10BinaryTree_node_bounds(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_8_kd_tree_10BinaryTree_11node_bounds_1__get__(o);
+static PyObject *__pyx_getprop_4AKNN_8_kd_tree_10BinaryTree_node_bounds(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_11node_bounds_1__get__(o);
 }
 
-static int __pyx_setprop_8_kd_tree_10BinaryTree_node_bounds(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
+static int __pyx_setprop_4AKNN_8_kd_tree_10BinaryTree_node_bounds(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
   if (v) {
-    return __pyx_pw_8_kd_tree_10BinaryTree_11node_bounds_3__set__(o, v);
+    return __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_11node_bounds_3__set__(o, v);
   }
   else {
     PyErr_SetString(PyExc_NotImplementedError, "__del__");
@@ -29200,30 +29200,30 @@ static int __pyx_setprop_8_kd_tree_10BinaryTree_node_bounds(PyObject *o, PyObjec
   }
 }
 
-static PyMethodDef __pyx_methods_8_kd_tree_BinaryTree[] = {
-  {"_update_memviews", (PyCFunction)__pyx_pw_8_kd_tree_10BinaryTree_5_update_memviews, METH_NOARGS, 0},
-  {"get_arrays", (PyCFunction)__pyx_pw_8_kd_tree_10BinaryTree_7get_arrays, METH_NOARGS, __pyx_doc_8_kd_tree_10BinaryTree_6get_arrays},
-  {"query", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8_kd_tree_10BinaryTree_9query, METH_VARARGS|METH_KEYWORDS, __pyx_doc_8_kd_tree_10BinaryTree_8query},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_8_kd_tree_10BinaryTree_11__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_8_kd_tree_10BinaryTree_13__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_4AKNN_8_kd_tree_BinaryTree[] = {
+  {"_update_memviews", (PyCFunction)__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_5_update_memviews, METH_NOARGS, 0},
+  {"get_arrays", (PyCFunction)__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_7get_arrays, METH_NOARGS, __pyx_doc_4AKNN_8_kd_tree_10BinaryTree_6get_arrays},
+  {"query", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_9query, METH_VARARGS|METH_KEYWORDS, __pyx_doc_4AKNN_8_kd_tree_10BinaryTree_8query},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_11__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_4AKNN_8_kd_tree_10BinaryTree_13__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static struct PyGetSetDef __pyx_getsets_8_kd_tree_BinaryTree[] = {
-  {(char *)"data", __pyx_getprop_8_kd_tree_10BinaryTree_data, 0, (char *)0, 0},
-  {(char *)"sum_weight", __pyx_getprop_8_kd_tree_10BinaryTree_sum_weight, __pyx_setprop_8_kd_tree_10BinaryTree_sum_weight, (char *)0, 0},
-  {(char *)"idx_array", __pyx_getprop_8_kd_tree_10BinaryTree_idx_array, __pyx_setprop_8_kd_tree_10BinaryTree_idx_array, (char *)0, 0},
-  {(char *)"node_data", __pyx_getprop_8_kd_tree_10BinaryTree_node_data, __pyx_setprop_8_kd_tree_10BinaryTree_node_data, (char *)0, 0},
-  {(char *)"node_bounds", __pyx_getprop_8_kd_tree_10BinaryTree_node_bounds, __pyx_setprop_8_kd_tree_10BinaryTree_node_bounds, (char *)0, 0},
+static struct PyGetSetDef __pyx_getsets_4AKNN_8_kd_tree_BinaryTree[] = {
+  {(char *)"data", __pyx_getprop_4AKNN_8_kd_tree_10BinaryTree_data, 0, (char *)0, 0},
+  {(char *)"sum_weight", __pyx_getprop_4AKNN_8_kd_tree_10BinaryTree_sum_weight, __pyx_setprop_4AKNN_8_kd_tree_10BinaryTree_sum_weight, (char *)0, 0},
+  {(char *)"idx_array", __pyx_getprop_4AKNN_8_kd_tree_10BinaryTree_idx_array, __pyx_setprop_4AKNN_8_kd_tree_10BinaryTree_idx_array, (char *)0, 0},
+  {(char *)"node_data", __pyx_getprop_4AKNN_8_kd_tree_10BinaryTree_node_data, __pyx_setprop_4AKNN_8_kd_tree_10BinaryTree_node_data, (char *)0, 0},
+  {(char *)"node_bounds", __pyx_getprop_4AKNN_8_kd_tree_10BinaryTree_node_bounds, __pyx_setprop_4AKNN_8_kd_tree_10BinaryTree_node_bounds, (char *)0, 0},
   {0, 0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_8_kd_tree_BinaryTree = {
+static PyTypeObject __pyx_type_4AKNN_8_kd_tree_BinaryTree = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_kd_tree.BinaryTree", /*tp_name*/
-  sizeof(struct __pyx_obj_8_kd_tree_BinaryTree), /*tp_basicsize*/
+  "AKNN._kd_tree.BinaryTree", /*tp_name*/
+  sizeof(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_8_kd_tree_BinaryTree, /*tp_dealloc*/
+  __pyx_tp_dealloc_4AKNN_8_kd_tree_BinaryTree, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -29250,23 +29250,23 @@ static PyTypeObject __pyx_type_8_kd_tree_BinaryTree = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_8_kd_tree_BinaryTree, /*tp_traverse*/
-  __pyx_tp_clear_8_kd_tree_BinaryTree, /*tp_clear*/
+  __pyx_tp_traverse_4AKNN_8_kd_tree_BinaryTree, /*tp_traverse*/
+  __pyx_tp_clear_4AKNN_8_kd_tree_BinaryTree, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_8_kd_tree_BinaryTree, /*tp_methods*/
+  __pyx_methods_4AKNN_8_kd_tree_BinaryTree, /*tp_methods*/
   0, /*tp_members*/
-  __pyx_getsets_8_kd_tree_BinaryTree, /*tp_getset*/
+  __pyx_getsets_4AKNN_8_kd_tree_BinaryTree, /*tp_getset*/
   0, /*tp_base*/
   0, /*tp_dict*/
   0, /*tp_descr_get*/
   0, /*tp_descr_set*/
   0, /*tp_dictoffset*/
-  __pyx_pw_8_kd_tree_10BinaryTree_3__init__, /*tp_init*/
+  __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_3__init__, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_8_kd_tree_BinaryTree, /*tp_new*/
+  __pyx_tp_new_4AKNN_8_kd_tree_BinaryTree, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -29289,29 +29289,29 @@ static PyTypeObject __pyx_type_8_kd_tree_BinaryTree = {
   0, /*tp_pypy_flags*/
   #endif
 };
-static struct __pyx_vtabstruct_8_kd_tree_KDTree __pyx_vtable_8_kd_tree_KDTree;
+static struct __pyx_vtabstruct_4AKNN_8_kd_tree_KDTree __pyx_vtable_4AKNN_8_kd_tree_KDTree;
 
-static PyObject *__pyx_tp_new_8_kd_tree_KDTree(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_8_kd_tree_KDTree *p;
-  PyObject *o = __pyx_tp_new_8_kd_tree_BinaryTree(t, a, k);
+static PyObject *__pyx_tp_new_4AKNN_8_kd_tree_KDTree(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_4AKNN_8_kd_tree_KDTree *p;
+  PyObject *o = __pyx_tp_new_4AKNN_8_kd_tree_BinaryTree(t, a, k);
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_8_kd_tree_KDTree *)o);
-  p->__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_8_kd_tree_BinaryTree*)__pyx_vtabptr_8_kd_tree_KDTree;
+  p = ((struct __pyx_obj_4AKNN_8_kd_tree_KDTree *)o);
+  p->__pyx_base.__pyx_vtab = (struct __pyx_vtabstruct_4AKNN_8_kd_tree_BinaryTree*)__pyx_vtabptr_4AKNN_8_kd_tree_KDTree;
   return o;
 }
 
-static PyMethodDef __pyx_methods_8_kd_tree_KDTree[] = {
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_8_kd_tree_6KDTree_1__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_8_kd_tree_6KDTree_3__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_4AKNN_8_kd_tree_KDTree[] = {
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_4AKNN_8_kd_tree_6KDTree_1__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_4AKNN_8_kd_tree_6KDTree_3__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_8_kd_tree_KDTree = {
+static PyTypeObject __pyx_type_4AKNN_8_kd_tree_KDTree = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_kd_tree.KDTree", /*tp_name*/
-  sizeof(struct __pyx_obj_8_kd_tree_KDTree), /*tp_basicsize*/
+  "AKNN._kd_tree.KDTree", /*tp_name*/
+  sizeof(struct __pyx_obj_4AKNN_8_kd_tree_KDTree), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_8_kd_tree_BinaryTree, /*tp_dealloc*/
+  __pyx_tp_dealloc_4AKNN_8_kd_tree_BinaryTree, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -29338,13 +29338,13 @@ static PyTypeObject __pyx_type_8_kd_tree_KDTree = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_8_kd_tree_BinaryTree, /*tp_traverse*/
-  __pyx_tp_clear_8_kd_tree_BinaryTree, /*tp_clear*/
+  __pyx_tp_traverse_4AKNN_8_kd_tree_BinaryTree, /*tp_traverse*/
+  __pyx_tp_clear_4AKNN_8_kd_tree_BinaryTree, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_8_kd_tree_KDTree, /*tp_methods*/
+  __pyx_methods_4AKNN_8_kd_tree_KDTree, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -29353,12 +29353,12 @@ static PyTypeObject __pyx_type_8_kd_tree_KDTree = {
   0, /*tp_descr_set*/
   0, /*tp_dictoffset*/
   #if CYTHON_COMPILING_IN_PYPY
-  __pyx_pw_8_kd_tree_10BinaryTree_3__init__, /*tp_init*/
+  __pyx_pw_4AKNN_8_kd_tree_10BinaryTree_3__init__, /*tp_init*/
   #else
   0, /*tp_init*/
   #endif
   0, /*tp_alloc*/
-  __pyx_tp_new_8_kd_tree_KDTree, /*tp_new*/
+  __pyx_tp_new_4AKNN_8_kd_tree_KDTree, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -29504,7 +29504,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_kd_tree.array", /*tp_name*/
+  "AKNN._kd_tree.array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -29626,7 +29626,7 @@ static PyMethodDef __pyx_methods_Enum[] = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_kd_tree.Enum", /*tp_name*/
+  "AKNN._kd_tree.Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -29890,7 +29890,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_kd_tree.memoryview", /*tp_name*/
+  "AKNN._kd_tree.memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -30031,7 +30031,7 @@ static struct PyGetSetDef __pyx_getsets__memoryviewslice[] = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "_kd_tree._memoryviewslice", /*tp_name*/
+  "AKNN._kd_tree._memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -30156,6 +30156,7 @@ static struct PyModuleDef __pyx_moduledef = {
 
 static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_s_AKNN__binary_tree_pxi, __pyx_k_AKNN__binary_tree_pxi, sizeof(__pyx_k_AKNN__binary_tree_pxi), 0, 0, 1, 0},
+  {&__pyx_n_s_AKNN__kd_tree, __pyx_k_AKNN__kd_tree, sizeof(__pyx_k_AKNN__kd_tree), 0, 0, 1, 1},
   {&__pyx_n_s_ASCII, __pyx_k_ASCII, sizeof(__pyx_k_ASCII), 0, 0, 1, 1},
   {&__pyx_n_s_BinaryTree, __pyx_k_BinaryTree, sizeof(__pyx_k_BinaryTree), 0, 0, 1, 1},
   {&__pyx_kp_s_BinaryTree_X_leaf_size_40_metri, __pyx_k_BinaryTree_X_leaf_size_40_metri, sizeof(__pyx_k_BinaryTree_X_leaf_size_40_metri), 0, 0, 1, 0},
@@ -30264,7 +30265,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_k, __pyx_k_k, sizeof(__pyx_k_k), 0, 0, 1, 1},
   {&__pyx_kp_s_k_must_be_less_than_or_equal_to, __pyx_k_k_must_be_less_than_or_equal_to, sizeof(__pyx_k_k_must_be_less_than_or_equal_to), 0, 0, 1, 0},
   {&__pyx_n_s_kd_tree, __pyx_k_kd_tree, sizeof(__pyx_k_kd_tree), 0, 0, 1, 1},
-  {&__pyx_n_s_kd_tree_2, __pyx_k_kd_tree_2, sizeof(__pyx_k_kd_tree_2), 0, 0, 1, 1},
   {&__pyx_n_s_leaf_size, __pyx_k_leaf_size, sizeof(__pyx_k_leaf_size), 0, 0, 1, 1},
   {&__pyx_kp_s_leaf_size_must_be_greater_than_o, __pyx_k_leaf_size_must_be_greater_than_o, sizeof(__pyx_k_leaf_size_must_be_greater_than_o), 0, 0, 1, 0},
   {&__pyx_n_s_log2, __pyx_k_log2, sizeof(__pyx_k_log2), 0, 0, 1, 1},
@@ -30964,69 +30964,69 @@ static int __Pyx_modinit_type_init_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  __pyx_vtabptr_8_kd_tree_NeighborsHeap = &__pyx_vtable_8_kd_tree_NeighborsHeap;
-  __pyx_vtable_8_kd_tree_NeighborsHeap.largest = (__pyx_t_8_kd_tree_DTYPE_t (*)(struct __pyx_obj_8_kd_tree_NeighborsHeap *, __pyx_t_8_kd_tree_ITYPE_t))__pyx_f_8_kd_tree_13NeighborsHeap_largest;
-  __pyx_vtable_8_kd_tree_NeighborsHeap._push = (int (*)(struct __pyx_obj_8_kd_tree_NeighborsHeap *, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_DTYPE_t, __pyx_t_8_kd_tree_ITYPE_t))__pyx_f_8_kd_tree_13NeighborsHeap__push;
-  __pyx_vtable_8_kd_tree_NeighborsHeap._sort = (int (*)(struct __pyx_obj_8_kd_tree_NeighborsHeap *))__pyx_f_8_kd_tree_13NeighborsHeap__sort;
-  if (PyType_Ready(&__pyx_type_8_kd_tree_NeighborsHeap) < 0) __PYX_ERR(0, 538, __pyx_L1_error)
+  __pyx_vtabptr_4AKNN_8_kd_tree_NeighborsHeap = &__pyx_vtable_4AKNN_8_kd_tree_NeighborsHeap;
+  __pyx_vtable_4AKNN_8_kd_tree_NeighborsHeap.largest = (__pyx_t_4AKNN_8_kd_tree_DTYPE_t (*)(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t))__pyx_f_4AKNN_8_kd_tree_13NeighborsHeap_largest;
+  __pyx_vtable_4AKNN_8_kd_tree_NeighborsHeap._push = (int (*)(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_DTYPE_t, __pyx_t_4AKNN_8_kd_tree_ITYPE_t))__pyx_f_4AKNN_8_kd_tree_13NeighborsHeap__push;
+  __pyx_vtable_4AKNN_8_kd_tree_NeighborsHeap._sort = (int (*)(struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *))__pyx_f_4AKNN_8_kd_tree_13NeighborsHeap__sort;
+  if (PyType_Ready(&__pyx_type_4AKNN_8_kd_tree_NeighborsHeap) < 0) __PYX_ERR(0, 538, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_8_kd_tree_NeighborsHeap.tp_print = 0;
+  __pyx_type_4AKNN_8_kd_tree_NeighborsHeap.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8_kd_tree_NeighborsHeap.tp_dictoffset && __pyx_type_8_kd_tree_NeighborsHeap.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_8_kd_tree_NeighborsHeap.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_4AKNN_8_kd_tree_NeighborsHeap.tp_dictoffset && __pyx_type_4AKNN_8_kd_tree_NeighborsHeap.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_4AKNN_8_kd_tree_NeighborsHeap.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_8_kd_tree_NeighborsHeap.tp_dict, __pyx_vtabptr_8_kd_tree_NeighborsHeap) < 0) __PYX_ERR(0, 538, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_NeighborsHeap, (PyObject *)&__pyx_type_8_kd_tree_NeighborsHeap) < 0) __PYX_ERR(0, 538, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_8_kd_tree_NeighborsHeap) < 0) __PYX_ERR(0, 538, __pyx_L1_error)
-  __pyx_ptype_8_kd_tree_NeighborsHeap = &__pyx_type_8_kd_tree_NeighborsHeap;
-  __pyx_vtabptr_8_kd_tree_NodeHeap = &__pyx_vtable_8_kd_tree_NodeHeap;
-  __pyx_vtable_8_kd_tree_NodeHeap.resize = (int (*)(struct __pyx_obj_8_kd_tree_NodeHeap *, __pyx_t_8_kd_tree_ITYPE_t))__pyx_f_8_kd_tree_8NodeHeap_resize;
-  __pyx_vtable_8_kd_tree_NodeHeap.push = (int (*)(struct __pyx_obj_8_kd_tree_NodeHeap *, struct __pyx_t_8_kd_tree_NodeHeapData_t))__pyx_f_8_kd_tree_8NodeHeap_push;
-  __pyx_vtable_8_kd_tree_NodeHeap.peek = (struct __pyx_t_8_kd_tree_NodeHeapData_t (*)(struct __pyx_obj_8_kd_tree_NodeHeap *))__pyx_f_8_kd_tree_8NodeHeap_peek;
-  __pyx_vtable_8_kd_tree_NodeHeap.pop = (struct __pyx_t_8_kd_tree_NodeHeapData_t (*)(struct __pyx_obj_8_kd_tree_NodeHeap *))__pyx_f_8_kd_tree_8NodeHeap_pop;
-  __pyx_vtable_8_kd_tree_NodeHeap.clear = (void (*)(struct __pyx_obj_8_kd_tree_NodeHeap *))__pyx_f_8_kd_tree_8NodeHeap_clear;
-  if (PyType_Ready(&__pyx_type_8_kd_tree_NodeHeap) < 0) __PYX_ERR(0, 672, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_4AKNN_8_kd_tree_NeighborsHeap.tp_dict, __pyx_vtabptr_4AKNN_8_kd_tree_NeighborsHeap) < 0) __PYX_ERR(0, 538, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_NeighborsHeap, (PyObject *)&__pyx_type_4AKNN_8_kd_tree_NeighborsHeap) < 0) __PYX_ERR(0, 538, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4AKNN_8_kd_tree_NeighborsHeap) < 0) __PYX_ERR(0, 538, __pyx_L1_error)
+  __pyx_ptype_4AKNN_8_kd_tree_NeighborsHeap = &__pyx_type_4AKNN_8_kd_tree_NeighborsHeap;
+  __pyx_vtabptr_4AKNN_8_kd_tree_NodeHeap = &__pyx_vtable_4AKNN_8_kd_tree_NodeHeap;
+  __pyx_vtable_4AKNN_8_kd_tree_NodeHeap.resize = (int (*)(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t))__pyx_f_4AKNN_8_kd_tree_8NodeHeap_resize;
+  __pyx_vtable_4AKNN_8_kd_tree_NodeHeap.push = (int (*)(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *, struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t))__pyx_f_4AKNN_8_kd_tree_8NodeHeap_push;
+  __pyx_vtable_4AKNN_8_kd_tree_NodeHeap.peek = (struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t (*)(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *))__pyx_f_4AKNN_8_kd_tree_8NodeHeap_peek;
+  __pyx_vtable_4AKNN_8_kd_tree_NodeHeap.pop = (struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t (*)(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *))__pyx_f_4AKNN_8_kd_tree_8NodeHeap_pop;
+  __pyx_vtable_4AKNN_8_kd_tree_NodeHeap.clear = (void (*)(struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *))__pyx_f_4AKNN_8_kd_tree_8NodeHeap_clear;
+  if (PyType_Ready(&__pyx_type_4AKNN_8_kd_tree_NodeHeap) < 0) __PYX_ERR(0, 672, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_8_kd_tree_NodeHeap.tp_print = 0;
+  __pyx_type_4AKNN_8_kd_tree_NodeHeap.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8_kd_tree_NodeHeap.tp_dictoffset && __pyx_type_8_kd_tree_NodeHeap.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_8_kd_tree_NodeHeap.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_4AKNN_8_kd_tree_NodeHeap.tp_dictoffset && __pyx_type_4AKNN_8_kd_tree_NodeHeap.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_4AKNN_8_kd_tree_NodeHeap.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_8_kd_tree_NodeHeap.tp_dict, __pyx_vtabptr_8_kd_tree_NodeHeap) < 0) __PYX_ERR(0, 672, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_NodeHeap, (PyObject *)&__pyx_type_8_kd_tree_NodeHeap) < 0) __PYX_ERR(0, 672, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_8_kd_tree_NodeHeap) < 0) __PYX_ERR(0, 672, __pyx_L1_error)
-  __pyx_ptype_8_kd_tree_NodeHeap = &__pyx_type_8_kd_tree_NodeHeap;
-  __pyx_vtabptr_8_kd_tree_BinaryTree = &__pyx_vtable_8_kd_tree_BinaryTree;
-  __pyx_vtable_8_kd_tree_BinaryTree.dist = (__pyx_t_8_kd_tree_DTYPE_t (*)(struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_ITYPE_t))__pyx_f_8_kd_tree_10BinaryTree_dist;
-  __pyx_vtable_8_kd_tree_BinaryTree.rdist = (__pyx_t_8_kd_tree_DTYPE_t (*)(struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_ITYPE_t))__pyx_f_8_kd_tree_10BinaryTree_rdist;
-  __pyx_vtable_8_kd_tree_BinaryTree._recursive_build = (int (*)(struct __pyx_obj_8_kd_tree_BinaryTree *, __Pyx_memviewslice, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_ITYPE_t))__pyx_f_8_kd_tree_10BinaryTree__recursive_build;
-  __pyx_vtable_8_kd_tree_BinaryTree._query_single_depthfirst = (int (*)(struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_ITYPE_t, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_ITYPE_t, struct __pyx_obj_8_kd_tree_NeighborsHeap *, __pyx_t_8_kd_tree_DTYPE_t))__pyx_f_8_kd_tree_10BinaryTree__query_single_depthfirst;
-  __pyx_vtable_8_kd_tree_BinaryTree._query_single_breadthfirst = (int (*)(struct __pyx_obj_8_kd_tree_BinaryTree *, __pyx_t_8_kd_tree_DTYPE_t *, __pyx_t_8_kd_tree_ITYPE_t, struct __pyx_obj_8_kd_tree_NeighborsHeap *, struct __pyx_obj_8_kd_tree_NodeHeap *))__pyx_f_8_kd_tree_10BinaryTree__query_single_breadthfirst;
-  if (PyType_Ready(&__pyx_type_8_kd_tree_BinaryTree) < 0) __PYX_ERR(0, 805, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_4AKNN_8_kd_tree_NodeHeap.tp_dict, __pyx_vtabptr_4AKNN_8_kd_tree_NodeHeap) < 0) __PYX_ERR(0, 672, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_NodeHeap, (PyObject *)&__pyx_type_4AKNN_8_kd_tree_NodeHeap) < 0) __PYX_ERR(0, 672, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4AKNN_8_kd_tree_NodeHeap) < 0) __PYX_ERR(0, 672, __pyx_L1_error)
+  __pyx_ptype_4AKNN_8_kd_tree_NodeHeap = &__pyx_type_4AKNN_8_kd_tree_NodeHeap;
+  __pyx_vtabptr_4AKNN_8_kd_tree_BinaryTree = &__pyx_vtable_4AKNN_8_kd_tree_BinaryTree;
+  __pyx_vtable_4AKNN_8_kd_tree_BinaryTree.dist = (__pyx_t_4AKNN_8_kd_tree_DTYPE_t (*)(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t))__pyx_f_4AKNN_8_kd_tree_10BinaryTree_dist;
+  __pyx_vtable_4AKNN_8_kd_tree_BinaryTree.rdist = (__pyx_t_4AKNN_8_kd_tree_DTYPE_t (*)(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t))__pyx_f_4AKNN_8_kd_tree_10BinaryTree_rdist;
+  __pyx_vtable_4AKNN_8_kd_tree_BinaryTree._recursive_build = (int (*)(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __Pyx_memviewslice, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_ITYPE_t))__pyx_f_4AKNN_8_kd_tree_10BinaryTree__recursive_build;
+  __pyx_vtable_4AKNN_8_kd_tree_BinaryTree._query_single_depthfirst = (int (*)(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t))__pyx_f_4AKNN_8_kd_tree_10BinaryTree__query_single_depthfirst;
+  __pyx_vtable_4AKNN_8_kd_tree_BinaryTree._query_single_breadthfirst = (int (*)(struct __pyx_obj_4AKNN_8_kd_tree_BinaryTree *, __pyx_t_4AKNN_8_kd_tree_DTYPE_t *, __pyx_t_4AKNN_8_kd_tree_ITYPE_t, struct __pyx_obj_4AKNN_8_kd_tree_NeighborsHeap *, struct __pyx_obj_4AKNN_8_kd_tree_NodeHeap *))__pyx_f_4AKNN_8_kd_tree_10BinaryTree__query_single_breadthfirst;
+  if (PyType_Ready(&__pyx_type_4AKNN_8_kd_tree_BinaryTree) < 0) __PYX_ERR(0, 805, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_8_kd_tree_BinaryTree.tp_print = 0;
+  __pyx_type_4AKNN_8_kd_tree_BinaryTree.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8_kd_tree_BinaryTree.tp_dictoffset && __pyx_type_8_kd_tree_BinaryTree.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_8_kd_tree_BinaryTree.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_4AKNN_8_kd_tree_BinaryTree.tp_dictoffset && __pyx_type_4AKNN_8_kd_tree_BinaryTree.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_4AKNN_8_kd_tree_BinaryTree.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_8_kd_tree_BinaryTree.tp_dict, __pyx_vtabptr_8_kd_tree_BinaryTree) < 0) __PYX_ERR(0, 805, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BinaryTree, (PyObject *)&__pyx_type_8_kd_tree_BinaryTree) < 0) __PYX_ERR(0, 805, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_8_kd_tree_BinaryTree) < 0) __PYX_ERR(0, 805, __pyx_L1_error)
-  __pyx_ptype_8_kd_tree_BinaryTree = &__pyx_type_8_kd_tree_BinaryTree;
-  __pyx_vtabptr_8_kd_tree_KDTree = &__pyx_vtable_8_kd_tree_KDTree;
-  __pyx_vtable_8_kd_tree_KDTree.__pyx_base = *__pyx_vtabptr_8_kd_tree_BinaryTree;
-  __pyx_type_8_kd_tree_KDTree.tp_base = __pyx_ptype_8_kd_tree_BinaryTree;
-  if (PyType_Ready(&__pyx_type_8_kd_tree_KDTree) < 0) __PYX_ERR(2, 13, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_4AKNN_8_kd_tree_BinaryTree.tp_dict, __pyx_vtabptr_4AKNN_8_kd_tree_BinaryTree) < 0) __PYX_ERR(0, 805, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_BinaryTree, (PyObject *)&__pyx_type_4AKNN_8_kd_tree_BinaryTree) < 0) __PYX_ERR(0, 805, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4AKNN_8_kd_tree_BinaryTree) < 0) __PYX_ERR(0, 805, __pyx_L1_error)
+  __pyx_ptype_4AKNN_8_kd_tree_BinaryTree = &__pyx_type_4AKNN_8_kd_tree_BinaryTree;
+  __pyx_vtabptr_4AKNN_8_kd_tree_KDTree = &__pyx_vtable_4AKNN_8_kd_tree_KDTree;
+  __pyx_vtable_4AKNN_8_kd_tree_KDTree.__pyx_base = *__pyx_vtabptr_4AKNN_8_kd_tree_BinaryTree;
+  __pyx_type_4AKNN_8_kd_tree_KDTree.tp_base = __pyx_ptype_4AKNN_8_kd_tree_BinaryTree;
+  if (PyType_Ready(&__pyx_type_4AKNN_8_kd_tree_KDTree) < 0) __PYX_ERR(2, 13, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_8_kd_tree_KDTree.tp_print = 0;
+  __pyx_type_4AKNN_8_kd_tree_KDTree.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8_kd_tree_KDTree.tp_dictoffset && __pyx_type_8_kd_tree_KDTree.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_8_kd_tree_KDTree.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_4AKNN_8_kd_tree_KDTree.tp_dictoffset && __pyx_type_4AKNN_8_kd_tree_KDTree.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_4AKNN_8_kd_tree_KDTree.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_8_kd_tree_KDTree.tp_dict, __pyx_vtabptr_8_kd_tree_KDTree) < 0) __PYX_ERR(2, 13, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_KDTree, (PyObject *)&__pyx_type_8_kd_tree_KDTree) < 0) __PYX_ERR(2, 13, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_8_kd_tree_KDTree) < 0) __PYX_ERR(2, 13, __pyx_L1_error)
-  __pyx_ptype_8_kd_tree_KDTree = &__pyx_type_8_kd_tree_KDTree;
+  if (__Pyx_SetVtable(__pyx_type_4AKNN_8_kd_tree_KDTree.tp_dict, __pyx_vtabptr_4AKNN_8_kd_tree_KDTree) < 0) __PYX_ERR(2, 13, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_KDTree, (PyObject *)&__pyx_type_4AKNN_8_kd_tree_KDTree) < 0) __PYX_ERR(2, 13, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_4AKNN_8_kd_tree_KDTree) < 0) __PYX_ERR(2, 13, __pyx_L1_error)
+  __pyx_ptype_4AKNN_8_kd_tree_KDTree = &__pyx_type_4AKNN_8_kd_tree_KDTree;
   __pyx_vtabptr_array = &__pyx_vtable_array;
   __pyx_vtable_array.get_memview = (PyObject *(*)(struct __pyx_array_obj *))__pyx_array_get_memview;
   if (PyType_Ready(&__pyx_type___pyx_array) < 0) __PYX_ERR(1, 106, __pyx_L1_error)
@@ -31270,11 +31270,11 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec__kd_tree(PyObject *__pyx_pyinit_mo
   PyObject *__pyx_t_1 = NULL;
   PyObject *__pyx_t_2 = NULL;
   int __pyx_t_3;
-  __pyx_t_8_kd_tree_DTYPE_t __pyx_t_4;
-  struct __pyx_t_8_kd_tree_NodeHeapData_t *__pyx_t_5;
+  __pyx_t_4AKNN_8_kd_tree_DTYPE_t __pyx_t_4;
+  struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *__pyx_t_5;
   struct __pyx_array_obj *__pyx_t_6 = NULL;
   PyObject *__pyx_t_7 = NULL;
-  struct __pyx_t_8_kd_tree_NodeData_t *__pyx_t_8;
+  struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *__pyx_t_8;
   static PyThread_type_lock __pyx_t_9[8];
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -31353,14 +31353,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(2, 3, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main__kd_tree) {
+  if (__pyx_module_is_main_AKNN___kd_tree) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name_2, __pyx_n_s_main) < 0) __PYX_ERR(2, 3, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(2, 3, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "_kd_tree")) {
-      if (unlikely(PyDict_SetItemString(modules, "_kd_tree", __pyx_m) < 0)) __PYX_ERR(2, 3, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "AKNN._kd_tree")) {
+      if (unlikely(PyDict_SetItemString(modules, "AKNN._kd_tree", __pyx_m) < 0)) __PYX_ERR(2, 3, __pyx_L1_error)
     }
   }
   #endif
@@ -31381,7 +31381,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(2, 3, __pyx_L1_error)
   #endif
 
-  /* "_kd_tree.pyx":3
+  /* "AKNN/_kd_tree.pyx":3
  * 
  * 
  * __all__ = ['KDTree']             # <<<<<<<<<<<<<<
@@ -31396,7 +31396,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_all, __pyx_t_1) < 0) __PYX_ERR(2, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "_kd_tree.pyx":5
+  /* "AKNN/_kd_tree.pyx":5
  * __all__ = ['KDTree']
  * 
  * DOC_DICT = {'BinaryTree': 'KDTree', 'binary_tree': 'kd_tree'}             # <<<<<<<<<<<<<<
@@ -31410,7 +31410,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_DOC_DICT, __pyx_t_1) < 0) __PYX_ERR(2, 5, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "_kd_tree.pyx":7
+  /* "AKNN/_kd_tree.pyx":7
  * DOC_DICT = {'BinaryTree': 'KDTree', 'binary_tree': 'kd_tree'}
  * 
  * VALID_METRICS = ['EuclideanDistance']             # <<<<<<<<<<<<<<
@@ -31523,7 +31523,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_4 = __pyx_PyFloat_AsDouble(__pyx_t_1); if (unlikely((__pyx_t_4 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 310, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_v_8_kd_tree_INF = __pyx_t_4;
+  __pyx_v_4AKNN_8_kd_tree_INF = __pyx_t_4;
 
   /* "AKNN/_binary_tree.pxi":311
  * # some handy constants
@@ -31542,7 +31542,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_4 = __pyx_PyFloat_AsDouble(__pyx_t_1); if (unlikely((__pyx_t_4 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 311, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_v_8_kd_tree_NEG_INF = __pyx_t_4;
+  __pyx_v_4AKNN_8_kd_tree_NEG_INF = __pyx_t_4;
 
   /* "AKNN/_binary_tree.pxi":312
  * cdef DTYPE_t INF = np.inf
@@ -31558,7 +31558,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_4 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 312, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_v_8_kd_tree_PI = __pyx_t_4;
+  __pyx_v_4AKNN_8_kd_tree_PI = __pyx_t_4;
 
   /* "AKNN/_binary_tree.pxi":313
  * cdef DTYPE_t NEG_INF = -np.inf
@@ -31567,7 +31567,7 @@ if (!__Pyx_RefNanny) {
  * cdef DTYPE_t LOG_PI = log(PI)
  * cdef DTYPE_t LOG_2PI = log(2 * PI)
  */
-  __pyx_v_8_kd_tree_ROOT_2PI = sqrt((2.0 * __pyx_v_8_kd_tree_PI));
+  __pyx_v_4AKNN_8_kd_tree_ROOT_2PI = sqrt((2.0 * __pyx_v_4AKNN_8_kd_tree_PI));
 
   /* "AKNN/_binary_tree.pxi":314
  * cdef DTYPE_t PI = np.pi
@@ -31576,7 +31576,7 @@ if (!__Pyx_RefNanny) {
  * cdef DTYPE_t LOG_2PI = log(2 * PI)
  * 
  */
-  __pyx_v_8_kd_tree_LOG_PI = log(__pyx_v_8_kd_tree_PI);
+  __pyx_v_4AKNN_8_kd_tree_LOG_PI = log(__pyx_v_4AKNN_8_kd_tree_PI);
 
   /* "AKNN/_binary_tree.pxi":315
  * cdef DTYPE_t ROOT_2PI = sqrt(2 * PI)
@@ -31585,7 +31585,7 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  */
-  __pyx_v_8_kd_tree_LOG_2PI = log((2.0 * __pyx_v_8_kd_tree_PI));
+  __pyx_v_4AKNN_8_kd_tree_LOG_2PI = log((2.0 * __pyx_v_4AKNN_8_kd_tree_PI));
 
   /* "AKNN/_binary_tree.pxi":326
  * # build the corresponding numpy dtype for NodeHeapData
@@ -31599,16 +31599,16 @@ if (!__Pyx_RefNanny) {
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_asarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 326, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_5 = (&__pyx_v_8_kd_tree_nhd_tmp);
+  __pyx_t_5 = (&__pyx_v_4AKNN_8_kd_tree_nhd_tmp);
   if (!__pyx_t_5) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
     __PYX_ERR(0, 326, __pyx_L1_error)
   }
-  __pyx_t_7 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn_struct____pyx_t_8_kd_tree_NodeHeapData_t); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 326, __pyx_L1_error)
+  __pyx_t_7 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 326, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 326, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_6 = __pyx_array_new(__pyx_t_2, sizeof(struct __pyx_t_8_kd_tree_NodeHeapData_t), PyBytes_AS_STRING(__pyx_t_7), (char *) "c", (char *) __pyx_t_5);
+  __pyx_t_6 = __pyx_array_new(__pyx_t_2, sizeof(struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t), PyBytes_AS_STRING(__pyx_t_7), (char *) "c", (char *) __pyx_t_5);
   if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 326, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -31635,16 +31635,16 @@ if (!__Pyx_RefNanny) {
   __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_asarray); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 336, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_8 = (&__pyx_v_8_kd_tree_nd_tmp);
+  __pyx_t_8 = (&__pyx_v_4AKNN_8_kd_tree_nd_tmp);
   if (!__pyx_t_8) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
     __PYX_ERR(0, 336, __pyx_L1_error)
   }
-  __pyx_t_2 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn_struct____pyx_t_8_kd_tree_NodeData_t); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 336, __pyx_L1_error)
+  __pyx_t_2 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 336, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_1 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 336, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __pyx_array_new(__pyx_t_1, sizeof(struct __pyx_t_8_kd_tree_NodeData_t), PyBytes_AS_STRING(__pyx_t_2), (char *) "c", (char *) __pyx_t_8);
+  __pyx_t_6 = __pyx_array_new(__pyx_t_1, sizeof(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t), PyBytes_AS_STRING(__pyx_t_2), (char *) "c", (char *) __pyx_t_8);
   if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 336, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -31675,12 +31675,12 @@ if (!__Pyx_RefNanny) {
  *     return obj.__new__(obj)
  * 
  */
-  __pyx_t_7 = PyCFunction_NewEx(&__pyx_mdef_8_kd_tree_1newObj, NULL, __pyx_n_s_kd_tree_2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 797, __pyx_L1_error)
+  __pyx_t_7 = PyCFunction_NewEx(&__pyx_mdef_4AKNN_8_kd_tree_1newObj, NULL, __pyx_n_s_AKNN__kd_tree); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 797, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_newObj, __pyx_t_7) < 0) __PYX_ERR(0, 797, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "_kd_tree.pyx":14
+  /* "AKNN/_kd_tree.pyx":14
  * # Inherit KDTree from BinaryTree
  * cdef class KDTree(BinaryTree):
  *     __doc__ = CLASS_DOC.format(**DOC_DICT)             # <<<<<<<<<<<<<<
@@ -31711,11 +31711,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_8_kd_tree_KDTree->tp_dict, __pyx_n_s_doc, __pyx_t_1) < 0) __PYX_ERR(2, 14, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_4AKNN_8_kd_tree_KDTree->tp_dict, __pyx_n_s_doc, __pyx_t_1) < 0) __PYX_ERR(2, 14, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  PyType_Modified(__pyx_ptype_8_kd_tree_KDTree);
+  PyType_Modified(__pyx_ptype_4AKNN_8_kd_tree_KDTree);
 
-  /* "_kd_tree.pyx":3
+  /* "AKNN/_kd_tree.pyx":3
  * 
  * 
  * __all__ = ['KDTree']             # <<<<<<<<<<<<<<
@@ -31890,11 +31890,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_7);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init _kd_tree", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init AKNN._kd_tree", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init _kd_tree");
+    PyErr_SetString(PyExc_ImportError, "init AKNN._kd_tree");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -34696,7 +34696,7 @@ __pyx_capsule_create(void *p, CYTHON_UNUSED const char *sig)
     return cobj;
 }
 
-static PyObject* __pyx_convert__to_py_struct____pyx_t_8_kd_tree_NodeHeapData_t(struct __pyx_t_8_kd_tree_NodeHeapData_t s) {
+static PyObject* __pyx_convert__to_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t s) {
   PyObject* res;
   PyObject* member;
   res = __Pyx_PyDict_NewPresized(3); if (unlikely(!res)) return NULL;
@@ -34738,18 +34738,18 @@ static PyObject* __pyx_convert__to_py_struct____pyx_t_8_kd_tree_NodeHeapData_t(s
     }
 
 /* MemviewDtypeToObject */
-static CYTHON_INLINE PyObject *__pyx_memview_get_nn_struct____pyx_t_8_kd_tree_NodeHeapData_t(const char *itemp) {
-    return (PyObject *) __pyx_convert__to_py_struct____pyx_t_8_kd_tree_NodeHeapData_t(*(struct __pyx_t_8_kd_tree_NodeHeapData_t *) itemp);
+static CYTHON_INLINE PyObject *__pyx_memview_get_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(const char *itemp) {
+    return (PyObject *) __pyx_convert__to_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(*(struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *) itemp);
 }
-static CYTHON_INLINE int __pyx_memview_set_nn_struct____pyx_t_8_kd_tree_NodeHeapData_t(const char *itemp, PyObject *obj) {
-    struct __pyx_t_8_kd_tree_NodeHeapData_t value = __pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeHeapData_t(obj);
+static CYTHON_INLINE int __pyx_memview_set_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(const char *itemp, PyObject *obj) {
+    struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t value = __pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(obj);
     if (PyErr_Occurred())
         return 0;
-    *(struct __pyx_t_8_kd_tree_NodeHeapData_t *) itemp = value;
+    *(struct __pyx_t_4AKNN_8_kd_tree_NodeHeapData_t *) itemp = value;
     return 1;
 }
 
-static PyObject* __pyx_convert__to_py_struct____pyx_t_8_kd_tree_NodeData_t(struct __pyx_t_8_kd_tree_NodeData_t s) {
+static PyObject* __pyx_convert__to_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t s) {
   PyObject* res;
   PyObject* member;
   res = __Pyx_PyDict_NewPresized(4); if (unlikely(!res)) return NULL;
@@ -34772,14 +34772,14 @@ static PyObject* __pyx_convert__to_py_struct____pyx_t_8_kd_tree_NodeData_t(struc
   return NULL;
 }
 /* MemviewDtypeToObject */
-static CYTHON_INLINE PyObject *__pyx_memview_get_nn_struct____pyx_t_8_kd_tree_NodeData_t(const char *itemp) {
-    return (PyObject *) __pyx_convert__to_py_struct____pyx_t_8_kd_tree_NodeData_t(*(struct __pyx_t_8_kd_tree_NodeData_t *) itemp);
+static CYTHON_INLINE PyObject *__pyx_memview_get_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(const char *itemp) {
+    return (PyObject *) __pyx_convert__to_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(*(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *) itemp);
 }
-static CYTHON_INLINE int __pyx_memview_set_nn_struct____pyx_t_8_kd_tree_NodeData_t(const char *itemp, PyObject *obj) {
-    struct __pyx_t_8_kd_tree_NodeData_t value = __pyx_convert__from_py_struct____pyx_t_8_kd_tree_NodeData_t(obj);
+static CYTHON_INLINE int __pyx_memview_set_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(const char *itemp, PyObject *obj) {
+    struct __pyx_t_4AKNN_8_kd_tree_NodeData_t value = __pyx_convert__from_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(obj);
     if (PyErr_Occurred())
         return 0;
-    *(struct __pyx_t_8_kd_tree_NodeData_t *) itemp = value;
+    *(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t *) itemp = value;
     return 1;
 }
 
@@ -35519,7 +35519,7 @@ no_fail:
 }
 
 /* ObjectToMemviewSlice */
-  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_8_kd_tree_DTYPE_t(PyObject *obj, int writable_flag) {
+  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t(PyObject *obj, int writable_flag) {
     __Pyx_memviewslice result = { 0, 0, { 0 }, { 0 }, { 0 } };
     __Pyx_BufFmt_StackElem stack[1];
     int axes_specs[] = { (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_FOLLOW), (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_CONTIG) };
@@ -35530,7 +35530,7 @@ no_fail:
     }
     retcode = __Pyx_ValidateAndInit_memviewslice(axes_specs, __Pyx_IS_C_CONTIG,
                                                  (PyBUF_C_CONTIGUOUS | PyBUF_FORMAT) | writable_flag, 2,
-                                                 &__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_DTYPE_t, stack,
+                                                 &__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t, stack,
                                                  &result, obj);
     if (unlikely(retcode == -1))
         goto __pyx_fail;
@@ -35542,7 +35542,7 @@ __pyx_fail:
 }
 
 /* ObjectToMemviewSlice */
-  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_8_kd_tree_ITYPE_t(PyObject *obj, int writable_flag) {
+  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t(PyObject *obj, int writable_flag) {
     __Pyx_memviewslice result = { 0, 0, { 0 }, { 0 }, { 0 } };
     __Pyx_BufFmt_StackElem stack[1];
     int axes_specs[] = { (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_FOLLOW), (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_CONTIG) };
@@ -35553,7 +35553,7 @@ __pyx_fail:
     }
     retcode = __Pyx_ValidateAndInit_memviewslice(axes_specs, __Pyx_IS_C_CONTIG,
                                                  (PyBUF_C_CONTIGUOUS | PyBUF_FORMAT) | writable_flag, 2,
-                                                 &__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_ITYPE_t, stack,
+                                                 &__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t, stack,
                                                  &result, obj);
     if (unlikely(retcode == -1))
         goto __pyx_fail;
@@ -35565,7 +35565,7 @@ __pyx_fail:
 }
 
 /* ObjectToMemviewSlice */
-  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_8_kd_tree_NodeHeapData_t(PyObject *obj, int writable_flag) {
+  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t(PyObject *obj, int writable_flag) {
     __Pyx_memviewslice result = { 0, 0, { 0 }, { 0 }, { 0 } };
     __Pyx_BufFmt_StackElem stack[2];
     int axes_specs[] = { (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_CONTIG) };
@@ -35576,7 +35576,7 @@ __pyx_fail:
     }
     retcode = __Pyx_ValidateAndInit_memviewslice(axes_specs, __Pyx_IS_C_CONTIG,
                                                  (PyBUF_C_CONTIGUOUS | PyBUF_FORMAT) | writable_flag, 1,
-                                                 &__Pyx_TypeInfo_nn_struct____pyx_t_8_kd_tree_NodeHeapData_t, stack,
+                                                 &__Pyx_TypeInfo_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeHeapData_t, stack,
                                                  &result, obj);
     if (unlikely(retcode == -1))
         goto __pyx_fail;
@@ -35588,7 +35588,7 @@ __pyx_fail:
 }
 
 /* ObjectToMemviewSlice */
-  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_8_kd_tree_DTYPE_t__const__(PyObject *obj, int writable_flag) {
+  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_dc_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__(PyObject *obj, int writable_flag) {
     __Pyx_memviewslice result = { 0, 0, { 0 }, { 0 }, { 0 } };
     __Pyx_BufFmt_StackElem stack[1];
     int axes_specs[] = { (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_FOLLOW), (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_CONTIG) };
@@ -35599,7 +35599,7 @@ __pyx_fail:
     }
     retcode = __Pyx_ValidateAndInit_memviewslice(axes_specs, __Pyx_IS_C_CONTIG,
                                                  (PyBUF_C_CONTIGUOUS | PyBUF_FORMAT) | writable_flag, 2,
-                                                 &__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_DTYPE_t__const__, stack,
+                                                 &__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__, stack,
                                                  &result, obj);
     if (unlikely(retcode == -1))
         goto __pyx_fail;
@@ -35611,7 +35611,7 @@ __pyx_fail:
 }
 
 /* ObjectToMemviewSlice */
-  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_8_kd_tree_ITYPE_t__const__(PyObject *obj, int writable_flag) {
+  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t__const__(PyObject *obj, int writable_flag) {
     __Pyx_memviewslice result = { 0, 0, { 0 }, { 0 }, { 0 } };
     __Pyx_BufFmt_StackElem stack[1];
     int axes_specs[] = { (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_CONTIG) };
@@ -35622,7 +35622,7 @@ __pyx_fail:
     }
     retcode = __Pyx_ValidateAndInit_memviewslice(axes_specs, __Pyx_IS_C_CONTIG,
                                                  (PyBUF_C_CONTIGUOUS | PyBUF_FORMAT) | writable_flag, 1,
-                                                 &__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_ITYPE_t__const__, stack,
+                                                 &__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t__const__, stack,
                                                  &result, obj);
     if (unlikely(retcode == -1))
         goto __pyx_fail;
@@ -35634,7 +35634,7 @@ __pyx_fail:
 }
 
 /* ObjectToMemviewSlice */
-  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_8_kd_tree_NodeData_t__const__(PyObject *obj, int writable_flag) {
+  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t__const__(PyObject *obj, int writable_flag) {
     __Pyx_memviewslice result = { 0, 0, { 0 }, { 0 }, { 0 } };
     __Pyx_BufFmt_StackElem stack[2];
     int axes_specs[] = { (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_CONTIG) };
@@ -35645,7 +35645,7 @@ __pyx_fail:
     }
     retcode = __Pyx_ValidateAndInit_memviewslice(axes_specs, __Pyx_IS_C_CONTIG,
                                                  (PyBUF_C_CONTIGUOUS | PyBUF_FORMAT) | writable_flag, 1,
-                                                 &__Pyx_TypeInfo_nn_struct____pyx_t_8_kd_tree_NodeData_t__const__, stack,
+                                                 &__Pyx_TypeInfo_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t__const__, stack,
                                                  &result, obj);
     if (unlikely(retcode == -1))
         goto __pyx_fail;
@@ -35657,7 +35657,7 @@ __pyx_fail:
 }
 
 /* ObjectToMemviewSlice */
-  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_nn___pyx_t_8_kd_tree_DTYPE_t__const__(PyObject *obj, int writable_flag) {
+  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_d_d_dc_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__(PyObject *obj, int writable_flag) {
     __Pyx_memviewslice result = { 0, 0, { 0 }, { 0 }, { 0 } };
     __Pyx_BufFmt_StackElem stack[1];
     int axes_specs[] = { (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_FOLLOW), (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_FOLLOW), (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_CONTIG) };
@@ -35668,7 +35668,7 @@ __pyx_fail:
     }
     retcode = __Pyx_ValidateAndInit_memviewslice(axes_specs, __Pyx_IS_C_CONTIG,
                                                  (PyBUF_C_CONTIGUOUS | PyBUF_FORMAT) | writable_flag, 3,
-                                                 &__Pyx_TypeInfo_nn___pyx_t_8_kd_tree_DTYPE_t__const__, stack,
+                                                 &__Pyx_TypeInfo_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__, stack,
                                                  &result, obj);
     if (unlikely(retcode == -1))
         goto __pyx_fail;
@@ -35707,7 +35707,7 @@ __pyx_fail:
 }
 
 /* ObjectToMemviewSlice */
-  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_8_kd_tree_NodeData_t(PyObject *obj, int writable_flag) {
+  static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(PyObject *obj, int writable_flag) {
     __Pyx_memviewslice result = { 0, 0, { 0 }, { 0 }, { 0 } };
     __Pyx_BufFmt_StackElem stack[2];
     int axes_specs[] = { (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_CONTIG) };
@@ -35718,7 +35718,7 @@ __pyx_fail:
     }
     retcode = __Pyx_ValidateAndInit_memviewslice(axes_specs, __Pyx_IS_C_CONTIG,
                                                  (PyBUF_C_CONTIGUOUS | PyBUF_FORMAT) | writable_flag, 1,
-                                                 &__Pyx_TypeInfo_nn_struct____pyx_t_8_kd_tree_NodeData_t, stack,
+                                                 &__Pyx_TypeInfo_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t, stack,
                                                  &result, obj);
     if (unlikely(retcode == -1))
         goto __pyx_fail;
@@ -35730,18 +35730,18 @@ __pyx_fail:
 }
 
 /* MemviewDtypeToObject */
-  static CYTHON_INLINE PyObject *__pyx_memview_get_nn___pyx_t_8_kd_tree_DTYPE_t__const__(const char *itemp) {
-    return (PyObject *) PyFloat_FromDouble(*(__pyx_t_8_kd_tree_DTYPE_t const  *) itemp);
+  static CYTHON_INLINE PyObject *__pyx_memview_get_nn___pyx_t_4AKNN_8_kd_tree_DTYPE_t__const__(const char *itemp) {
+    return (PyObject *) PyFloat_FromDouble(*(__pyx_t_4AKNN_8_kd_tree_DTYPE_t const  *) itemp);
 }
 
 /* MemviewDtypeToObject */
-  static CYTHON_INLINE PyObject *__pyx_memview_get_nn___pyx_t_8_kd_tree_ITYPE_t__const__(const char *itemp) {
-    return (PyObject *) __Pyx_PyInt_From_Py_intptr_t(*(__pyx_t_8_kd_tree_ITYPE_t const  *) itemp);
+  static CYTHON_INLINE PyObject *__pyx_memview_get_nn___pyx_t_4AKNN_8_kd_tree_ITYPE_t__const__(const char *itemp) {
+    return (PyObject *) __Pyx_PyInt_From_Py_intptr_t(*(__pyx_t_4AKNN_8_kd_tree_ITYPE_t const  *) itemp);
 }
 
 /* MemviewDtypeToObject */
-  static CYTHON_INLINE PyObject *__pyx_memview_get_nn_struct____pyx_t_8_kd_tree_NodeData_t__const__(const char *itemp) {
-    return (PyObject *) __pyx_convert__to_py_struct____pyx_t_8_kd_tree_NodeData_t(*(struct __pyx_t_8_kd_tree_NodeData_t const  *) itemp);
+  static CYTHON_INLINE PyObject *__pyx_memview_get_nn_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t__const__(const char *itemp) {
+    return (PyObject *) __pyx_convert__to_py_struct____pyx_t_4AKNN_8_kd_tree_NodeData_t(*(struct __pyx_t_4AKNN_8_kd_tree_NodeData_t const  *) itemp);
 }
 
 /* Declarations */
