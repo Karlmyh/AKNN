@@ -5,23 +5,11 @@ from Cython.Build import cythonize
 import numpy
 import pathlib
 import os
-import sklearn
 
 here = pathlib.Path(__file__).parent.resolve()
 long_description = (here / "README.md").read_text(encoding="utf-8")
 
 
-
-
-
-
-
-
-
-# Custom build_ext command to set OpenMP compile flags depending on os and
-# compiler. Also makes it possible to set the parallelism level via
-# and environment variable (useful for the wheel building CI).
-# build_ext has to be imported after setuptools
 
 from numpy.distutils.command.build_ext import build_ext  
 
@@ -33,6 +21,7 @@ USE_NEWEST_NUMPY_C_API = (
 class build_ext_subclass(build_ext):
     def finalize_options(self):
         super().finalize_options()
+        
       
 
     def build_extensions(self):
