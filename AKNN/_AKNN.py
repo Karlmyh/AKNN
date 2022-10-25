@@ -39,8 +39,7 @@ class NNDE(object):
         
         self.n_train_=X.shape[0]
         
-        if self.score_validate_scale=="auto":
-            self.score_validate_scale_=self.n_train_*(self.dim_*2)
+       
         
         # default euclidean metric
         self.tree_ = KDTree(
@@ -53,6 +52,8 @@ class NNDE(object):
         
         self.vol_unitball_=math.pi**(self.dim_/2)/math.gamma(self.dim_/2+1)
         
+        if self.score_validate_scale=="auto":
+            self.score_validate_scale_=self.n_train_*(self.dim_*2)
         
         return self
     
