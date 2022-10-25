@@ -10,7 +10,6 @@ from ._utils import mc_sampling,aknn
 class NNDE(object):
     def __init__(
         self,
-        metric="euclidean",
         leaf_size=40,
         seed=1,
         score_criterion="MISE",
@@ -18,7 +17,7 @@ class NNDE(object):
         max_neighbors="auto",
         score_validate_scale="auto"
     ):
-        self.metric = metric
+       
         self.leaf_size=leaf_size
         self.seed=seed
         self.score_criterion=score_criterion
@@ -27,9 +26,7 @@ class NNDE(object):
         self.score_validate_scale=score_validate_scale
         
         
-        if metric not in KDTree.valid_metrics:
-            raise ValueError("invalid metric: '{0}'".format(metric))
-        
+    
         self.log_density=None
         
         
@@ -44,10 +41,10 @@ class NNDE(object):
         if self.score_validate_scale=="auto":
             self.score_validate_scale_=self.n_train_*(self.dim_*2)
         
-
+        # default euclidean metric
         self.tree_ = KDTree(
             X,
-            metric=self.metric,
+            metric="euclidean",
             leaf_size=self.leaf_size,
         )
         
