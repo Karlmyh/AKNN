@@ -37,7 +37,8 @@ class NNDE(object):
         if self.max_neighbors=="auto":
             self.max_neighbors_=min(int(X.shape[0]*(2/3)),10000)
         
-            
+        self.n_train_=X.shape[0]
+        
         if self.score_validate_scale=="auto":
             self.score_validate_scale_=self.n_train_*(self.dim_*2)
         
@@ -49,7 +50,7 @@ class NNDE(object):
         )
         
         self.dim_=X.shape[1]
-        self.n_train_=X.shape[0]
+        
         self.vol_unitball_=math.pi**(self.dim_/2)/math.gamma(self.dim_/2+1)
         
         
