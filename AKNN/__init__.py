@@ -1,1 +1,1 @@
-from ._kd_tree import KDTree__all__ = ["KDTree"]
+from ._kd_tree import KDTreefrom ._AKNN import AKNN__all__ = ["KDTree","AKNN"]
