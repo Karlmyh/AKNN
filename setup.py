@@ -67,8 +67,8 @@ ext_module_kd_tree = Extension("AKNN._kd_tree",
 
 
 extensions = [
+    ext_module_partition_nodes,
     ext_module_kd_tree,
-    ext_module_partition_nodes
 ]
 
 
